@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-details</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- left-sidebar css -->
+    <link rel="stylesheet" href="css/left-sidebar.css" />
+
+    <!-- blog Css -->
+     <link rel="stylesheet" href="css/blog.css"/>
+    
+    <!-- blog details Css -->
+     <link rel="stylesheet" href="css/blog-details.css">
+</head>
+<body>
+    <!-- navber start -->
+    <nav class="navber">
+        <div class="up-nav-sec">
+            <div class="num-sec">
+                <div class="phone-number">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="number">+91 987 654 3210</p>
+                </div>
+                <div class="wapp-number">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p class="number">+91 987 654 3210</p>
+                </div>
+            </div>
+            <div class="online-destination">
+                <p class="online-destination-text">World`s Fastest Online Shopping Destination</p>
+            </div>
+            <div class="help-other-sec">
+                <a href="" class="support">help?</a>
+                <a href="" class="support">Track Orde?</a>
+                <div class="language">
+                    <a href="" class="support">English<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="drop_down">
+                        <li class="lang-list">
+                        <a class="drop-lang-text" href="#">English(uk)</a>
+                        </li>
+                        <li class="lang-list">
+                        <a class="drop-lang-text" href="#">English(us)</a>
+                        </li>
+                        <li class="lang-list">
+                        <a class="drop-lang-text" href="#">Hindi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dollar">
+                    <a href="" class="support">Dollar<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dollar-list">
+                        <li class="currency-list">
+                        <a class="currency-text" href="#">Rupee</a>
+                        </li>
+                        <li class="currency-list">
+                        <a class="currency-text" href="#">EUR</a>
+                        </li>
+                        <li class="currency-list">
+                        <a class="currency-text" href="#">Yuan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo-search-login">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" height="23"/>
+            </div>
+            <div class="search-sec">
+                <input class="search" type="text" placeholder="search products..." name="" value=""/> <i class="fa-solid fa-magnifying-glass"></i>
+            </div> 
+            <div class="login-cart-sec">
+                <div class="login">
+                    <i class="far fa-user"></i>
+                    <div class="log-watch-cart">
+                        <p class="ac-watch-cart-text">Account</p>
+                        <p class="log-item">Login</p>
+                    </div>
+                </div>
+                <div class="watchlist">
+                    <i class="far fa-heart"></i>
+                    <div class="log-watch-cart">
+                        <p class="ac-watch-cart-text">Wishlist</p>
+                        <p class="log-item">3-items</p>
+                    </div>
+                </div>
+                <div class="cart car-t">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="log-watch-cart">
+                        <p class="ac-watch-cart-text">Cart</p>
+                        <p class="log-item">3-items</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-menu-sec">
+            <div class="categories" id="categori-sec">
+                <img src="images/icons/grid-outline 2.png" alt="icon" class="categorie-icon" width="20"/>
+                <a class="categories-text" href="#">all categories</a><i class="fa-solid fa-angle-down"></i>
+                <ul id="categori-list">
+                    <li class="categori-items"><a href="#" class="items">Men t-shirt</a></li>
+                    <li class="categori-items"><a href="#" class="items">Women t-shirt</a></li>
+                    <li class="categori-items"><a href="#" class="items">Toys</a></li>
+                    <li class="categori-items"><a href="#" class="items">Shoes</a></li>
+                    <li class="categori-items"><a href="#" class="items">Food</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <ul class="menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home<i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="nave-menu-home">
+                            <li><a href="index.html">Grocery</a></li>
+                            <li><a href="fashion.html">Fashion</a></li>
+                            <li><a href="fashion2.html">Fashion2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-menu-categori-sec">
+                        <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="nav-menu-categori-list">
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Jens</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Beauty Product</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Appliance</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Electronic</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Grocery</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Jewellery</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Sports</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-menu-product-list-sec">
+                        <a href="#Products" class="nav-link">Products <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="nav-menu-product-list">
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Fruit</a>
+                            </li>
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Juice</a>
+                            </li>
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Snacks</a>
+                            </li>
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Dry food</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Blog" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                </ul>
+                <div class="offer-sec">
+                    <img src="images/prod-watching/return.png" alt="image" height="20"/>
+                    <p class="offer">Offers</p>
+                </div>
+            </div>
+            <div class="categories" id="business-location">
+                <img src="images/icons/location-pin.png" alt="icon" class="categorie-icon" width="20"/>
+                <a class="categories-text" href="#">New York</a><i class="fa-solid fa-angle-down"></i>
+                <ul id="business-places">
+                    <li class="place-name">
+                        <a href="#" class="location" id="delhi">Delhi</a>
+                    </li>
+                    <li class="place-name">
+                        <a href="#" class="location">Mumbai</a>
+                    </li>
+                    <li class="place-name">
+                        <a href="#" class="location">Kolkata</a>
+                    </li>
+                    <li class="place-name">
+                        <a href="#" class="location">Rajasthan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+     <div class="shop-page">
+        <a href="#" class="shop">Blog Page</a>
+        <div class="home-shop">
+          <a href="#" class="home">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#" class="shop active-point">Blog Page</a>
+        </div>
+      </div>
+    <!-- navber end -->
+
+
+    <!-- images blog sec start -->
+    <section class="images-blog-sec">
+        <div class="images-blog">
+            <div class="blog-organic-product-img-txt">
+                <div class="blog-img">
+                    <img src="images/blog-image/8.jpg (1).png" alt="">
+                    <p class="blog-img-date">June 30,2022 - Organic</p>
+                    <h4 class="blog-img-heading-txt">Marketing Guide: 5 Steps to Success.</h4>
+                    <p class="blog-img-details">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever
+                        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+                        of Lorem Ipsum.
+                    </p>
+                    <p class="blog-img-details different-style">
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from `de Finibus Bonorum et Malorum` by Cicero.
+                    </p>
+                    <p class="blog-img-details">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passages of Lorem Ipsum classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+                    </p>
+                </div>
+            </div>
+            <div class="blogs-items blog-items">
+                <div class="blog-unit">
+                    <div class="blog-itm-img">
+                        <img src="images/blog-image/3.jpg.png" alt="image" width="420"/>
+                    </div>
+                </div>
+                <div class="blog-unit">
+                    <div class="blog-itm-img">
+                        <img src="images/blog-image/4.jpg.png" alt="image" width="420"/>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-img">
+                <p class="blog-img-details" id="bottom-details">
+                    It is a long established fact that a reader will be distracted by the readable content of a page distracted by the readable when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.
+                </p>
+                <p class="blog-img-details" id="bottom-details">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered distracted by the readable alteration in some form, by injected humour.
+                </p>
+            </div>
+            <div class="blog-img-review">
+                <p>Please <code>login</code> or <code>register</code> to review the blog comments.</p>
+            </div>
+        </div>
+        <div class="img-blog-search-items">
+            <div id="blog-search">
+                <input type="text" placeholder="Search Our Blog"/><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="blog-recent-article">
+                <h4 class="recent-article-txt">Recent Articles</h4>
+                <div class="article-line"></div>
+                <div class="article-img-txt">
+                    <div class="article-img">
+                        <img src="images/blog-image/6.jpg.png" alt="image" width="80"/>
+                    </div>
+                    <div class="blog-article-txt">
+                        <p class="headline-of-the-article">The best fashion influencers.</p>
+                        <p class="recent-article-date">June 30,2021-2022</p>
+                        <p class="type-of-product-article">- Organic</p>
+                    </div>
+                </div>
+                <div class="article-line"></div>
+                <div class="article-img-txt">
+                    <div class="article-img">
+                        <img src="images/blog-image/5.jpg.png" alt="image" width="80"/>
+                    </div>
+                    <div class="blog-article-txt">
+                        <p class="headline-of-the-article">Vogue Shopping Weekend.</p>
+                        <p class="recent-article-date">April 02,2021-2022</p>
+                        <p class="type-of-product-article">- Fruits</p>
+                    </div>
+                </div>
+                <div class="article-line"></div>
+                <div class="article-img-txt">
+                    <div class="article-img">
+                        <img src="images/blog-image/4.jpg.png" alt="image" width="80"/>
+                    </div>
+                    <div class="blog-article-txt">
+                        <p class="headline-of-the-article">Fashion Market Reveals Her Jacket.</p>
+                        <p class="recent-article-date">Mar 09,2021-2022</p>
+                        <p class="type-of-product-article">- Vegetables</p>
+                    </div>
+                </div>
+                <div class="article-line"></div>
+                <div class="article-img-txt">
+                    <div class="article-img">
+                        <img src="images/blog-image/3.jpg.png" alt="image" width="80"/>
+                    </div>
+                    <div class="blog-article-txt">
+                        <p class="headline-of-the-article">Summer Trending Fashion Market.</p>
+                        <p class="recent-article-date">January 25,2021-2022</p>
+                        <p class="type-of-product-article">- Organic</p>
+                    </div>
+                </div>
+                <div class="article-line"></div>
+                <div class="article-img-txt">
+                    <div class="article-img">
+                        <img src="images/blog-image/2.jpg.png" alt="image" width="80"/>
+                    </div>
+                    <div class="blog-article-txt">
+                        <p class="headline-of-the-article">Winter 2021 Trending Fashion Market.</p>
+                        <p class="recent-article-date">December 10,2021-2022</p>
+                        <p class="type-of-product-article">- Vegetables</p>
+                    </div>
+                </div>
+                <div class="article-line"></div>
+                <h4 class="recent-article-txt">Categories</h4>
+                <div class="article-line"></div>
+                <div class="blog-article-filter">
+                    <div class="article-filter-checkbox">
+                        <input type="checkbox"/>
+                        <p class="blog-categori-type">Organic</p>
+                    </div>
+                    <div class="quantity">-2</div>
+                </div>
+                <div class="article-line"></div>
+                <div class="blog-article-filter">
+                    <div class="article-filter-checkbox">
+                        <input type="checkbox"/>
+                        <p class="blog-categori-type">Fruits</p>
+                    </div>
+                    <div class="quantity">-3</div>
+                </div>
+                <div class="article-line"></div>
+                <div class="blog-article-filter">
+                    <div class="article-filter-checkbox">
+                        <input type="checkbox"/>
+                        <p class="blog-categori-type">Vegetables</p>
+                    </div>
+                    <div class="quantity">-2</div>
+                </div>
+                <div class="article-line"></div>
+                <div class="blog-article-filter">
+                    <div class="article-filter-checkbox">
+                        <input type="checkbox"/>
+                        <p class="blog-categori-type">Fastfood</p>
+                    </div>
+                    <div class="quantity">-2</div>
+                </div>
+                <button type="button" class="filter-btn">Filter</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg col-md-4">
+                    <div class="logo-details">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="image" width="100"/>
+                        </div>
+                        <div class="com-detail">
+                            <p>Grabit is the biggest market of grocery products.Get your daily needs from our store.</p>
+                        </div>
+                        <div class="app-store-sec">
+                            <img src="images/android.png.png" alt="image" width="100"/>
+                            <img src="images/apple.png.png" alt="image" width="100"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-4">
+                    <div class="all-details">
+                        <h4>Category</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Dried Fruit</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Cookies</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Foods</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Fresh Fruit</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Tuber root</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Vegetables</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-4">
+                    <div class="all-details">
+                        <h4>Company</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">About us</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Delivery</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Legal Notice</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Terms & conditions</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Secure payment</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-6">
+                    <div class="all-details">
+                        <h4>Account</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Sign In</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">View Cart</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Return Policy</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Become a Vendor</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Affiliate Program</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Payments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-6">
+                    <div class="all-details">
+                        <h4>Contact</h4>
+                        <div class="line all-details-line"></div>
+                        <div class="contact-site">
+                            <div class="loc">
+                                <img src="images/location.png" alt="image" height="10"/>
+                            </div>
+                            <p class="contact-way contact-address">2548 Broaddus Maple Court, Madisonville KY 4783, USA.</p>
+                        </div>
+                        <div class="contact-site">
+                            <div class="wh-app-icon">
+                                <img src="images/w.app.png" alt="image" height="10"/>
+                            </div>
+                            <p class="contact-way">+00 9876543210</p>
+                        </div>
+                        <div class="contact-site">
+                            <div class="email-icon">
+                                <img src="images/email.png" alt="image" height="10"/>
+                            </div>
+                            <p class="contact-way">example@email.com</p>
+                        </div>
+                        <div class="social-icons">
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/fb.png" alt="image" height="10"/>
+                            </div>
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/indeed.png" alt="image" height="10"/>
+                            </div>
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/twiter.png" alt="image" height="10"/>
+                            </div>
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/instra.png" alt="image" height="10"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+    </section>
+    <section class="copyright-sec">
+        <div class="copy-right-text">
+            <p>Copyright © <span>Grabit</span>all rights reserved. Powered by Grabit.</p>
+        </div>
+        <div class="payment">
+            <img src="images/payment.png.png" alt="image" height="30" />
+        </div>
+    </section>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- main js -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

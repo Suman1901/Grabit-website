@@ -1,0 +1,29 @@
+.up-nav{
+    background: #5CAF90 !important;
+}
+.online-destination p{
+    color: white !important;
+}
+.phone-number .fa-solid.fa-phone{
+    color: white !important;
+}
+.phone-number .number{
+    color: #ffffff !important;
+}
+.wapp-number .fa-brands.fa-whatsapp{
+    color: white;
+}
+.wapp-number .number{
+    color: white;
+}
+
+
+.help-other-sec .support{
+    color: white !important;
+}
+.support .fa-solid.fa-angle-down{
+    color: white !important;
+}
+
+
+

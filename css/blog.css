@@ -1,0 +1,290 @@
+/* ===images blog sec start=== */
+.images-blog-sec{
+    padding: 40px 5%;
+}
+.images-blog{
+    width: 56vw;
+}
+
+.blog-unit{
+    width: 420px;
+}
+.blog-unit .blog-itm-img{
+    width: 420px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.images-blog-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.blogs-items{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-unit .pro-date{
+    font-size: 13px;
+    color: #999999;
+    margin-top: 20px;
+}
+.blog-unit .guide{
+    font-weight: 500;
+    font-size: 17px;
+    color: #4B5966;
+    margin-top: 18px;
+}
+.blog-unit .blog-product-detail{
+    font-size: 14px;
+    color: #777777;
+    margin-top: 15px;
+    line-height: 30px;
+}
+.img-blog-search-items{
+    width: 30vw;
+}
+.img-blog-search-items #blog-search{
+    width: 30vw;
+    border: 1px solid #999999;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#blog-search input{
+    border: none;
+}
+#blog-search input:focus{
+    outline: none;
+}
+.img-blog-search-items .blog-recent-article{
+    padding: 30px;
+    margin-top: 30px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    /* position: relative; */
+}
+.blog-recent-article .article-line{
+    width: auto;
+    height: 1px;
+    background: #999999;
+    margin: 20px 0;
+}
+.blog-recent-article .recent-article-txt{
+    color: #212529;
+}
+.blog-recent-article .article-img-txt {
+    display: flex;
+    align-items: center;
+}
+.article-img-txt .article-img{
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.article-img-txt .blog-article-txt{
+    padding-left: 15px;
+}
+.blog-article-txt .headline-of-the-article{
+    font-size: 16px;
+    font-weight: 500;
+    color: #4B5966;
+}
+.blog-article-txt .recent-article-date{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 8px;
+}
+.blog-article-txt .type-of-product-article{
+    color: #5CAF90;
+    margin-top: 8px;
+}
+.blog-recent-article .blog-article-filter{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-article-filter .article-filter-checkbox{
+    display: flex;
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+.article-filter-checkbox .blog-categori-type{
+    padding-left: 10px;
+    color: #777777;
+}
+.filter-btn{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background: #5CAF90;
+    color: white;
+    position: relative;
+    right: 0;
+    margin-top: 40px;
+    right: -84%;
+}
+.blog-article-filter .quantity{
+    color: #777777;
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1366px){
+    .blog-unit .blog-itm-img{
+        width: auto;
+    }
+    .blog-unit {
+        width: 26vw;
+    }
+    .blog-unit .pro-date{
+        margin-top: 10px;
+    }
+    .blog-unit .guide{
+        margin-top: 5px;
+        line-height: 17px;
+        font-size: 15px;
+    }
+    .blog-unit .blog-product-detail{
+        font-size: 13px;
+        margin-top: 5px;
+        line-height: 17px;
+    }
+    .img-blog-search-items .blog-recent-article{
+        padding: 13px;
+        margin-top: 20px;
+    }
+    .blog-recent-article .article-line{
+        margin: 10px 0;
+    }
+    .article-img-txt .article-img{
+        width: auto;
+        height: auto;
+    }
+    .blog-article-txt .headline-of-the-article{
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .blog-article-txt .recent-article-date{
+        font-size: 13px;
+        margin-top: 3px;
+    }
+    .blog-article-txt .type-of-product-article{
+        margin-top: 0px;
+    }
+    .filter-btn{
+        margin-top: 17px;
+        right: -71%;
+        padding: 4px 14px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .blog-unit .blog-itm-img{
+        width: auto;
+    }
+    .blog-unit {
+        width: 26vw;
+    }
+    .blog-unit .pro-date{
+        margin-top: 10px;
+    }
+    .blog-unit .guide{
+        margin-top: 5px;
+        line-height: 17px;
+        font-size: 15px;
+    }
+    .blog-unit .blog-product-detail{
+        font-size: 13px;
+        margin-top: 5px;
+        line-height: 17px;
+    }
+    .img-blog-search-items .blog-recent-article{
+        padding: 13px;
+        margin-top: 20px;
+    }
+    .blog-recent-article .article-line{
+        margin: 10px 0;
+    }
+    .article-img-txt .article-img{
+        width: auto;
+        height: auto;
+    }
+    .blog-article-txt .headline-of-the-article{
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .blog-article-txt .recent-article-date{
+        font-size: 13px;
+        margin-top: 3px;
+    }
+    .blog-article-txt .type-of-product-article{
+        margin-top: 0px;
+    }
+    .filter-btn{
+        margin-top: 17px;
+        right: -71%;
+        padding: 4px 14px;
+    }
+}
+/* @media screen and (min-width:540px) and (max-width:767px){
+    .images-blog-sec{
+        flex-direction: column;
+    }
+
+} */
+@media screen and (min-width:320px) and (max-width:767px){
+    .images-blog-sec{
+        flex-direction: column;
+    }
+    .blogs-items{
+        flex-direction: column;
+    }
+    .blog-unit .blog-itm-img{
+        width: auto;
+    }
+    .blog-unit{
+        width: auto;
+        margin-top: 15px;
+    }
+    .images-blog{
+        margin: auto;
+    }
+    .img-blog-search-items #blog-search{
+        display: none;
+    }
+    .img-blog-search-items{
+        width: 75vw;
+        margin: auto;
+    }
+    .blog-unit .pro-date{
+        margin-top: 5px;
+    }
+    .blog-unit .guide{
+        margin-top: 5px;
+        line-height: 17px;
+    }
+    .blog-unit .blog-product-detail{
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 16px;
+    }
+    .img-blog-search-items .blog-recent-article{
+        padding: 20px;
+    }
+    .blog-recent-article .article-line{
+        margin: 10px 0;
+    }
+    .blog-article-txt .recent-article-date{
+        margin-top: 0px;
+    }
+    .blog-article-txt .type-of-product-article{
+        margin-top: 0px;
+    }
+    .filter-btn{
+        margin-top: 20px;
+    }
+    .filter-btn{
+        right: -70%;
+    }
+
+}

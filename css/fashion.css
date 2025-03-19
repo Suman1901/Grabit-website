@@ -1,0 +1,360 @@
+/* ====navber==== */
+
+
+.fashion-drop-down{
+    background: #5CAF90 !important;
+}
+.lang-txt{
+    color: white !important;
+}
+.lang-txt:hover{
+    color: yellow !important;
+}
+.logo-search-login .icon-sec{
+    display: flex;
+}
+.icon-sec .icons{
+    padding-right: 10px;
+}
+.shopping-cart-icon{
+    padding-right: 0;
+}
+.logo-menu-sec{
+    border-bottom: 1px solid #dddddd;
+}
+
+/* ====banner==== */
+.banners{
+    padding: 0px 75px;
+}
+
+/* ====categorys==== */
+
+.categorys{
+    display: flex;
+    padding: 40px 5%;
+    justify-content: space-between;
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+.different-category-wear label input{
+    margin-right: 8px;
+}
+.accordion{
+    width: 20vw;
+}
+.category .category-text{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.category-text .catego{
+    color: #5CAF90;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.category-text .fa-solid.fa-angle-down{
+    color: #798693;
+}
+.clothes-sec .cloth-txt{
+    color: #777777;
+    font-weight: 500;
+}
+.clothes-sec .different-category-wear{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    color: #777777;
+}
+.foot-wear-sec,.accessories-sec{
+    margin-top: 20px;
+}
+.check-wear{
+    display: flex;
+}
+.check-wear .wear-txt{
+    color: #777777;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.check-wear .uqantity{
+    color: #777777;
+}
+.tag-sec button{
+    background: #516EBF;
+    padding: 4px 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 3px;
+}
+
+.top-most-pro{
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 20px;
+    position: relative;
+}
+.top-most-pro .top-most-pro-txt{
+    position: absolute;
+    top: 20px;
+    width: 72%;
+    left: 20px;
+}
+.top-most-pro-txt .top-pro-txt{
+    font-size: 21px;
+    color: #5CAF90;
+    font-weight: 500;
+}
+.top-most-pro-txt button{
+    background: #516EBF;
+    border: none;
+    padding: 3px 7px;
+    color: white;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.different-type-category{
+    width: 68vw;
+}
+.different-type-category .pro-category{
+    padding: 0;
+}
+
+/* ===product category=== */
+
+.product-img-text .pro-name{
+    color: #5CAF90 !important;
+}
+.typeOf-Products .fachion-dis-pro{
+    background: #516EBF !important;
+}
+
+
+/* ===new-arrival==== */
+.fashion-new-arrival{
+    padding: 0 !important;
+    margin-top: 60px;
+}
+.new-arrival-txt{
+    font-size: 25px;
+    font-weight: 500;
+    color: #5CAF90 !important;
+}
+.new-arrival-txt .arri{
+    color: #516EBF !important;
+}
+.new-arrival-up-text .new-arrival-type{
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+}
+.product-type .arrival-type{
+    color: #777777;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+.product-type .all{
+    color: #516EBF !important;
+}
+.product-type .arrival-type:hover{
+    color: #516EBF;
+    transition: all 0.3s ease-in-out;
+}
+.new-arri-img-sec{
+    border: 1px solid #f3f1f1 !important;
+}
+.new-arri-text-sec{
+    border: 1px solid #f3f1f1 !important;
+}
+.type-of-product-txt{
+    margin-top: 20px;
+    color: #5CAF90 !important;
+    font-size: 16px;
+    margin-bottom: 25px !important;
+}
+.rate .new-arri-currect-pro-rate{
+    color: #5CAF90 !important;
+}
+
+/* ====discount-product====== */
+.discount-product{
+    padding: 0 !important;
+    margin: 40px 0 !important;
+}
+.smart-watch, .sports-shoes{
+    width: 33.3vw !important;
+    height: 256px !important;
+}
+.smartwatch-txt{
+    width: 12vw !important;
+}
+.dis-pro-txt{
+    color: #5CAF90 !important;
+}
+.smartwatch-txt .dis-price{
+    font-size: 16px;
+}
+.discount-pro-shop-btn{
+    background: #516EBF !important;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* =====fashion-day-of-deal==== */
+
+.fashion-day-of-deal{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.fashion-heading-txt{
+    color: #5CAF90 !important;
+}
+.fashion-heading2-txt{
+    color: #516EBF !important;
+}
+.fashion-day-of-deal-img-sec{
+    margin-top: 20px !important;
+}
+.day-of-deal-pro-name{
+    color: #5CAF90 !important;
+}
+.day-of-deal-current-amount{
+    color: #5CAF90 !important;
+}
+
+/* ===fashion middle banner=== */
+
+.fashion-middle-banner{
+    padding: 0 !important;
+    margin: 40px 0 !important;
+}
+.fresh-fruit-text .shopping-sale-text{
+    color: #5CAF90;
+}
+.shopping-discound{
+    color: #516EBF !important;
+}
+.fresh-fruit-text .shop-btn{
+    background: #516EBF !important;
+    color: white;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+/* ===tranding-top-product-list=== */
+
+.fashion-top-product-sec{
+    padding: 0 !important;
+}
+.fashion-top-product-arrow{
+    color: #5CAF90 !important;
+}
+.orginal-discount-price .fashion-orginal-pro-amount{
+    color: #5CAF90 !important;
+}
+.nut-mix-txt-price{
+    padding-left: 15px;
+}
+
+/* ===product waching section=== */
+
+.Free-Shipping-img-text .product-watching-txt{
+    color: #516EBF !important;
+}
+
+
+/* ===latest blog=== */
+.marketing-guid .read{
+    transition: all 0.4s ease-in-out;
+}
+.marketing-guid:hover .read{
+    background: #108d6f;
+    transition: all 0.4s ease-in-out;
+}
+.marketing-guid:hover .fashion-marketing-txt{
+    color: white !important;
+} 
+.fashion-marketing-text{
+    color: #5CAF90 !important;
+}
+
+.fashion-marketing-txt{
+    color: #5CAF90 !important;
+}
+
+
+.footer-copyright-sec{
+    background: #5CAF90 !important;
+}
+
+
+
+@media screen and (min-width:1025px) and (max-width:1366px){
+
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+
+}
+@media screen and (min-width:540px) and (max-width:767px){
+
+}
+@media screen and (min-width:320px) and (max-width:539px){
+    .categorys{
+        flex-direction: column;
+    }
+    .accordion{
+        width: 80vw;
+    }
+    .different-type-category{
+        width: auto;
+    }
+    .different-type-category{
+        margin-top: 20px;
+    }
+    /* .day-of-deal-img-sec .deal-img-sec{
+        margin: 20px auto;
+    } */
+    .new-arri-img-sec{
+        width: 76.8vw !important;
+    }
+    .smart-watch, .sports-shoes{
+        width: 76.3vw !important;
+        margin: auto;
+        height: 138px !important;
+    }
+    .smartwatch-txt{
+        width: 26vw !important;
+        top: 14%;
+    }
+    .fashion-new-arrival{
+        margin: auto;
+    }
+    .day-of-deal-img-sec .deal-img-sec{
+        width: 76vw;
+    }
+    .middle-banner-img .fresh-fruit-text{
+        right: 20px !important;
+    }
+    .top-pro-list{
+        margin: auto;
+    }
+    .product-watching-sec{
+        margin-bottom: 20px;
+    }
+    .blogs{
+        width: 28vw;
+    }
+}

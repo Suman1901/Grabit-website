@@ -1,0 +1,198 @@
+/* product-summery-customer-checkout-sec */
+.product-summery-customer-checkout-sec{
+    display: flex;
+}
+#checkout-pro-items{
+    flex-direction: column;
+    padding: 0;
+}
+.checkout-bg{
+    width: 30vw !important;
+    margin-right: 20px;
+}
+.product-summery-customer-checkout-sec{
+    padding: 40px 5%;
+}
+.product-type{
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+}
+.product-type .pro-type-txt{
+    padding-left: 10px;
+}
+.delivery-method,.payment-method{
+    margin-top: 30px;
+}
+.shopping-estimate p{
+    font-size: 14px;
+    color: #777777;
+}
+.delivery-methods{
+    display: flex;
+    margin-top: 15px;
+}
+.type-of-delivery .type-del-txt{
+    color: #4B5966;
+    font-size: 16px;
+    font-weight: 500;
+}
+.delivery-methods .flat-rate{
+    margin-left: 30%;
+}
+.type-of-delivery label{
+    color: #777777;
+    font-size: 14px;
+}
+.shopping-estimate #add-comment{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.shopping-estimate #comment-box{
+    width: 26vw;
+    height: 26vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+.payment-methods{
+    margin-top: 15px;
+}
+.payment-methods label{
+    color: #777777;
+    font-size: 14px;
+}
+.payment-method .user-disition{
+    margin-top: 20px;
+    display: flex;
+}
+.user-disition p{
+    color: #777777;
+    padding-left: 10px;
+}
+.user-disition span{
+    color: #4B5966;
+    font-weight: 500;
+}
+.payment-method img{
+    margin-top: 15px;
+}
+
+.new-customer-checkout .new-customer-txt{
+    color: #4B5966;
+    font-weight: 600;
+    width: 120px;
+}
+.new-customer-checkout #checkout-option{
+    font-size: 15px;
+    font-weight: 500;
+    color: #4B5966;
+    margin-top: 20px;
+}
+.new-customer-checkout .checkout-options{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.new-customer-checkout .checkout-txt{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777777;
+}
+.new-customer-checkout .continue{
+    background: #5CAF90;
+    margin-top: 24px;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+.new-customer-checkout{
+    border: 1px solid #EEEEEE;
+    padding: 31px;
+    height: 50vh;
+    border-radius: 5px;
+}
+.option{
+    display: flex;
+    margin-right: 10px;
+}
+.option label{
+    line-height: 15px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .pro-rate{
+        display: flex;
+    }
+    .delivery-methods .flat-rate {
+        margin-left: 6%;
+    }
+    .day-of-deal-img-sec{
+        display: none;
+    }
+}
+@media screen and (min-width:540px) and (max-width:767px) {
+    
+    .checkout-bg {
+        width: auto !important;
+    }
+    .product-type .pro-type-txt{
+        width: 65%;
+        padding-left: 0;
+    }
+    .pro-rate{
+        display: flex;
+    }
+    .pro-rate label{
+        padding-left: 5px;
+    }
+    .delivery-methods .flat-rate {
+        margin-left: 5%;
+    }
+    .shopping-estimate #comment-box{
+        width: auto;
+    }
+    .day-of-deal-img-sec{
+        display: none;
+    }
+}
+@media screen and (min-width:320px) and (max-width:539px) {
+    .product-summery-customer-checkout-sec{
+        flex-direction: column;
+    }
+    .checkout-bg{
+        width: auto !important;
+        margin: 0 auto 20px;
+    }
+    .shopping-estimate #comment-box{
+        width: 100%;
+    }
+    .new-customer-checkout{
+        padding: 15px;
+    }
+    .new-customer-checkout .new-customer-txt{
+        width: 50%;
+    }
+    .new-customer-checkout #checkout-option{
+        margin-top: 5px;
+    }
+    .new-customer-checkout .checkout-options{
+        width: auto;
+    }
+    .option{
+        display: flex;
+        align-items: center;
+    }
+    .option label{
+        line-height: 15px;
+        padding-left: 5px;
+    }
+
+}

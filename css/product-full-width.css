@@ -1,0 +1,45 @@
+.product-Page{
+    padding: 40px 5%;
+}
+.product-full-img-sec{
+    width: auto;
+}
+.input-details-txt{
+    margin-top: 40px;
+}
+.input-product-details{
+    width: 89vw;
+    height: 43vh;
+    border: 1px solid #777777;
+}
+.input-product-details:focus{
+    outline: none;
+}
+
+.product-full-img-reating{
+    width: 28vw;
+}
+@media screen and (min-width:320px) and (max-width:539px) {
+    .pro-page-product-sec{
+        margin-top: 0;
+    }
+    .product-images-details-rate #product-rate-details{
+        margin: 20px 0;
+        width: auto;
+    }
+    .product-images-details-rate #product-images-sec{
+        width: auto;
+    }
+    .chips-img img{
+        width: auto;
+    }
+    #product-rate-details .add-card-sec{
+        width: auto;
+    }
+    .pro-reating-sec{
+        margin-top: 0;
+    }
+    .product-full-img-reating{
+        width: auto !important;
+    }
+}

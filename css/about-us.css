@@ -1,0 +1,266 @@
+.who-we-are-img-txt{
+    padding: 80px 5%;
+    display: flex;
+    align-items: center;
+    
+}
+.who-we-are-imgs{
+    display: flex;
+}
+.who-we-are-imgs .who-are-first-img{
+    margin-right: 24px;
+}
+.who-are-small-img-sec .who-sec-img{
+    margin-bottom: 20px;
+}
+.who-we-are-txt{
+    margin-left: 20px;
+    width: 50vw;
+}
+.who-we-are-txt .who-we-are-txt-heading{
+    color: #4B5966;
+    font-size: 26px;
+    font-weight: 600;
+}
+.who-we-are-txt span{
+    color: #5CAF90;
+}
+.who-we-are-txt .who-are-main-txt{
+    text-transform: uppercase;
+    color: #777777;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.who-we-are-txt .who-we-are-details{
+    color: #777777;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+/* ===our services=== */
+.our-services .our-services-heading{
+    text-align: center;
+}
+.our-services-heading h3{
+    color: #4B5966;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.our-services-heading span{
+    color: #5CAF90;
+}
+.our-services-heading p{
+    width: 23vw;
+    margin: auto;
+    color: #777777;
+}
+.purchess-product-watching-sec{
+    margin-top: 60px;
+}
+
+
+/* ===CEO sec=== */
+.ceo-sec{
+    width: 89vw;
+    margin: auto;
+    background: #f6f6f6;
+    padding: 50px;
+    border-radius: 5px;
+}
+.ceo-sec .ceo-contain-sec{
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+}
+.ceo-contain-sec #short-ceo-detail{
+    font-size: 15px;
+    color: #777777;
+    margin: 32px 0 15px 0;
+}
+.ceo-contain-sec #ceo-name{
+    color: #5CAF90;
+    margin-bottom: 5px;
+}
+.ceo-contain-sec p{
+    color: #777777;
+    font-size: 16px;
+}
+
+
+/* ===company turnout === */
+.company-turnout-sec{
+    width: 89vw;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.company-turnout-sec .different-type-sec{
+    width: 21vw;
+    border: 1px solid #bebdbd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+}
+.different-type-sec .count{
+    color: #DDDDDD;
+    font-weight: 600;
+}
+.different-type-sec .company-turnout-type{
+    color: #4B5966;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.different-type-sec .company-turnout-txt{
+    font-size: 14px;
+    color: #777777;
+    margin-top: 10px;
+}
+
+/* ===our team=== */
+.our-team-sec{
+    margin-bottom: 70px;
+}
+.our-team-sec .our-team-heading{
+    text-align: center;
+}
+.our-team-heading h2{
+    color: #4B5966;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.our-team-heading span{
+    color: #5CAF90;
+}
+.our-team-heading p{
+    color: #777777;
+}
+.our-team-sec .our-team-imgs-post{
+    width: 89vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.our-team-img{
+    width: 209px;
+}
+
+.img-post .name{
+    font-size: 15px;
+    color: #4B5966;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.img-post .post{
+    text-align: center;
+    color: #4B5966;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.our-team-img{
+    margin: auto;
+}
+.row{
+    width: 100%;
+}
+
+@media screen and (min-width:540px) and (max-width:767px) {
+    .who-we-are-img-txt{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+    .who-we-are-txt{
+        margin-left: 0;
+        width: auto;
+    }
+    .our-services-heading p{
+        width: 55vw;
+    }
+    .purchess-product-watching-sec{
+        flex-direction: column;
+    }
+    .product-watching-sec{
+        width:65vw;
+        margin: 0 auto 15px;
+    }
+    .company-turnout-sec{
+        flex-direction: column;
+        /* margin: auto; */
+    }
+    .company-turnout-sec .different-type-sec{
+        width: 53vw;
+        margin: 0 auto 15px;
+    }
+    .our-team-heading h2{
+        margin-bottom: 0;
+    }
+    .our-team-sec .our-team-imgs-post{
+        flex-direction: column;
+    }
+    .our-team-img{
+        margin: auto;
+    }
+
+
+}
+@media screen and (min-width:320px) and (max-width:539px) {
+    .who-we-are-img-txt{
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    .who-we-are-imgs{
+        flex-direction: column;
+    }
+    .who-we-are-txt{
+        width: auto;
+    }
+    .our-services-heading p{
+        width: 60vw;
+    }
+    .purchess-product-watching-sec{
+        margin-top: 30px;
+    }
+    .product-watching-sec{
+        height: 21vh;
+        margin: 0 auto 10px;
+    }
+    .ceo-sec{
+        padding: 30px;
+    }
+    .ceo-sec .ceo-contain-sec{
+        width: auto;
+    }
+    .company-turnout-sec{
+        flex-direction: column;
+        margin: 30px auto;
+    }
+    .company-turnout-sec .different-type-sec{
+        width: auto;
+        margin-bottom: 16px;
+    }
+    .our-team-sec .our-team-imgs-post{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .our-team-img{
+        margin: auto;
+    }
+    .our-team-heading h2{
+        margin-bottom: 0;
+    }
+    .img-post .post{
+        margin-top: 0;
+    }
+    .img-post .name{
+        margin-top: 0;
+    }
+    .img-post{
+        margin-bottom: 10px;
+    }
+    .our-team-sec{
+        margin-bottom: 0;
+    }
+
+}

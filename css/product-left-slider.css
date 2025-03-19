@@ -1,0 +1,395 @@
+/* ===pro-page-product-sec=== */
+.pro-page-product-sec{
+    width: 68vw;
+}
+.pro-page-product-sec .product-images-details-rate{
+    display: flex;
+    justify-content: space-between;
+}
+.product-images-details-rate #product-images-sec{
+    width: 25vw;
+    border: 1px solid #ced4da;
+    height: 60vh;
+}
+#product-images-sec .pro-imgs{
+    display: flex;
+}
+
+.product-images-details-rate #product-rate-details{
+    width: 42vw;
+}
+#product-rate-details .product-heading{
+    width: 35vw;
+}
+.product-heading .pro-head-txt{
+    color: #4B5966;
+    font-weight: 400;
+}
+#product-rate-details .product-stars{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.product-stars .count-of-rating{
+    padding-left: 10px;
+    color: #999999;
+}
+#product-rate-details .rate-stock-check{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.orginal-amount .main-price{
+    color: #4B5966;
+    font-weight: 500;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.orginal-amount .discount-price{
+    color: #5CAF90;
+}
+.rate-sec .before-amount{
+    margin-top: 17px;
+    position: relative;
+}
+.before-amount .before-price{
+    color: #4B5966;
+}
+.before-amount #crash-line{
+    position: absolute;
+    height: 1px;
+    width: 75px;
+    background: #9a9ea2;
+    right: 0;
+    top: 13px;
+}
+.stock-sec .pro-number{
+    color: #4B5966;
+    font-weight: 500;
+    font-size: 20px;
+}
+.stock-sec .avaible{
+    color: #5CAF90;
+    margin-top: 17px;
+}
+#product-rate-details .pro-small-detail{
+    color: #777777;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 35vw;
+}
+.pro-detail-list{
+    padding-left: 17px;
+    margin-top: 15px;
+}
+.pro-detail-list li{
+    color: #4B5966;
+    margin-bottom: 8px;
+}
+.pro-detail-list li span{
+    font-size: 18px;
+    font-weight: 600;
+}
+#product-rate-details .net-weight{
+    margin-top: 30px;
+}
+.net-weight p{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #4B5966;
+}
+.net-weight .small-packet-active{
+    margin-left: 0;
+    background: #5CAF90;
+}
+.net-weight button{
+    border: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: white;
+}
+#product-rate-details .add-card-sec{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    justify-content: space-between;
+}
+.add-card-sec .number-increse{
+    display: flex;
+    width: 5vw;
+    justify-content: space-between;
+}
+.number-increse button{
+    border: none;
+    background: none;
+}
+.number-increse p{
+    margin: 0 10px;
+}
+.add-card-btn button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #4B5966;
+    color: white;
+    text-transform: uppercase;
+}
+.fas.fa-heart,.far.fa-eye{
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+.pro-reating-sec{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-reating{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #e6e6e6;
+    width: 22vw;
+    border-radius: 5px;
+}
+.img-reating .product-reating-txt{
+    margin-left: 10px;
+}
+.product-reating-txt p{
+    color: #777777;
+}
+.detail-review-etc-btns-txt{
+    margin-top: 40px;
+}
+.detail-review-etc-btns .active{
+    background: #5CAF90;
+    color: white;
+}
+.detail-review-etc-btns button{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #4B5966;
+}
+.detail-review-etc-btns-txt .details-txt{
+    border-top: 1px solid #777777;
+    padding: 25px;
+    margin-top: 25px;
+}
+.details-txt p{
+    color: #4B5966;
+}
+.chips-img img{
+    width: 30vw;
+}
+
+/* ===new arrival=== */
+.new-arrival .related-product-heading{
+    justify-content: center !important;
+    text-align: center;
+}
+.new-arrival{
+    margin-bottom: 60px;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    .product-images-details-rate #product-images-sec{
+        width: 44vw;
+        height: 50%;
+    }
+    .chips-img img{
+        width: 44vw;
+    }
+    #product-rate-details .add-card-sec{
+        width: 30vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-images-details-rate #product-images-sec{
+        width: 45vw;
+        height: 64%;
+    }
+    .chips-img img {
+        width: 45vw;
+    }
+    #product-rate-details .net-weight{
+        margin-top: 15px;
+    }
+    #product-rate-details .product-heading{
+        width: auto;
+    }
+    #product-rate-details .add-card-sec{
+        width: auto;
+        margin-top: 20px;
+    }
+    .add-card-btn button{
+        font-size: 14px;
+    }
+    .img-reating .product-reating-txt{
+        width: 17vw;
+    }
+    .rate{
+        margin-top: 0;
+    }
+    .input-details-txt{
+        margin-top: 15px !important;
+    }
+
+
+}
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    .product-images-details-rate #product-images-sec{
+        width: 43vw;
+        height: 50%;
+    }
+    .chips-img img {
+        width: auto;
+    }
+    #product-rate-details .product-heading{
+        width: auto;
+    }
+    #product-rate-details .product-stars{
+        margin-top: 10px;
+    }
+    #product-rate-details .rate-stock-check{
+        margin-top: 10px;
+    }
+    .rate-sec .before-amount{
+        margin-top: 0;
+    }
+    .stock-sec .avaible{
+        margin-top: 0;
+    }
+    #product-rate-details .pro-small-detail {
+        width: auto;
+        margin-top: 20px;
+    }
+    .pro-detail-list{
+        text-align: left;
+    }
+    .pro-detail-list li{
+        margin-bottom: 0;
+    }
+    #product-rate-details .net-weight{
+        margin-top: 20px;
+    }
+    #product-rate-details .add-card-sec{
+        width: auto;
+        margin-top: 20px;
+    }
+    .add-card-btn button{
+        font-size: 13px;
+        padding: 4px 7px;
+    }
+    .img-reating .product-reating-txt{
+        margin-left: 5px;
+        width: 17vw;
+    }
+    .product-reating-txt p{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .fa-solid.fa-star{
+        font-size: 9px;
+    }
+    .rate{
+        margin-top: 0;
+    }
+    .pro-reating-sec{
+        margin-top: 25px;
+    }
+    .detail-review-etc-btns-txt{
+        margin-top: 30px;
+    }
+    .input-details-txt{
+        margin-top: 15px !important;
+    }
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 539px) {
+    .pro-page-product-sec{
+        width: auto;
+        margin-top: 30px;
+    }
+    .pro-page-product-sec .product-images-details-rate{
+        flex-direction: column;
+    }
+    .product-images-details-rate #product-images-sec{
+        margin: auto;
+        width: 60vw;
+        height: auto;
+    }
+    .chips-img img {
+        width: 60vw;
+    }
+    .product-images-details-rate #product-rate-details{
+        width: 70vw;
+        margin: 20px auto 0;
+    }
+    #product-rate-details .product-heading {
+        width: auto;
+    }
+    .product-heading .pro-head-txt{
+        font-size: 17px;
+    }
+    #product-rate-details .product-stars{
+        margin-top: 10px;
+    }
+    #product-rate-details .rate-stock-check{
+        margin-top: 10px;
+    }
+    .rate-sec .before-amount{
+        margin-top: 0;
+    }
+    .stock-sec .avaible{
+        margin-top: 0;
+    }
+    #product-rate-details .pro-small-detail{
+        width: auto;
+        margin-top: 10px;
+    }
+    .pro-detail-list li{
+        margin-bottom: 0;
+    }
+    #product-rate-details .net-weight{
+        margin-top: 20px;
+    }
+    .net-weight p {
+        font-size: 18px;
+    }
+    #product-rate-details .add-card-sec{
+        margin-top: 20px;
+        width: 62vw;
+    }
+    .add-card-btn button{
+        font-size: 13px;
+    }
+    .pro-reating-sec{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .product-full-img-reating{
+        width: 72vw !important;
+        margin: 10px auto;
+    }
+    .img-reating .product-reating-txt{
+        margin-left: 25px;
+    }
+    .rate{
+        margin-top: 4px;
+    }
+    .detail-review-etc-btns-txt {
+        margin-top: 25px;
+    }
+    .input-details-txt {
+        margin-top: 15px !important;
+    }
+
+}

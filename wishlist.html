@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- fashion Css -->
+    <link rel="stylesheet" href="css/fashion.css" />
+
+    <!-- left-sidebar css -->
+    <link rel="stylesheet" href="css/left-sidebar.css" />
+
+    <!-- product-left-slider Css -->
+    <link rel="stylesheet" href="css/product-left-slider.css">
+
+    <!-- watchlist Css -->
+     <link rel="stylesheet" href="css/wishlist.css">
+</head>
+<body>
+    <!-- navber start -->
+    <nav class="navber">
+        <div class="up-nav-sec">
+            <div class="num-sec">
+                <div class="phone-number">
+                    <svg class="phone-icon">
+                        <use href="assets/icons.svg#phoneicon"></use>
+                    </svg>
+                    <p class="number">+91 987 654 3210</p>
+                </div>
+                <div class="wapp-number">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p class="number">+91 987 654 3210</p>
+                </div>
+            </div>
+            <div class="online-destination">
+                <p class="online-destination-text">World`s Fastest Online Shopping Destination</p>
+            </div>
+            <div class="help-other-sec">
+                <a href="customer-support.html" class="support help">help?</a>
+                <a href="orders.html" class="support order-trak">Track Order?</a>
+                <div class="language">
+                    <a href="" class="support">English<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="drop_down">
+                        <li class="lang-list">
+                        <a class="drop-lang-text" href="#">English(uk)</a>
+                        </li>
+                        <li class="lang-list">
+                        <a class="drop-lang-text" href="#">English(us)</a>
+                        </li>
+                        <li class="lang-list">
+                        <a class="drop-lang-text" href="#">Hindi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dollar">
+                    <a href="" class="support">Dollar<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dollar-list">
+                        <li class="currency-list">
+                        <a class="currency-text" href="#">Rupee</a>
+                        </li>
+                        <li class="currency-list">
+                        <a class="currency-text" href="#">EUR</a>
+                        </li>
+                        <li class="currency-list">
+                        <a class="currency-text" href="#">Yuan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo-search-login">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" height="23"/>
+            </div>
+            <div class="search-sec">
+                <input class="search" type="text" placeholder="search products..." name="" value=""/> <i class="fa-solid fa-magnifying-glass"></i>
+            </div> 
+            <div class="login-cart-sec">
+                <div class="login">
+                    <svg class="login-icon">
+                        <use href="assets/icons.svg#loginicon"></use>
+                    </svg>
+                    <div class="log-watch-cart">
+                        <a href="login.html" class="ac-watch-cart-text">Account</a>
+                        <a href="login.html" class="log-item">Login</a>
+                    </div>
+                </div>
+                <div class="watchlist">
+                    <svg class="watchlist-icon">
+                        <use href="assets/icons.svg#witchlisticon"></use>
+                    </svg>
+                    <div class="log-watch-cart">
+                        <a href="wishlist.html" class="ac-watch-cart-text">Wishlist</a>
+                        <a href="wishlist.html" class="log-item">3-items</a>
+                    </div>
+                </div>
+                <div class="cart car-t">
+                    <svg class="cart-icon">
+                        <use href="assets/icons.svg#carticon"></use>
+                    </svg>
+                    <div class="log-watch-cart">
+                        <a href="cart.html" class="ac-watch-cart-text">Cart</a>
+                        <a href="cart.html" class="log-item">3-items</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav-menu-sec">
+            <div class="categories" id="categori-sec">
+                <svg class="categoryicon">
+                    <use href="assets/icons.svg#category"></use>
+                </svg>
+                <a class="categories-text" href="#">all categories</a><i class="fa-solid fa-angle-down"></i>
+                <ul id="categori-list">
+                    <li class="categori-items"><a href="#" class="items">Men t-shirt</a></li>
+                    <li class="categori-items"><a href="#" class="items">Women t-shirt</a></li>
+                    <li class="categori-items"><a href="#" class="items">Toys</a></li>
+                    <li class="categori-items"><a href="#" class="items">Shoes</a></li>
+                    <li class="categori-items"><a href="#" class="items">Food</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <ul class="menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item" id="nav-menu-categori-sec">
+                        <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="nav-menu-categori-list">
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Jens</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Beauty Product</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Appliance</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Electronic</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Grocery</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Jewellery</a>
+                            </li>
+                            <li class="nav-categori-items">
+                                <a href="#" class="items">Sports</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-menu-product-list-sec">
+                        <a href="#Products" class="nav-link">Products <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="nav-menu-product-list">
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Fruit</a>
+                            </li>
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Juice</a>
+                            </li>
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Snacks</a>
+                            </li>
+                            <li class="nav-product-items">
+                                <a href="#" class="items">Dry food</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                </ul>
+                <div class="offer-sec">
+                    <img src="images/prod-watching/return.png" alt="image" height="20"/>
+                    <p class="offer">Offers</p>
+                </div>
+            </div>
+            <div class="categories" id="business-location">
+                <img src="images/icons/location-pin.png" alt="icon" class="categorie-icon" width="20"/>
+                <a class="categories-text" href="#">New York</a><i class="fa-solid fa-angle-down"></i>
+                <ul id="business-places">
+                    <li class="place-name">
+                        <a href="#" class="location" id="delhi">Delhi</a>
+                    </li>
+                    <li class="place-name">
+                        <a href="#" class="location">Mumbai</a>
+                    </li>
+                    <li class="place-name">
+                        <a href="#" class="location">Kolkata</a>
+                    </li>
+                    <li class="place-name">
+                        <a href="#" class="location">Rajasthan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" height="23"/>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="hamburger-items login">
+                    <a href="login.html">Login</a>
+                </div>
+                <div class="hamburger-items wishlist">
+                    <a href="wishlist.html">Wishlist</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="cart.html">Cart Items</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="#" class="nav-link active">Home</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            Products
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="#" class="nav-link active">Offers</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            Location
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Delhi</a></li>
+                        <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                        <li><a class="dropdown-item" href="#">Rajasthan</a></li>
+                        <li><a class="dropdown-item" href="#">Kolkata</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="customer-support.html" class="nav-link active">Customer Support</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="orders.html" class="nav-link active">Order trak</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            language
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">English(US)</a></li>
+                        <li><a class="dropdown-item" href="#">English(UK)</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="shop-page">
+        <a href="#" class="shop">Wishlist</a>
+        <div class="home-shop">
+          <a href="#" class="home">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#" class="shop active-point">Wishlist</a>
+        </div>
+    </div>
+    <!-- navber end -->
+
+    <!-- product watchlist -->
+    <section class="product-watchlist">
+        <div class="product-watchlist-heading">
+            <h4>Product <span>Wishlist</span></h4>
+            <p>Your product wish is our first priority.</p>
+        </div>
+        <div class="watchlist-table">
+            <div class="watchlist-shop">
+                <p>watchlist</p>
+                <button type="button">Shop Now</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table-head">ID</th>
+                        <th class="table-head">Image</th>
+                        <th class="table-head">Name</th>
+                        <th class="table-head">Date</th>
+                        <th class="table-head">Price</th>
+                        <th class="table-head">Status</th>
+                        <th class="table-head">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sl-no">1</td>
+                        <td>
+                            <img src="images/watchlist-img/wallate.png" alt="image" width="50"/>
+                        </td>
+                        <td class="product-name">Women's wallet Hand Purse</td>
+                        <td class="product-date">22/01/2025</td>
+                        <td class="dalar">$70</td>
+                        <td class="avaible">Available</td>
+                        <td>
+                            <div class="cross-btn">
+                                <button type="button" class="belet-btn"><i class="far fa-trash-alt"></i></button>
+                                <button type="button">X</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sl-no">2</td>
+                        <td>
+                            <img src="images/watchlist-img/53_1.jpg (1).png" alt="image" width="50"/>
+                        </td>
+                        <td class="product-name">Rose Gold Earring</td>
+                        <td class="product-date">22/01/2025</td>
+                        <td class="dalar">$80</td>
+                        <td class="stock-out">Out Of Stock</td>
+                        <td>
+                            <div class="cross-btn">
+                                <button type="button" class="belet-btn"><i class="far fa-trash-alt"></i></button>
+                                <button type="button">X</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sl-no">3</td>
+                        <td>
+                            <img src="images/watchlist-img/21_1.jpg (1).png" alt="image" width="50"/>
+                        </td>
+                        <td class="product-name">Apple</td>
+                        <td class="product-date">22/01/2025</td>
+                        <td class="dalar">$12</td>
+                        <td class="avaible">Available</td>
+                        <td>
+                            <div class="cross-btn">
+                                <button type="button" class="belet-btn"><i class="far fa-trash-alt"></i></button>
+                                <button type="button">X</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table-for-mobile">
+                <tr>
+                    <th class="table-head">image</th>
+                    <td>
+                        <div class="wishlist-pro-img"><img src="images/checkout-img/48_1.jpg (1).png" alt="image" width="80"/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="table-head">Name</th>
+                    <td class="product-name">Women's wallet Hand Purse</td>
+                </tr>
+                <tr>
+                    <th class="table-head">Date</th>
+                    <td class="product-date">22/01/2025</td>
+                </tr>
+                <tr>
+                    <th class="table-head">Price</th>
+                    <td class="dalar">$70</td>
+                </tr>
+                <tr>
+                    <th class="table-head">Status</th>
+                    <td class="avaible">Available</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+
+    <!-- new arrival -->
+    <section class="new-arrival">
+        <div class="day-of-deal-up-sec">
+            <div class="up-text-sec">
+                <p class="day-of-deal-text"><b>New</b> <span class="deal-txt"><b>Arrivals</b></span></p>
+                <p class="suggetion-text">Shop online for new arrivals and get free shipping!</p>
+            </div>
+            <div class="time product-type">
+                <a href="#" class="active">All</a>
+                <a href="#">Snack & Spices</a>
+                <a href="#">Fruits</a>
+                <a href="#">Vegetables</a>
+            </div>
+        </div>
+        <div class="day-of-deal-img-sec new-arrival-img-sec">
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
+                    <div class="sale">
+                        <p>SALE</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Dried Fruits</p>
+                    <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$56.00</b></p>
+                        <p class="dis-rate">$45.00</p><div class="rate-line"></div>
+                    </div>
+                    <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                </div>
+            </div>
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
+                    <div class="sale">
+                        <p>SALE</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Cookies</p>
+                    <p class="nuts-txt">Multi Grain Combo Cookies</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                        <div class="quentity">
+                            <p>10kg</p>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$30.00</b></p>
+                        <p class="dis-rate">$25.00</p><div class="rate-line"></div>
+                    </div>
+                    <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                </div>
+            </div>
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Foods</p>
+                    <p class="nuts-txt">Fresh Mango juice pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$65.00</b></p>
+                        <p class="dis-rate">$46.00</p><div class="rate-line"></div>
+                    </div>
+                    <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                </div>
+            </div>
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
+                    <div class="sale">
+                        <p>SALE</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Dried Fruits</p>
+                    <p class="nuts-txt">Dates Value Fresh Pouch</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$85.00</b></p>
+                        <p class="dis-rate">$78.00</p><div class="rate-line"></div>
+                    </div>
+                    <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                </div>
+            </div>
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/foods2.png" alt="image"/>
+                    <div class="sale new">
+                        <p>NEW</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Dried Fruits</p>
+                    <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                        <div class="quentity">
+                            <p>2pack</p>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$50.00</b></p>
+                        <p class="dis-rate">$45.00</p><div class="rate-line"></div>
+                    </div>
+                    <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper day-of-deal-imges-sec">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide day-of-deal-part-img day-of-deal-first-img" >
+              <div class="deal-img-sec product-grid8 product-grid9">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Link → 24_1.jpg.png" alt="image" height="100"/>
+                      <div class="sale new">
+                          <p>NEW</p>
+                      </div>
+                      <ul class="social">
+                          <li><a href="" class="fa fa-search"></a></li>
+                          <li><a href="" class="fa fa-shopping-bag"></a></li>
+                          <li><a href="" class="fa fa-shopping-cart"></a></li>
+                      </ul>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Fresh Fruit</p>
+                      <p class="nuts-txt">Natural Hub Cherry Karonda</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$65.00</b></p>
+                          <p class="dis-rate">$49.00</p><div class="rate-line"></div>
+                      </div>
+                      <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec product-grid8 product-grid9">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Foods</p>
+                      <p class="nuts-txt">Fresh Mango juice pack</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$21.00</b></p>
+                          <p class="dis-rate">$20.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec product-grid8 product-grid9">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Link → 17_1.jpg.png" alt="image" height="100"/>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Tuber root</p>
+                      <p class="nuts-txt">Fresh Organic Ginger Pack</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$3.00</b></p>
+                          <p class="dis-rate">$2.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="image" height="100"/>
+                      <div class="sale new">
+                          <p>NEW</p>
+                      </div>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Foods</p>
+                      <p class="nuts-txt">Natural Hub Cherry Karonda</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$65.00</b></p>
+                          <p class="dis-rate">$49.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Link → 25_1.jpg.png" alt="image" height="100"/>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Fresh Fruit</p>
+                      <p class="nuts-txt">Fresh Mango juice pack</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$21.00</b></p>
+                          <p class="dis-rate">$20.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
+                      <div class="sale">
+                          <p>SALE</p>
+                      </div>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Dried Fruits</p>
+                      <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$56.00</b></p>
+                          <p class="dis-rate">$45.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
+                      <div class="sale">
+                          <p>SALE</p>
+                      </div>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Cookies</p>
+                      <p class="nuts-txt">Multi Grain Combo Cookies</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                          <div class="quentity">
+                              <p>10kg</p>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$30.00</b></p>
+                          <p class="dis-rate">$25.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Foods</p>
+                      <p class="nuts-txt">Fresh Mango juice pack</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$65.00</b></p>
+                          <p class="dis-rate">$46.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
+                      <div class="sale">
+                          <p>SALE</p>
+                      </div>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Dried Fruits</p>
+                      <p class="nuts-txt">Dates Value Fresh Pouch</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$85.00</b></p>
+                          <p class="dis-rate">$78.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide day-of-deal-part-img">
+              <div class="deal-img-sec">
+                  <div class="deal-up-imge">
+                      <img src="images/day-of-the-deal/foods2.png" alt="image"/>
+                      <div class="sale new">
+                          <p>NEW</p>
+                      </div>
+                  </div>
+                  <div class="deal-text-sec">
+                      <p class="product-name">Dried Fruits</p>
+                      <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                      <div class="stars product-quentity">
+                          <div class="product-stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                              <i class="fa-solid fa-star dont-reating"></i>
+                          </div>
+                          <div class="quentity">
+                              <p>2pack</p>
+                          </div>
+                      </div>
+                      <div class="rate">
+                          <p class="currect-rate"><b>$50.00</b></p>
+                          <p class="dis-rate">$45.00</p><div class="rate-line"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next "></div>
+          <div class="swiper-button-prev "></div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg col-md-4">
+                    <div class="logo-details">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="image" width="100"/>
+                        </div>
+                        <div class="com-detail">
+                            <p>Grabit is the biggest market of grocery products.Get your daily needs from our store.</p>
+                        </div>
+                        <div class="app-store-sec">
+                            <img src="images/android.png.png" alt="image" width="100"/>
+                            <img src="images/apple.png.png" alt="image" width="100"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-4">
+                    <div class="all-details">
+                        <h4>Category</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Dried Fruit</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Cookies</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Foods</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Fresh Fruit</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Tuber root</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Vegetables</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-4">
+                    <div class="all-details">
+                        <h4>Company</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">About us</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Delivery</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Legal Notice</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Terms & conditions</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Secure payment</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-6">
+                    <div class="all-details">
+                        <h4>Account</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Sign In</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">View Cart</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Return Policy</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Become a Vendor</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Affiliate Program</a></li>
+                            <li class="defarance-category"><a href="#" class="def-categ-link">Payments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg col-md-6">
+                    <div class="all-details">
+                        <h4>Contact</h4>
+                        <div class="line all-details-line"></div>
+                        <div class="contact-site">
+                            <div class="loc">
+                                <img src="images/location.png" alt="image" height="10"/>
+                            </div>
+                            <p class="contact-way contact-address">2548 Broaddus Maple Court, Madisonville KY 4783, USA.</p>
+                        </div>
+                        <div class="contact-site">
+                            <div class="wh-app-icon">
+                                <img src="images/w.app.png" alt="image" height="10"/>
+                            </div>
+                            <p class="contact-way">+00 9876543210</p>
+                        </div>
+                        <div class="contact-site">
+                            <div class="email-icon">
+                                <img src="images/email.png" alt="image" height="10"/>
+                            </div>
+                            <p class="contact-way">example@email.com</p>
+                        </div>
+                        <div class="social-icons">
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/fb.png" alt="image" height="10"/>
+                            </div>
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/indeed.png" alt="image" height="10"/>
+                            </div>
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/twiter.png" alt="image" height="10"/>
+                            </div>
+                            <div class="social-media-icon">
+                                <img src="images/social-media-icon/instra.png" alt="image" height="10"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+    </section>
+    <section class="copyright-sec">
+        <div class="copy-right-text">
+            <p>Copyright © <span>Grabit</span>all rights reserved. Powered by Grabit.</p>
+        </div>
+        <div class="payment">
+            <img src="images/payment.png.png" alt="image" height="30" />
+        </div>
+    </section>
+  
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+  
+      <!-- swipper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <!-- main js -->
+      <script src="js/script.js"></script>
+</body>
+</html>

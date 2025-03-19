@@ -1,0 +1,404 @@
+/* ===hambergur=== */
+
+
+/* ===banner=== */
+.explore-fresh-juice #shop-now{
+    padding: 7px 10px;
+    font-size: 15px;
+}
+.glass-txt{
+    font-size: 44px;
+}
+.jackets{
+    font-size: 48px;
+}
+
+/* ===middle banner=== */
+
+.middle-off{
+    color: white !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+.fresh-fruit-text .fruit-text{
+    color: white;
+}
+
+
+.day-of-deal-img-sec .deal-img-sec{
+    width: 16vw;
+}
+
+/* ===collection==== */
+.collection{
+    width: 29vw !important;
+    height: 223px !important;
+    transition: all 0.4s ease-in-out;
+}
+.collection:hover{
+    box-shadow: 3px 5px 13px 0 black;
+}
+.collection:hover img{
+    transform: scale(1.03);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.collection-txt{
+    color: white !important;
+}
+.collection-off{
+    background: white !important;
+}
+.parsent{
+    color: #4B5966 !important;
+}
+
+
+/* ===top product section=== */
+.fashion2-top-product-sec{
+    flex-direction: column;
+}
+.top-pro-list-sec{
+    width: auto !important;
+}
+.top-rate-sell{
+    margin-top: 20px;
+}
+.top-pro-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.top-pro-items .top-item{
+    width: 21.5vw;
+}
+.top-pro-list .nut-mix{
+    margin-top: 0;
+}
+
+
+
+/* ===latest blog=== */
+.blogs{
+    width: 7vw !important;
+    justify-content: space-between;
+}
+.marketing-text{
+    margin-top: 10px !important;
+}
+.latest-blog{
+    margin-bottom: 40px !important;
+}
+
+
+/* ===product watching sec=== */
+.row{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1366px){
+    /* ===Top product=== */
+    .top-pro-head-txt .treding{
+        width: auto;
+    }
+    .top-pro-aarow{
+        width: 80px !important;
+    }
+    /* ===Latest Blog=== */
+    .blogs {
+        width: 100px !important;
+    }
+    .arrow{
+        width: auto;
+    }
+    .latest-blog .latest-img-sec{
+        margin-top: 20px;
+    }
+    /* ===footer=== */
+    .footer-sec {
+        padding: 40px 0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    /* ===Snack Fruits=== */
+    .collection{
+        height: auto !important;
+    }
+    .snack-fruits-sec{
+        margin: 30px 0;
+    }
+    .snack-fruits-sec .off{
+        top: 8px;
+        left: 8px;
+        border-radius: 4px;
+        padding: 3px 4px;
+    }
+    .snack-food-text{
+        width: 13vw;
+    }
+    .snack-food-text .tasty-snack-text {
+        font-size: 22px;
+    }
+    .snack-food-text .snack-fruit-btn{
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    /* ===Latest Blog=== */
+    .product-watching{
+        padding-bottom: 0 !important;
+    }
+    .frontside{
+        margin-bottom: 15px;
+    }
+    .top-pro-head-txt .treding{
+        font-size: 22px;
+    }
+    .top-pro-head-txt .treding{
+        width: auto;
+    }
+    .arrow{
+        width: 10%;
+    }
+    .blogs{
+        width: 105px !important;
+    }
+}
+@media screen and (min-width:540px) and (max-width:767px){
+    /* ===Banner sec=== */
+    .explore-fresh-juice{
+        width: 38vw;
+        top: 12%;
+    }
+    .glass-txt {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .explore-fresh-juice #shop-now{
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .jackets{
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .explore-fresh-juice #explore-juice{
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    /* ===Snack Fruits=== */
+    .collection{
+        height: auto !important;
+    }
+    .snack-fruits-sec .off{
+        top: 5px;
+        left: 5px;
+        border-radius: 4px;
+        padding: 3px;
+    }
+    .off p{
+        font-size: 7px;
+    }
+    .snack-food-text{
+        width: 13vw;
+        top: 18%;
+    }
+    .snack-food-text .tasty-snack-text{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .snack-fruits-sec{
+        margin: 20px 0 20px 0;
+    }
+    .snack-food-text .snack-fruit-btn{
+        font-size: 10px;
+    }
+
+    /* ===top product=== */
+    .top-pro-items{
+        flex-direction: column;
+    }
+    .top-pro-list-sec{
+        margin: 0;
+    }
+    .top-pro-head-txt .treding{
+        width: auto;
+    }
+    .top-pro-items .top-item{
+        width: auto;
+    }
+    .top-product-sec{
+        width: 55%;
+        margin: auto;
+        padding: 0;
+    }
+    .top-pro-items .top-item{
+        margin-top: 20px;
+    }
+    .top-pro-items{
+        margin-top: 0;
+    }
+    .top-pro-items .top-pro-first-item{
+        margin-top: 5px !important;
+    }
+
+    /* ===Latest Blog=== */
+    .latest-blog-arrow-sec{
+        width: auto;
+    }
+    .blogs {
+        width: 100px !important;
+    }
+    .product-watching{
+        padding-bottom: 0 !important;
+    }
+
+}
+@media screen and (min-width:320px) and (max-width:539px){
+    /* ===banner=== */
+    .banner{
+        padding: 10px 5%;
+    }
+    .explore-fresh-juice{
+        width: 35vw;
+        top: 14%;
+    }
+    .explore-fresh-juice #amount{
+        font-size: 13px;
+    }
+    .explore-fresh-juice #explore-juice{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .explore-fresh-juice #shop-now{
+        margin-top: 6px;
+        font-size: 10px;
+    }
+    .jackets, .glass-txt{
+        margin-top: 1px;
+        font-size: 15px;
+    }
+
+
+    /*=== day of the deal ===*/
+    .time span{
+        font-size: 14px;
+    }
+    .day-of-deal-sec{
+        margin: 20px 0;
+    }
+    .up-text-sec .day-of-deal-text{
+        font-size: 20px;
+    }
+    .suggetion-text{
+        font-size: 10px;
+    }
+    .day-of-deal-img-sec{
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+    }
+    .day-of-deal-img-sec .deal-img-sec{
+        width: 56vw;
+        margin-bottom: 20px;
+    }
+    .day-of-deal-img-sec .deal-last-img{
+        margin-bottom: 0;
+    }
+    .product-type{
+        display: none !important;
+    }
+    .deal-img-sec .deal-up-imge{
+        height: auto;
+    }
+    .snack-fruits-sec{
+        margin: 20px 0 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .snack-fruits-sec .snack{
+        height: auto;
+        width: 80vw;
+        margin-bottom: 12px;
+    }
+    .snack-fruits-sec .fruits{
+        height: auto;
+        width: 80vw;
+        margin-bottom: 12px;
+    }
+    .purchess-product-watching-sec{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 20px 0;
+    }
+    .product-categorys{
+        padding: 10px 5%;
+    }
+    .product-watching-sec{
+        width: 50vw;
+        margin: auto;
+        height: 23vh;
+    }
+    .product-watching-sec .Free-Shipping-img-text{
+        width: 50vw;
+    }
+    .Free-Shipping-img-text .items{
+        width: auto;
+    }
+
+    /* ===middle-banner=== */
+    .middle-banner .middle-banner-img .fresh-fruit-text{
+        right: 26px;
+    }
+
+    /* ===snack-fruits=== */
+    .collection{
+        width: auto !important;
+        height: auto !important;
+    }
+    .snack-fruits-sec .off{
+        transform: translate(0);
+    }
+    .snack-food-text{
+        top: 24%;
+    }
+    .snack-food-text .tasty-snack-text{
+        font-size: 25px;
+    }
+    .snack-food-text .snack-fruit-btn{
+        transform: translate(0);
+    }
+    .off p{
+        font-size: 10px;
+    }
+    /* .product-watching{
+        margin-bottom: none !important;
+    } */
+    .payment-method-sec{
+        margin-bottom: 0;
+    }
+
+    /* === top product=== */
+    .top-product-sec{
+        padding: 0 5%;
+    }
+    .top-pro-items{
+        flex-direction: column;
+    }
+    .top-pro-items .top-item{
+        width: auto;
+        margin-top: 10px;
+    }
+    .blogs{
+        width: 90px !important;
+    }
+    .latest-blog-arrow-sec{
+        width: 0;
+    }
+
+}

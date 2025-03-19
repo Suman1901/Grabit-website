@@ -1,0 +1,9 @@
+tbody tr .shipping{
+    color: #777777;
+}
+.complete-orders{
+    margin-top: 8vh !important;
+}
+tbody tr .complete{
+    color: #E9ABAB;
+}

@@ -1,0 +1,254 @@
+
+.back-to-home-txt{
+    padding: 40px;
+}
+.back-to-home{
+    text-decoration: none;
+    color: #4B5966;
+}
+
+/* ===login sec=== */
+.login-sec{
+    margin: 80px 0;
+}
+.login-sec .login-headline{
+    text-align: center;
+    width: 20vw;
+    margin: auto;
+}
+.login-headline h2{
+    color: #4B5966;
+    font-weight: 600;
+}
+.login-headline p{
+    color: #777777;
+}
+.login-sec .login-form-img{
+    display: flex;
+    width: 62vw;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.login-form-img .login-form{
+    border: 1px solid #EEEEEE;
+    width: 29vw;
+    border-radius: 5px;
+    padding: 20px;
+    height: 40vh;
+}
+.email-address,.email-pass p{
+    color: #4B5966;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.email-address input{
+    width: 26vw;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    margin-top: 8px;
+}
+.email-address input:focus{
+    outline: none;
+}
+.login-form .email-pass{
+    margin-top: 25px;
+}
+.email-pass input{
+    width: 26vw;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    margin-top: 8px;
+}
+.email-pass input:focus{
+    outline: none;
+}
+#login-form-sec #forgot-pass{
+    color: #777777;
+    font-size: 14px;
+    position: relative;
+    right: -19vw;
+    margin-top: 5px;
+}
+#login-form-sec .acc-create-login-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.acc-create-login-btn #create-acc-txt{
+    color: #4B5966;
+    text-decoration: none;
+}
+.acc-create-login-btn #login-btn{
+    padding: 5px 10px;
+    background: #4B5966;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (min-width:1025px) and (max-width:1366px) {
+    .login-sec{
+        margin: 0;
+    }
+    .login-sec .login-headline {
+        width: 26vw;
+    }
+    .login-img{
+        width: 29vw;
+    }
+    .email-address input{
+        margin-top: 0;
+    }
+    .login-form .email-pass{
+        margin-top: 15px;
+    }
+    #login-form-sec #forgot-pass{
+        right: -16vw;
+    }
+    #login-form-sec .acc-create-login-btn{
+        margin-top: 9px;
+    }
+    .acc-create-login-btn #login-btn{
+        font-size: 14px;
+        
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .login-sec{
+        margin: 0;
+    }
+    .login-sec .login-headline{
+        width: 35vw;
+    }
+    .login-img{
+        width: 29vw;
+    }
+    .login-sec .login-form-img{
+        align-items: center;
+    }
+    .login-form-img .login-form{
+        width: auto;
+    }
+    .email-address input,.email-pass input{
+        margin-top: 0;
+    }
+    .login-form .email-pass{
+        margin-top: 6px;
+    }
+    #login-form-sec #forgot-pass {
+        right: -14vw;
+    }
+    #login-form-sec .acc-create-login-btn{
+        margin-top: 20px;
+    }
+    .acc-create-login-btn #login-btn{
+        padding: 4px 8px;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:540px) and (max-width:767px) {
+    .back-to-home-txt{
+        padding: 23px;
+        font-size: 13px;
+    }
+    .login-sec{
+        margin: 20px 0;
+    }
+    .login-sec .login-headline{
+        width: auto;
+    }
+    .login-img{
+        display: none;
+    }
+    .login-form-img .login-form{
+        width: 100%;
+    }
+    .login-sec .login-form-img{
+        width: 80vw;
+    }
+    .email-address input {
+        width: 100%;
+        margin-top: 0;
+        font-size: 13px;
+    }
+    .email-pass input{
+        margin-top: 0;
+        width: 100%;
+        font-size: 13px;
+    }
+    .login-form .email-pass{
+        margin-top: 10px;
+    }
+    #login-form-sec .acc-create-login-btn{
+        margin-top: 17px;
+    }
+    .acc-create-login-btn #login-btn {
+        padding: 3px 8px;
+        font-size: 13px;
+    }
+    .acc-create-login-btn #create-acc-txt {
+        font-size: 13px;
+    }
+    #login-form-sec #forgot-pass{
+        font-size: 13px;
+        right: -53vw;
+    }
+    .login-headline p{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:539px) {
+    .back-to-home-txt{
+        padding: 23px;
+        font-size: 13px;
+    }
+    .login-sec{
+        margin: 20px 0;
+    }
+    .login-sec .login-headline{
+        width: auto;
+    }
+    .login-img{
+        display: none;
+    }
+    .login-form-img .login-form{
+        width: 100%;
+    }
+    .login-sec .login-form-img{
+        width: 80vw;
+    }
+    .email-address input {
+        width: 100%;
+        margin-top: 0;
+        font-size: 13px;
+    }
+    .email-pass input{
+        margin-top: 0;
+        width: 100%;
+        font-size: 13px;
+    }
+    .login-form .email-pass{
+        margin-top: 10px;
+    }
+    #login-form-sec .acc-create-login-btn{
+        margin-top: 17px;
+    }
+    .acc-create-login-btn #login-btn {
+        padding: 3px 8px;
+        font-size: 13px;
+    }
+    .acc-create-login-btn #create-acc-txt {
+        font-size: 13px;
+    }
+    #login-form-sec #forgot-pass{
+        font-size: 13px;
+        right: -35vw;
+    }
+    .login-headline p{
+        font-size: 10px;
+    }
+}

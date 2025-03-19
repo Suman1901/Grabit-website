@@ -1,0 +1,38 @@
+.blog-img .blog-img-date{
+    margin-top: 20px;
+    color: #999999;
+}
+.blog-img .blog-img-heading-txt{
+    color: #4B5966;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.blog-img .blog-img-details{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777777;
+}
+.different-style{
+    font-style: italic;
+}
+.blog-items{
+    margin-top: 35px;
+}
+#bottom-details{
+    margin-top: 28px;
+}
+.blog-img-review p{
+    color: #777777;
+    margin-top: 80px;
+    font-size: 15px;
+}
+.blog-img-review code{
+    color: #0D6EFD;
+    font-size: 15px;
+}
+@media screen and (min-width:320px) and (max-width:539px) {
+    .images-blog{
+        width: auto;
+        margin: 0;
+    }
+}
