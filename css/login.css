@@ -8,9 +8,7 @@
 }
 
 /* ===login sec=== */
-.login-sec{
-    margin: 80px 0;
-}
+
 .login-sec .login-headline{
     text-align: center;
     width: 20vw;
@@ -35,7 +33,7 @@
     width: 29vw;
     border-radius: 5px;
     padding: 20px;
-    height: 40vh;
+    height: auto;
 }
 .email-address,.email-pass p{
     color: #4B5966;
@@ -88,6 +86,16 @@
     color: white;
     border: none;
     border-radius: 5px;
+}
+.error{
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+}
+#password-error{
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
 }
 @media screen and (min-width:1025px) and (max-width:1366px) {
     .login-sec{

@@ -40,19 +40,21 @@
         </div>
         <div class="login-form-img">
             <div class="login-form">
-                <form action="" id="login-form-sec">
+                <form action="" id="login-form-sec" onsubmit="return validateForm()">
                     <div class="email-address">
                         <p><label for="email" id="email">Email Address*</label></p>
-                        <input type="text" placeholder="Enter your email add.."/>
+                        <input type="email" id="emailInput" placeholder="Enter your email add.."/>
+                        <p id="email-error" class="error"></p>
                     </div>
                     <div class="email-pass">
-                        <p><label for="email" id="email">password*</label></p>
-                        <input type="text" placeholder="Enter your password"/>
+                        <p><label for="email" id="password">password*</label></p>
+                        <input type="text" id="passInput" placeholder="Enter your password"/>
+                        <p id="password-error" class="passerror"></p>
                     </div>
                     <a href="#" id="forgot-pass">Forgot Passwort?</a>
                     <div class="acc-create-login-btn">
                         <a href="#" id="create-acc-txt">Create Account?</a>
-                        <button id="login-btn" type="button">Login</button>
+                        <button id="login-btn" type="submit">Login</button>
                     </div>
                 </form>
             </div>
@@ -69,6 +71,10 @@
     <!-- swipper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- main js -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+
+    <!-- login js -->
+     <script src="js/login.js"></script>
 </body>
 </html>

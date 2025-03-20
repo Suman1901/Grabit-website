@@ -2395,7 +2395,13 @@ section .section-title {
         margin-bottom: 15px;
     }
     .middle-banner .middle-banner-img .fresh-fruit-text{
-        width: 30vw;
+        width: 110px;
+        right: 30px;
+    }
+    .fresh-fruit-text #middle-banner-shop-btn{
+        margin-top: 0;
+        padding: 2px 4px;
+        font-size: 10px;
     }
     .fresh-fruit-text h2{
         font-size: 14px;

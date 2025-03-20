@@ -52,10 +52,12 @@
 }
 .shopping-estimate #comment-box{
     width: 26vw;
-    height: 26vh;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #EEEEEE;
+}
+.shopping-estimate #comment-box:focus{
+    outline: none;
 }
 .payment-methods{
     margin-top: 15px;
