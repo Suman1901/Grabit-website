@@ -1,3 +1,4 @@
+
 /* ===for icon css=== */
 .grspes-icon{
     width: 15px;
@@ -19,13 +20,22 @@
     height: 18px;
     margin: 0 10px;
 }
-
+.barIcon{
+    width: 20px;
+    height: 15px;
+}
 
 
 
 .left-sidebar-pro-category{
     padding-top: 40px !important;
 }
+
+/* ===product category=== */
+.product-categorys{
+    padding: 20px 5%;
+}
+
 /* ===categorys & product=== */
 .fas.fa-volleyball-ball{
     margin: 0 10px;
@@ -83,6 +93,40 @@
     background: #6556FF;
 }
 
+.slider-container {
+    text-align: center;
+}
+.target-prices{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 15px;
+
+}
+.set-price p{
+    color: #4B5966;
+}
+
+.priceBox{
+    width: 50%;
+    text-align: center;
+    color: #4B5966;
+    border: none;
+    background: #e7e5e5;
+    padding: 4px 0;
+    border-radius: 4px;
+}
+
+#rangeSlider {
+    width:100%;
+}
+
+#sliderValue {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 /* ===short-by==== */
 .different-type-category .short-by{
@@ -93,12 +137,16 @@
     border: 1px solid #d1d1d1;
     padding: 5px;
     border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
 }
 .short-icon .icon-bg{
     background: #5CAF90;
-    padding: 1px 3px;
-    width: 27px;
+    padding: 2px 6px;
+    width: 30px;
     border-radius: 4px;
+    height: 30px;
+    margin-right: 10px;
 }
 .short-by .short-by-txt-sec{
     width: 20vw;
@@ -185,7 +233,7 @@
         padding: 0;
     }
     .new-arrival-img{
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .deal-img-sec .deal-text-sec {
         padding: 7px;
@@ -223,21 +271,27 @@
     .day-of-deal-img-sec .left-sidebar-deal-img-sec {
         width: 22vw;
     }
+     
 
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    .categorys{
+        flex-direction: column;
+    }
     .day-of-deal-img-sec{
-        display: block;
+        display: flex;
     }
     /* ===categorys & product === */
     .accordion{
-        width: 30vw;
+        width: 55vw;
+        margin: auto;
     }
     .different-type-category{
-        width: 57vw;
+        width: 100%;
+        margin: 30px auto 0;
     }
     .day-of-deal-img-sec .left-sidebar-deal-img-sec {
-        width: 27vw;
+        width: auto;
         margin-bottom: 15px;
     }
     .new-arrival-img{
@@ -249,28 +303,39 @@
     .categorys{
         flex-direction: column;
     }
+    /* ===product category=== */
+    .product-categorys .pro-category-bg{
+        width: 30vw;
+    }
 
     /* ===categorys & product=== */
     .accordion{
-        width: 45vw;
+        width: 60vw;
         margin: auto;
     }
 
     .day-of-deal-img-sec{
-        display: block;
+        display: flex;
         margin-top: 15px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .different-type-category{
         margin: auto;
         padding-top: 30px;
     }
     .day-of-deal-img-sec .left-sidebar-deal-img-sec{
-        width: 65vw;
-        margin: 20px auto;
+        width: 32%;
+        /* margin: 20px auto; */
     }
+
     .all-details .contact-site{
         width: 30vw;
     }
+    .different-type-category{
+        width: 100%;
+    }
+
 
 
     /* ===footer=== */

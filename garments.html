@@ -1359,13 +1359,13 @@
     </section>
 
     <!-- product watching sec -->
-    <section id="team" class="pb-5 product-watching">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="image-flip" >
-                        <div class="mainflip flip-0">
-                            <div class="frontside">
+    <section id="team">
+        <div class="container product-watching-container">
+            <div class="row product-watching-row">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                    <div class=" flip-box" >
+                        <div class="flip-box-inner">
+                            <div class=" flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/Free Shipping.png" alt="image"/>
@@ -1374,7 +1374,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="backside">
+                            <div class="flip-box-back">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/Free Shipping.png" alt="image"/>
@@ -1386,10 +1386,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/support.png" alt="image"/>
@@ -1398,7 +1398,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="backside">
+                            <div class="flip-box-back">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/support.png" alt="image"/>
@@ -1410,10 +1410,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/return.png" alt="image"/>
@@ -1423,7 +1423,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="backside">
+                            <div class="flip-box-back">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/return.png" alt="image"/>
@@ -1436,10 +1436,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside payment-method-sec">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/payment.png" alt="image"/>
@@ -1448,7 +1448,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="backside">
+                            <div class="flip-box-back">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/payment.png" alt="image"/>
@@ -2056,16 +2056,14 @@
             </div>
             <div class="blogs">
                 <p class="latest-blog-nxt-btn">All Blogs</p>
-                <div class="arrow latest-blog-arrow-sec">
-                    <i class="fas fa-angle-double-right swiper-button-next latest-blog-nxt-btn"></i>
-                </div>
+                <i class="fas fa-angle-double-right latest-blog-nxt-btn"></i>
             </div>
         </div>
         <div class="swiper latest-blog-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="latest-img-sec">
-                        <div class="marketing-guid">
+                <div class="swiper-slide container latest-blog-swiper-slider">
+                    <div class="latest-img-sec row">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/watch.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Marketing Guide: 5 Steps to</p>
                             <p class="marketing-text">Success to way.</p>
@@ -2073,7 +2071,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/lage.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Best way to solve business deal</p>
                             <p class="marketing-text">issue in market.</p>
@@ -2081,7 +2079,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/girl.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">31 grocery customer service stats</p>
                             <p class="marketing-text">know in 2019.</p>
@@ -2089,7 +2087,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/glass.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Business ideas to grow your</p>
                             <p class="marketing-text">business traffic.</p>
@@ -2097,7 +2095,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/bag.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Marketing Guide: 5 Steps way to</p>
                             <p class="marketing-text">Success.</p>
@@ -2107,9 +2105,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="latest-img-sec">
-                        <div class="marketing-guid">
+                <div class="swiper-slide container latest-blog-swiper-slider">
+                    <div class="latest-img-sec row">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/bag.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Marketing Guide: 5 Steps way to</p>
                             <p class="marketing-text">Success.</p>
@@ -2117,7 +2115,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/glass.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">31 grocery customer service stats</p>
                             <p class="marketing-text">know in 2019.</p>
@@ -2125,7 +2123,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/girl.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Marketing Guide: 5 Steps to</p>
                             <p class="marketing-text">Success to way.</p>
@@ -2133,7 +2131,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/lage.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Best way to solve business deal</p>
                             <p class="marketing-text">issue in market.</p>
@@ -2141,7 +2139,7 @@
                                 <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
-                        <div class="marketing-guid">
+                        <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
                             <img src="images/latest/watch.png" alt="image" class="latest-blog-img" width="200"/>
                             <p class="marketing-text">Business ideas to grow your</p>
                             <p class="marketing-text">business traffic.</p>

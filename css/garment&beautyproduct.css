@@ -135,6 +135,18 @@ input[type="checkbox"]{
 .typeOf-Products .fachion-dis-pro{
     background: #516EBF !important;
 }
+.product-categorys{
+    padding: 0;
+}
+.fashion-category-row{
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+.product-categorys .pro-category-bg{
+    width: 12vw;
+}
 
 
 /* ===new-arrival==== */
@@ -170,13 +182,11 @@ input[type="checkbox"]{
 .new-arri-img-sec{
     border: 1px solid #f3f1f1 !important;
 }
-.new-arri-text-sec{
-    border: 1px solid #f3f1f1 !important;
-}
+
 .type-of-product-txt{
     margin-top: 20px;
     color: #5CAF90 !important;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 25px !important;
 }
 .rate .new-arri-currect-pro-rate{
@@ -303,20 +313,191 @@ input[type="checkbox"]{
 
 
 @media screen and (min-width:1025px) and (max-width:1366px){
-
+    .blogs {
+        width: 87px;
+    }
+    
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    /* ===category & product=== */
+    .categorys{
+        padding: 20px 5%;
+    }
+    .accordion {
+        width: 27vw;
+    }
+    .different-type-category {
+        width: 61vw;
+    }
+    .product-categorys .pro-category-bg {
+        width: auto;
+    }
+    .fashion-new-arrival{
+        margin-top: 20px;
+    }
+    .day-of-deal-up-sec .product-type {
+        width: 56%;
+    }
+    .up-text-sec{
+        width: 40%;
+    }
+    .snack-fruits-sec .snack, .fruits{
+        width: 49% !important;
+        height: auto !important;
+    }
+    .smartwatch-txt {
+        width: 15vw !important;
+    }
+    .snack-food-text .tasty-snack-text {
+        font-size: 21px;
+        line-height: 18px;
+    }
+    .smartwatch-txt .dis-price {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .discount-pro-shop-btn{
+        margin-top: 7px;
+        font-size: 13px;
+    }
+    .snack-food-text{
+        top: 14%;
+    }
+    .day-of-deal-img-sec{
+        display: flex;
+        margin-top: 15px;
+    }
+    .day-of-deal-img-sec .deal-img-sec{
+        width: 15vw;
+        margin-bottom: 0;
+    }
+    .deal-img-sec .deal-text-sec{
+        padding: 5px;
+    }
+    .type-of-product-txt{
+        margin-top: 0;
+        margin-bottom: 0 !important;
+    }
+    .rate{
+        flex-direction: column;
+    }
+    .rate .dis-rate{
+        margin-left: 0;
+    }
+    .top-pro-list {
+        width: 32%;
+    }
+    .top-pro-list .nut-mix{
+        align-items: center;
+    }
+    .nut-mix-img{
+        width: auto;
+    }
+    .top-product-sec {
+        margin-bottom: 0;
+    }
 
 }
 @media screen and (min-width:540px) and (max-width:767px){
+    .categorys{
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+    /* ===product category=== */
+    .product-categorys .pro-category-bg{
+        width: 30vw;
+    }
+
+    /* ===fashion new arrival=== */
+    .fashion-new-arrival{
+        margin-top: 25px;
+    }
+
+    /* ===categorys & product=== */
+    .accordion{
+        width: 60vw;
+        margin: auto;
+    }
+
+    .day-of-deal-img-sec{
+        display: flex;
+        margin-top: 15px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .different-type-category{
+        margin: auto;
+        padding-top: 30px;
+    }
+    .day-of-deal-img-sec .left-sidebar-deal-img-sec{
+        width: 32%;
+    }
+
+    .all-details .contact-site{
+        width: 30vw;
+    }
+    .different-type-category{
+        width: 100%;
+    }
+    .day-of-deal-img-sec .deal-img-sec{
+        width: 21vw;
+    }
+    .deal-img-sec .deal-text-sec {
+        padding: 9px;
+    }
+    .rate p{
+        font-size: 15px;
+    }
+    .day-of-deal-img-sec .deal-img-sec{
+        margin-bottom: 0;
+    }
+    .smart-watch,.sports-shoes{
+        width: 44vw !important;
+        height: auto !important;
+    }
+    .smartwatch-txt {
+        width: 17vw !important;
+        top: 14%;
+    }
+    .discount-pro-shop-btn{
+        font-size: 13px;
+    }
+    .latest-blog .latest-img-sec{
+        width: 80%;
+        margin: auto;
+    }
+    .latest-blog-swiper{
+        margin-top: 20px;
+    }
+    .marketing-guid{
+        margin-bottom: 20px;
+    }
+    .marketing-guid .read{
+        margin-top: 3px;
+    }
+
+
+    /* ===footer=== */
+    .footer-sec .logo{
+        width: 10vw;
+    }
+    .contact-site img{
+        height: 20px;
+    }
 
 }
 @media screen and (min-width:320px) and (max-width:539px){
+    /* ===product-categorys=== */
     .categorys{
         flex-direction: column;
+        padding: 10px 5%;
     }
     .accordion{
         width: 80vw;
+        margin: auto;
+    }
+    .product-categorys .pro-category-bg{
+        width: auto;
     }
     .different-type-category{
         width: auto;
@@ -324,9 +505,6 @@ input[type="checkbox"]{
     .different-type-category{
         margin-top: 20px;
     }
-    /* .day-of-deal-img-sec .deal-img-sec{
-        margin: 20px auto;
-    } */
     .new-arri-img-sec{
         width: 76.8vw !important;
     }
@@ -343,7 +521,7 @@ input[type="checkbox"]{
         margin: auto;
     }
     .day-of-deal-img-sec .deal-img-sec{
-        width: 76vw;
+        width: auto;
     }
     .middle-banner-img .fresh-fruit-text{
         right: 20px !important;
@@ -354,7 +532,8 @@ input[type="checkbox"]{
     .product-watching-sec{
         margin-bottom: 20px;
     }
-    .blogs{
-        width: 28vw;
+    /* ===footer=== */
+    .loc{
+        margin: auto;
     }
 }

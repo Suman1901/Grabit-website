@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 
     <!-- fashion Css -->
-    <link rel="stylesheet" href="css/fashion.css"/>
+    <link rel="stylesheet" href="css/garment&beautyproduct.css"/>
 
     <!-- left-sidebar css -->
     <link rel="stylesheet" href="css/left-sidebar.css" />
@@ -307,7 +307,7 @@
     <!-- navber end -->
 
     <!-- product category start -->
-    <section class="product-categorys left-sidebar-pro-category">
+    <section class="product-categorys">
       <div class="container product-categorys-container">
           <div class="row">
               <div class="col-6 col-sm-6  col-md-4 col-lg-2">
@@ -389,8 +389,8 @@
               </div>
           </div>
       </div>
-    </section>
-    <!-- product category end -->
+   </section>
+  <!-- product category end -->
 
     <!-- categorys & product -->
     <section class="categorys">
@@ -653,7 +653,20 @@
               <div class="category brand">
                 <div class="garments-type">
                   <div class="clothes-sec brand-sec">
-                    
+                    <div class="slider-container">
+                      <div class="target-prices">
+                        <div class="set-price">
+                          <p>From</p>
+                          <input type="number" value="0" class="priceBox"/>
+                        </div>
+                        <p> - </p>
+                        <div class="set-price">
+                          <p>To</p>
+                          <input type="number" value="100" class="priceBox"/>
+                        </div>
+                      </div>
+                      <input type="range" id="rangeSlider" min="0" max="100" />
+                    </div>
 
 
                   </div>
@@ -706,13 +719,13 @@
         <div class="short-by">
           <div class="short-icon">
             <div class="icon-bg">
-              <img
-                src="images/icons/grid-outline 2.png"
-                alt="icon"
-                class="categorie-icon"
-                width="20"
-              />
+              <svg class="categoryicon">
+                <use href="assets/icons.svg#category"></use>
+              </svg>
             </div>
+            <svg class="barIcon"> 
+              <use href="assets/icons.svg#baricon"></use>
+            </svg>
           </div>
           <div class="short-by-txt-sec">
             <p class="short-by-txt">Sort by</p>
@@ -720,9 +733,9 @@
           </div>
         </div>
         <!-- new arrival -->
-        <section class="new-arrival left-sidebar-new-arrival container">
-          <div class="row">
-            <div class="day-of-deal-img-sec col-lg ">
+        <section class="new-arrival left-sidebar-new-arrival">
+          <!-- <div class=""> -->
+            <div class="day-of-deal-img-sec">
               <div class="deal-img-sec left-sidebar-deal-img-sec">
                 <div class="deal-up-imge left-sidebar-deal-image">
                   <img
@@ -752,7 +765,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$56.00</b></p>
                     <p class="dis-rate">$45.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -785,7 +798,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$30.00</b></p>
                     <p class="dis-rate">$25.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -818,12 +831,12 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$85.00</b></p>
                     <p class="dis-rate">$78.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-            <div class="day-of-deal-img-sec col-lg  ">
+            <div class="day-of-deal-img-sec  new-arrival-img">
               <div class="deal-img-sec left-sidebar-deal-img-sec">
                 <div class="deal-up-imge left-sidebar-deal-image">
                   <img
@@ -853,7 +866,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$50.00</b></p>
                     <p class="dis-rate">$45.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -886,7 +899,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$65.00</b></p>
                     <p class="dis-rate">$49.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -916,12 +929,12 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$21.00</b></p>
                     <p class="dis-rate">$20.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-            <div class="day-of-deal-img-sec col-lg  new-arrival-img">
+            <div class="day-of-deal-img-sec  new-arrival-img">
               <div class="deal-img-sec left-sidebar-deal-img-sec">
                 <div class="deal-up-imge left-sidebar-deal-image">
                   <img
@@ -948,7 +961,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$3.00</b></p>
                     <p class="dis-rate">$2.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -981,7 +994,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$65.00</b></p>
                     <p class="dis-rate">$49.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -1011,12 +1024,12 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$21.00</b></p>
                     <p class="dis-rate">$20.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-            <div class="day-of-deal-img-sec col-lg  new-arrival-img">
+            <div class="day-of-deal-img-sec  new-arrival-img">
               <div class="deal-img-sec left-sidebar-deal-img-sec">
                 <div class="deal-up-imge left-sidebar-deal-image">
                   <img
@@ -1046,7 +1059,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$8.00</b></p>
                     <p class="dis-rate">$6.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -1076,7 +1089,7 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$3.00</b></p>
                     <p class="dis-rate">$2.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -1109,12 +1122,12 @@
                   <div class="rate">
                     <p class="currect-rate"><b>$17.00</b></p>
                     <p class="dis-rate">$15.00</p>
-                    <div class="rate-line"></div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </section>
 
         <div class="showing-item-next-btn">
@@ -1252,5 +1265,8 @@
 
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+     <script src="js/jquery-3.7.1.slim.min.js"></script>
   </body>
 </html>

@@ -23,8 +23,7 @@ categori.addEventListener("click", () =>{
 
 
 
-// const businessLocation = document.getElementById("business-location");
-// const delhi = document.getElementById("delhi");
+
 
 
 
@@ -35,10 +34,10 @@ var swiper = new Swiper(".mySwiper", {
     dynamicBullets: true,
   },
   loop: true,
-  // autoplay : {
-  //     delay:5000,
-  //     disableOnInteraction:false
-  // },
+  autoplay : {
+      delay:5000,
+      disableOnInteraction:false
+  },
   effect : "fade",
   speed : 600,
 });
@@ -109,3 +108,18 @@ var swiper = new Swiper(".latest-blog-swiper", {
 
 
 
+// ===renge slider===
+$(document).ready(function() {
+    // Update the slider value when the range input changes
+    $('#rangeSlider').on('input', function() {
+        var value = $(this).val();
+        $('#sliderValue').text(value);
+    });
+});
+$(document).ready(function() {
+    // Update the slider value when the range input changes
+    $('#rangeSlider').on('input', function() {
+        var value = $(this).val();
+        $('#sliderValue').text(value);
+    });
+});

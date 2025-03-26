@@ -100,6 +100,21 @@
 
 
 @media screen and (min-width:1025px) and (max-width:1366px){
+    .snack-fruits-sec .off{
+        transform: translate(-135%, 10px);
+    }
+    .snack-food-text{
+        width: 12vw;
+    }
+    .collection-txt{
+        font-size: 22px;
+    }
+    .snack-food-text .snack-fruit-btn{
+        transform: translate(0%, 207%);
+    }
+    .collection{
+        height: auto !important;
+    }
     /* ===Top product=== */
     .top-pro-head-txt .treding{
         width: auto;
@@ -120,6 +135,12 @@
     /* ===footer=== */
     .footer-sec {
         padding: 40px 0;
+    }
+    .contact-site .contact-way{
+        font-size: 12px;
+    }
+    .loc{
+        margin-right: 5px;
     }
 }
 @media screen and (min-width:768px) and (max-width:1024px){
