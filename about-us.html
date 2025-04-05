@@ -15,8 +15,8 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css"/>
 
-    <!-- left-sidebar css -->
-    <link rel="stylesheet" href="css/left-sidebar.css"/>
+    <!-- shop page css -->
+    <link rel="stylesheet" href="css/shop-page.css"/>
 
     <!-- about Css -->
     <link rel="stylesheet" href="css/about-us.css"/>
@@ -24,11 +24,13 @@
 </head>
 <body>
     <!-- navber start -->
-    <nav class="navber">
+    <div class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
-                    <i class="fa-solid fa-phone"></i>
+                    <svg class="phone-icon">
+                        <use href="assets/icons.svg#phoneicon"></use>
+                    </svg>
                     <p class="number">+91 987 654 3210</p>
                 </div>
                 <div class="wapp-number">
@@ -40,8 +42,8 @@
                 <p class="online-destination-text">World`s Fastest Online Shopping Destination</p>
             </div>
             <div class="help-other-sec">
-                <a href="" class="support">help?</a>
-                <a href="" class="support">Track Orde?</a>
+                <a href="customer-support.html" class="support help">help?</a>
+                <a href="orders.html" class="support order-trak">Track Order?</a>
                 <div class="language">
                     <a href="" class="support">English<i class="fa-solid fa-angle-down"></i></a>
                     <ul class="drop_down">
@@ -81,34 +83,42 @@
             </div> 
             <div class="login-cart-sec">
                 <div class="login">
-                    <i class="far fa-user"></i>
+                    <svg class="login-icon">
+                        <use href="assets/icons.svg#loginicon"></use>
+                    </svg>
                     <div class="log-watch-cart">
-                        <p class="ac-watch-cart-text">Account</p>
-                        <p class="log-item">Login</p>
+                        <a href="login.html" class="ac-watch-cart-text">Account</a>
+                        <a href="login.html" class="log-item">Login</a>
                     </div>
                 </div>
                 <div class="watchlist">
-                    <i class="far fa-heart"></i>
+                    <svg class="watchlist-icon">
+                        <use href="assets/icons.svg#witchlisticon"></use>
+                    </svg>
                     <div class="log-watch-cart">
-                        <p class="ac-watch-cart-text">Wishlist</p>
-                        <p class="log-item">3-items</p>
+                        <a href="wishlist.html" class="ac-watch-cart-text">Wishlist</a>
+                        <a href="wishlist.html" class="log-item">3-items</a>
                     </div>
                 </div>
                 <div class="cart car-t">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <svg class="cart-icon">
+                        <use href="assets/icons.svg#carticon"></use>
+                    </svg>
                     <div class="log-watch-cart">
-                        <p class="ac-watch-cart-text">Cart</p>
-                        <p class="log-item">3-items</p>
+                        <a href="cart.html" class="ac-watch-cart-text">Cart</a>
+                        <a href="cart.html" class="log-item">3-items</a>
                     </div>
                 </div>
             </div>
-            <div class="bars">
+            <button class="btn btn-primary bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
-        <div class="nav-menu-sec">
+        <nav class="nav-menu-sec">
             <div class="categories" id="categori-sec">
-                <img src="images/icons/grid-outline 2.png" alt="icon" class="categorie-icon" width="20"/>
+                <svg class="categoryicon">
+                    <use href="assets/icons.svg#category"></use>
+                </svg>
                 <a class="categories-text" href="#">all categories</a><i class="fa-solid fa-angle-down"></i>
                 <ul id="categori-list">
                     <li class="categori-items"><a href="#" class="items">Men t-shirt</a></li>
@@ -121,21 +131,16 @@
             <div class="links">
                 <ul class="menu">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link active">Home<i class="fa-solid fa-angle-down"></i></a>
-                        <ul id="nave-menu-home">
-                            <li><a href="index.html">Grocery</a></li>
-                            <li><a href="fashion.html">Fashion</a></li>
-                            <li><a href="fashion2.html">Fashion2</a></li>
-                        </ul>
+                        <a href="#home" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item" id="nav-menu-categori-sec">
                         <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="nav-menu-categori-list">
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Jens</a>
+                                <a href="garment&beautyproduct.html" class="items">garment & beautyproduct</a>
                             </li>
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Beauty Product</a>
+                                <a href="garments.html" class="items">garments</a>
                             </li>
                             <li class="nav-categori-items">
                                 <a href="#" class="items">Appliance</a>
@@ -171,11 +176,21 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#Blog" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <li class="nav-item" id="nave-menu-blogList-sec">
+                        <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="navMenuBlogList">
+                            <li class="blogItems"><a href="blog.html">Blog</a></li>
+                            <li class="blogItems"><a href="blog-details.html">Blog details</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="pages-sec">
                         <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="pages">
+                            <li class="pages-List"><a href="shop-page.html">Shop Page</a></li>
+                            <li class="pages-List"><a href="product-page.html">Product Page</a></li>
+                            <li class="pages-List"><a href="compare.html">Product compare</a></li>
+                            <li class="pages-List"><a href="about-us.html">About us</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="offer-sec">
@@ -201,8 +216,87 @@
                     </li>
                 </ul>
             </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" height="23"/>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="hamburger-items login">
+                    <a href="login.html">Login</a>
+                </div>
+                <div class="hamburger-items wishlist">
+                    <a href="wishlist.html">Wishlist</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="cart.html">Cart Items</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="#" class="nav-link active">Home</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            Products
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="#" class="nav-link active">Offers</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            Location
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Delhi</a></li>
+                        <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                        <li><a class="dropdown-item" href="#">Rajasthan</a></li>
+                        <li><a class="dropdown-item" href="#">Kolkata</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="customer-support.html" class="nav-link active">Customer Support</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <a href="orders.html" class="nav-link active">Order trak</a>
+                </div>
+                <div class="hamburger-items cart-items">
+                    <div class="dropdown mt-3">
+                        <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            language
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">English(US)</a></li>
+                        <li><a class="dropdown-item" href="#">English(UK)</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
     <div class="shop-page">
         <a href="#" class="shop">About Us</a>
         <div class="home-shop">
@@ -252,34 +346,107 @@
             <h3>Our <span>Services</span></h3>
             <p>Customer service should not be a department. It should be the entire company.</p>
         </div>
-        <div class="purchess-product-watching-sec">
-            <div class="product-watching-sec">
-                <div class="Free-Shipping-img-text">
-                    <img src="images/prod-watching/Free Shipping.png" alt="image"/>
-                    <p class="pro-text">Free Shipping</p>
-                    <p class="items">Free shipping on all US order or order above $200</p>
-                </div>
-            </div>
-            <div class="product-watching-sec">
-                <div class="Free-Shipping-img-text">
-                    <img src="images/prod-watching/support.png" alt="image"/>
-                    <p class="pro-text">24X7 Support</p>
-                    <p class="items">Contact us 24 hours a day, 7 days a week</p>
-                </div>
-            </div>
-            <div class="product-watching-sec">
-                <div class="Free-Shipping-img-text">
-                    <img src="images/prod-watching/return.png" alt="image"/>
-                    <p class="pro-text">30 Days Return</p>
-                    <p class="items">Simply return it within 30 days for an
-                        exchange</p>
-                </div>
-            </div>
-            <div class="product-watching-sec">
-                <div class="Free-Shipping-img-text">
-                    <img src="images/prod-watching/payment.png" alt="image"/>
-                    <p class="pro-text">Payment Secure</p>
-                    <p class="items">Contact us 24 hours a day, 7 days a week</p>
+        <div id="team">
+            <div class="container product-watching-container">
+                <div class="row product-watching-row">
+                    <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                        <div class=" flip-box" >
+                            <div class="flip-box-inner">
+                                <div class=" flip-box-front">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/Free Shipping.png" alt="image"/>
+                                            <p class="pro-text">Free Shipping</p>
+                                            <p class="items">Free shipping on all US order or order above $200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/Free Shipping.png" alt="image"/>
+                                            <p class="pro-text">Free Shipping</p>
+                                            <p class="items">Free shipping on all US order or order above $200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/support.png" alt="image"/>
+                                            <p class="pro-text">24X7 Support</p>
+                                            <p class="items">Contact us 24 hours a day, 7 days a week</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/support.png" alt="image"/>
+                                            <p class="pro-text">24X7 Support</p>
+                                            <p class="items">Contact us 24 hours a day, 7 days a week</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/return.png" alt="image"/>
+                                            <p class="pro-text">30 Days Return</p>
+                                            <p class="items">Simply return it within 30 days for an
+                                                exchange</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/return.png" alt="image"/>
+                                            <p class="pro-text">30 Days Return</p>
+                                            <p class="items">Simply return it within 30 days for an
+                                                exchange</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/payment.png" alt="image"/>
+                                            <p class="pro-text">Payment Secure</p>
+                                            <p class="items">Contact us 24 hours a day, 7 days a week</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="product-watching-sec">
+                                        <div class="Free-Shipping-img-text">
+                                            <img src="images/prod-watching/payment.png" alt="image"/>
+                                            <p class="pro-text">Payment Secure</p>
+                                            <p class="items">Contact us 24 hours a day, 7 days a week</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

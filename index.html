@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- navber start -->
-     <nav class="navber">
+     <header class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -97,6 +97,7 @@
                     <svg class="cart-icon">
                         <use href="assets/icons.svg#carticon"></use>
                     </svg>
+                    <span class="cartItem-count"></span>
                     <div class="log-watch-cart">
                         <a href="cart.html" class="ac-watch-cart-text">Cart</a>
                         <a href="cart.html" class="log-item">3-items</a>
@@ -107,7 +108,7 @@
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <div class="nav-menu-sec">
+        <nav class="nav-menu-sec">
             <div class="categories" id="categori-sec">
                 <svg class="categoryicon">
                     <use href="assets/icons.svg#category"></use>
@@ -130,10 +131,10 @@
                         <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="nav-menu-categori-list">
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Jens</a>
+                                <a href="garment&beautyproduct.html" class="items">garment & beautyproduct</a>
                             </li>
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Beauty Product</a>
+                                <a href="garments.html" class="items">garments</a>
                             </li>
                             <li class="nav-categori-items">
                                 <a href="#" class="items">Appliance</a>
@@ -169,11 +170,21 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="nave-menu-blogList-sec">
                         <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="navMenuBlogList">
+                            <li class="blogItems"><a href="blog.html">Blog</a></li>
+                            <li class="blogItems"><a href="blog-details.html">Blog details</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="pages-sec">
                         <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="pages">
+                            <li class="pages-List"><a href="shop-page.html">Shop Page</a></li>
+                            <li class="pages-List"><a href="product-page.html">Product Page</a></li>
+                            <li class="pages-List"><a href="compare.html">Product compare</a></li>
+                            <li class="pages-List"><a href="about-us.html">About us</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="offer-sec">
@@ -199,7 +210,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <div class="logo">
@@ -279,10 +290,8 @@
                 </div>
             </div>
         </div>
-     </nav>
+     </header>
     <!-- navber end -->
-
-    
 
     <!-- banner start -->
      <section class="banner">
@@ -423,7 +432,7 @@
                 </div>
         </div>
         <div class="day-of-deal-img-sec">
-                <div class="deal-img-sec product-grid9">
+            <div class="deal-img-sec product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
                         <div class="sale">
@@ -448,8 +457,8 @@
                         </div>
                         <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
                     </div>
-                </div>
-                <div class="deal-img-sec product-grid9">
+            </div>
+            <div class="deal-img-sec product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
                         <div class="sale">
@@ -477,8 +486,8 @@
                         </div>
                         <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
                     </div>
-                </div>
-                <div class="deal-img-sec product-grid9">
+            </div>
+            <div class="deal-img-sec product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
                     </div>
@@ -500,8 +509,8 @@
                         </div>
                         <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
                     </div>
-                </div>
-                <div class="deal-img-sec product-grid9">
+            </div>
+            <div class="deal-img-sec product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
                         <div class="sale">
@@ -526,8 +535,8 @@
                         </div>
                         <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
                     </div>
-                </div>
-                <div class="deal-img-sec product-grid9 deal-last-img">
+            </div>
+            <div class="deal-img-sec product-grid9 deal-last-img">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/foods2.png" alt="image"/>
                         <div class="sale new">
@@ -555,151 +564,156 @@
                         </div>
                         <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
                     </div>
-                </div>
+            </div>
         </div>
         <div class="swiper day-of-deal-imges-sec">
-                <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide day-of-deal-part-img day-of-deal-first-img" >
-                        <div class="deal-img-sec">
-                            <div class="deal-up-imge">
-                                <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
-                                <div class="sale">
-                                    <p>SALE</p>
-                                </div>
-                            </div>
-                            <div class="deal-text-sec">
-                                <p class="product-name">Dried Fruits</p>
-                                <p class="nuts-txt">Mixed Nuts Berries Pack</p>
-                                <div class="stars product-quentity">
-                                    <div class="product-stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                    </div>
-                                </div>
-                                <div class="rate">
-                                    <p class="currect-rate"><b>$56.00</b></p>
-                                    <p class="dis-rate">$45.00</p>
-                                </div>
+                    <div class="deal-img-sec product-grid9">
+                        <div class="deal-up-imge">
+                            <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
+                            <div class="sale">
+                                <p>SALE</p>
                             </div>
                         </div>
+                        <div class="deal-text-sec">
+                            <h3 class="title"><a href="#" class="product-name">Dried Fruits</a></h3>
+                            <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                            <div class="stars product-quentity">
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <p class="currect-rate"><b>$56.00</b></p>
+                                <p class="dis-rate">$45.00</p>
+                            </div>
+                            <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide day-of-deal-part-img">
-                        <div class="deal-img-sec">
-                            <div class="deal-up-imge">
-                                <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
-                                <div class="sale">
-                                    <p>SALE</p>
-                                </div>
-                            </div>
-                            <div class="deal-text-sec">
-                                <p class="product-name">Cookies</p>
-                                <p class="nuts-txt">Multi Grain Combo Cookies</p>
-                                <div class="stars product-quentity">
-                                    <div class="product-stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                    </div>
-                                    <div class="quentity">
-                                        <p>10kg</p>
-                                    </div>
-                                </div>
-                                <div class="rate">
-                                    <p class="currect-rate"><b>$30.00</b></p>
-                                    <p class="dis-rate">$25.00</p>
-                                </div>
+                    <div class="deal-img-sec product-grid9">
+                        <div class="deal-up-imge">
+                            <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
+                            <div class="sale">
+                                <p>SALE</p>
                             </div>
                         </div>
+                        <div class="deal-text-sec">
+                            <h3 class="title"><a href="#" class="product-name">Cookies</a></h3>
+                            <p class="nuts-txt">Multi Grain Combo Cookies</p>
+                            <div class="stars product-quentity">
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                </div>
+                                <div class="quentity">
+                                    <p>10kg</p>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <p class="currect-rate"><b>$30.00</b></p>
+                                <p class="dis-rate">$25.00</p>
+                            </div>
+                            <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide day-of-deal-part-img">
-                        <div class="deal-img-sec">
-                            <div class="deal-up-imge">
-                                <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
-                            </div>
-                            <div class="deal-text-sec">
-                                <p class="product-name">Foods</p>
-                                <p class="nuts-txt">Fresh Mango juice pack</p>
-                                <div class="stars product-quentity">
-                                    <div class="product-stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                    </div>
-                                </div>
-                                <div class="rate">
-                                    <p class="currect-rate"><b>$65.00</b></p>
-                                    <p class="dis-rate">$46.00</p>
-                                </div>
-                            </div>
+                    <div class="deal-img-sec product-grid9">
+                        <div class="deal-up-imge">
+                            <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
                         </div>
+                        <div class="deal-text-sec">
+                            <h3 class="title"><a href="#" class="product-name">Foods</a></h3>
+                            <p class="nuts-txt">Fresh Mango juice pack</p>
+                            <div class="stars product-quentity">
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <p class="currect-rate"><b>$65.00</b></p>
+                                <p class="dis-rate">$46.00</p>
+                            </div>
+                            <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide day-of-deal-part-img">
-                        <div class="deal-img-sec">
-                            <div class="deal-up-imge">
-                                <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
-                                <div class="sale">
-                                    <p>SALE</p>
-                                </div>
-                            </div>
-                            <div class="deal-text-sec">
-                                <p class="product-name">Dried Fruits</p>
-                                <p class="nuts-txt">Dates Value Fresh Pouch</p>
-                                <div class="stars product-quentity">
-                                    <div class="product-stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                    </div>
-                                </div>
-                                <div class="rate">
-                                    <p class="currect-rate"><b>$85.00</b></p>
-                                    <p class="dis-rate">$78.00</p>
-                                </div>
+                    <div class="deal-img-sec product-grid9">
+                        <div class="deal-up-imge">
+                            <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
+                            <div class="sale">
+                                <p>SALE</p>
                             </div>
                         </div>
+                        <div class="deal-text-sec">
+                            <h3 class="title"><a href="#" class="product-name">Dried Fruits</a></h3>
+                            <p class="nuts-txt">Dates Value Fresh Pouch</p>
+                            <div class="stars product-quentity">
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <p class="currect-rate"><b>$85.00</b></p>
+                                <p class="dis-rate">$78.00</p>
+                            </div>
+                            <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide day-of-deal-part-img">
-                        <div class="deal-img-sec deal-last-img">
-                            <div class="deal-up-imge">
-                                <img src="images/day-of-the-deal/foods2.png" alt="image"/>
-                                <div class="sale new">
-                                    <p>NEW</p>
-                                </div>
-                            </div>
-                            <div class="deal-text-sec">
-                                <p class="product-name">Dried Fruits</p>
-                                <p class="nuts-txt">Mixed Nuts Berries Pack</p>
-                                <div class="stars product-quentity">
-                                    <div class="product-stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                        <i class="fa-solid fa-star dont-reating"></i>
-                                    </div>
-                                    <div class="quentity">
-                                        <p>2pack</p>
-                                    </div>
-                                </div>
-                                <div class="rate">
-                                    <p class="currect-rate"><b>$50.00</b></p>
-                                    <p class="dis-rate">$45.00</p>
-                                </div>
+                    <div class="deal-img-sec product-grid9 deal-last-img">
+                        <div class="deal-up-imge">
+                            <img src="images/day-of-the-deal/foods2.png" alt="image"/>
+                            <div class="sale new">
+                                <p>NEW</p>
                             </div>
                         </div>
+                        <div class="deal-text-sec">
+                            <h3 class="title"><a href="#" class="product-name">Foods</a></h3>
+                            <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                            <div class="stars product-quentity">
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                    <i class="fa-solid fa-star dont-reating"></i>
+                                </div>
+                                <div class="quentity">
+                                    <p>2pack</p>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <p class="currect-rate"><b>$50.00</b></p>
+                                <p class="dis-rate">$45.00</p>
+                            </div>
+                            <a class="add-to-cart" href="product-full-widht.html">VIEW PRODUCTS</a>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div class="swiper-button-next "></div>
-                <div class="swiper-button-prev "></div>
+            </div>
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div>
         </div>
     </section>
 
@@ -739,7 +753,7 @@
                     <ul class="social">
                         <li><a href="" class="fa fa-search"></a></li>
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart add-cart"></a></li>
                     </ul>
                 </div>
                 <div class="deal-text-sec">
@@ -770,7 +784,7 @@
                     <ul class="social">
                         <li><a href="" class="fa fa-search"></a></li>
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart add-cart"></a></li>
                     </ul>
                 </div>
                 <div class="deal-text-sec">
@@ -801,7 +815,7 @@
                     <ul class="social">
                         <li><a href="" class="fa fa-search"></a></li>
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart add-cart"></a></li>
                     </ul>
                 </div>
                 <div class="deal-text-sec">
@@ -832,7 +846,7 @@
                     <ul class="social">
                         <li><a href="" class="fa fa-search"></a></li>
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart add-cart"></a></li>
                     </ul>
                 </div>
                 <div class="deal-text-sec">
@@ -863,7 +877,7 @@
                     <ul class="social">
                         <li><a href="" class="fa fa-search"></a></li>
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart add-cart"></a></li>
                     </ul>
                 </div>
                 <div class="deal-text-sec">
@@ -1042,6 +1056,174 @@
               <div class="swiper-slide day-of-deal-part-img day-of-deal-first-img" >
                 <div class="deal-img-sec product-grid8 product-grid9">
                     <div class="deal-up-imge">
+                        <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
+                        <div class="sale">
+                            <p>SALE</p>
+                        </div>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
+                    </div>
+                    <div class="deal-text-sec">
+                        <p class="product-name">Dried Fruits</p>
+                        <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                        <div class="stars product-quentity">
+                            <div class="product-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <p class="currect-rate"><b>$56.00</b></p>
+                            <p class="dis-rate">$45.00</p>
+                        </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide day-of-deal-part-img">
+                <div class="deal-img-sec product-grid8 product-grid9">
+                    <div class="deal-up-imge">
+                        <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
+                        <div class="sale">
+                            <p>SALE</p>
+                        </div>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
+                    </div>
+                    <div class="deal-text-sec">
+                        <p class="product-name">Cookies</p>
+                        <p class="nuts-txt">Multi Grain Combo Cookies</p>
+                        <div class="stars product-quentity">
+                            <div class="product-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                            </div>
+                            <div class="quentity">
+                                <p>10kg</p>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <p class="currect-rate"><b>$30.00</b></p>
+                            <p class="dis-rate">$25.00</p>
+                        </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide day-of-deal-part-img">
+                <div class="deal-img-sec product-grid8 product-grid9">
+                    <div class="deal-up-imge">
+                        <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
+                    </div>
+                    <div class="deal-text-sec">
+                        <p class="product-name">Foods</p>
+                        <p class="nuts-txt">Fresh Mango juice pack</p>
+                        <div class="stars product-quentity">
+                            <div class="product-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <p class="currect-rate"><b>$65.00</b></p>
+                            <p class="dis-rate">$46.00</p>
+                        </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide day-of-deal-part-img">
+                <div class="deal-img-sec product-grid8 product-grid9">
+                    <div class="deal-up-imge">
+                        <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
+                        <div class="sale">
+                            <p>SALE</p>
+                        </div>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
+                    </div>
+                    <div class="deal-text-sec">
+                        <p class="product-name">Dried Fruits</p>
+                        <p class="nuts-txt">Dates Value Fresh Pouch</p>
+                        <div class="stars product-quentity">
+                            <div class="product-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <p class="currect-rate"><b>$85.00</b></p>
+                            <p class="dis-rate">$78.00</p>
+                        </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide day-of-deal-part-img">
+                <div class="deal-img-sec product-grid8 product-grid9">
+                    <div class="deal-up-imge">
+                        <img src="images/day-of-the-deal/foods2.png" alt="image"/>
+                        <div class="sale new">
+                            <p>NEW</p>
+                        </div>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
+                    </div>
+                    <div class="deal-text-sec">
+                        <p class="product-name">Dried Fruits</p>
+                        <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                        <div class="stars product-quentity">
+                            <div class="product-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                                <i class="fa-solid fa-star dont-reating"></i>
+                            </div>
+                            <div class="quentity">
+                                <p>2pack</p>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <p class="currect-rate"><b>$50.00</b></p>
+                            <p class="dis-rate">$45.00</p>
+                        </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide day-of-deal-part-img">
+                <div class="deal-img-sec product-grid8 product-grid9">
+                    <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Link → 24_1.jpg.png" alt="image" height="100"/>
                         <div class="sale new">
                             <p>NEW</p>
@@ -1076,6 +1258,11 @@
                 <div class="deal-img-sec product-grid8 product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
                     </div>
                     <div class="deal-text-sec">
                         <p class="product-name">Foods</p>
@@ -1093,6 +1280,7 @@
                             <p class="currect-rate"><b>$21.00</b></p>
                             <p class="dis-rate">$20.00</p>
                         </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
                     </div>
                 </div>
               </div>
@@ -1100,6 +1288,11 @@
                 <div class="deal-img-sec product-grid8 product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Link → 17_1.jpg.png" alt="image" height="100"/>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
                     </div>
                     <div class="deal-text-sec">
                         <p class="product-name">Tuber root</p>
@@ -1117,16 +1310,22 @@
                             <p class="currect-rate"><b>$3.00</b></p>
                             <p class="dis-rate">$2.00</p>
                         </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
                     </div>
                 </div>
               </div>
               <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
+                <div class="deal-img-sec product-grid8 product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="image" height="100"/>
                         <div class="sale new">
                             <p>NEW</p>
                         </div>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
                     </div>
                     <div class="deal-text-sec">
                         <p class="product-name">Foods</p>
@@ -1144,13 +1343,19 @@
                             <p class="currect-rate"><b>$65.00</b></p>
                             <p class="dis-rate">$49.00</p>
                         </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
                     </div>
                 </div>
               </div>
               <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
+                <div class="deal-img-sec product-grid8 product-grid9">
                     <div class="deal-up-imge">
                         <img src="images/day-of-the-deal/Link → 25_1.jpg.png" alt="image" height="100"/>
+                        <ul class="social">
+                            <li><a href="" class="fa fa-search"></a></li>
+                            <li><a href="" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                        </ul>
                     </div>
                     <div class="deal-text-sec">
                         <p class="product-name">Fresh Fruit</p>
@@ -1168,144 +1373,7 @@
                             <p class="currect-rate"><b>$21.00</b></p>
                             <p class="dis-rate">$20.00</p>
                         </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
-                    <div class="deal-up-imge">
-                        <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
-                        <div class="sale">
-                            <p>SALE</p>
-                        </div>
-                    </div>
-                    <div class="deal-text-sec">
-                        <p class="product-name">Dried Fruits</p>
-                        <p class="nuts-txt">Mixed Nuts Berries Pack</p>
-                        <div class="stars product-quentity">
-                            <div class="product-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                            </div>
-                        </div>
-                        <div class="rate">
-                            <p class="currect-rate"><b>$56.00</b></p>
-                            <p class="dis-rate">$45.00</p>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
-                    <div class="deal-up-imge">
-                        <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
-                        <div class="sale">
-                            <p>SALE</p>
-                        </div>
-                    </div>
-                    <div class="deal-text-sec">
-                        <p class="product-name">Cookies</p>
-                        <p class="nuts-txt">Multi Grain Combo Cookies</p>
-                        <div class="stars product-quentity">
-                            <div class="product-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                            </div>
-                            <div class="quentity">
-                                <p>10kg</p>
-                            </div>
-                        </div>
-                        <div class="rate">
-                            <p class="currect-rate"><b>$30.00</b></p>
-                            <p class="dis-rate">$25.00</p>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
-                    <div class="deal-up-imge">
-                        <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
-                    </div>
-                    <div class="deal-text-sec">
-                        <p class="product-name">Foods</p>
-                        <p class="nuts-txt">Fresh Mango juice pack</p>
-                        <div class="stars product-quentity">
-                            <div class="product-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                            </div>
-                        </div>
-                        <div class="rate">
-                            <p class="currect-rate"><b>$65.00</b></p>
-                            <p class="dis-rate">$46.00</p>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
-                    <div class="deal-up-imge">
-                        <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
-                        <div class="sale">
-                            <p>SALE</p>
-                        </div>
-                    </div>
-                    <div class="deal-text-sec">
-                        <p class="product-name">Dried Fruits</p>
-                        <p class="nuts-txt">Dates Value Fresh Pouch</p>
-                        <div class="stars product-quentity">
-                            <div class="product-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                            </div>
-                        </div>
-                        <div class="rate">
-                            <p class="currect-rate"><b>$85.00</b></p>
-                            <p class="dis-rate">$78.00</p>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide day-of-deal-part-img">
-                <div class="deal-img-sec">
-                    <div class="deal-up-imge">
-                        <img src="images/day-of-the-deal/foods2.png" alt="image"/>
-                        <div class="sale new">
-                            <p>NEW</p>
-                        </div>
-                    </div>
-                    <div class="deal-text-sec">
-                        <p class="product-name">Dried Fruits</p>
-                        <p class="nuts-txt">Mixed Nuts Berries Pack</p>
-                        <div class="stars product-quentity">
-                            <div class="product-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                                <i class="fa-solid fa-star dont-reating"></i>
-                            </div>
-                            <div class="quentity">
-                                <p>2pack</p>
-                            </div>
-                        </div>
-                        <div class="rate">
-                            <p class="currect-rate"><b>$50.00</b></p>
-                            <p class="dis-rate">$45.00</p>
-                        </div>
+                        <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
                     </div>
                 </div>
               </div>
@@ -1345,7 +1413,7 @@
     <section id="team">
         <div class="container product-watching-container">
             <div class="row product-watching-row">
-                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-md-6">
                     <div class=" flip-box" >
                         <div class="flip-box-inner">
                             <div class=" flip-box-front">
@@ -1369,14 +1437,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-md-6">
                     <div class="flip-box">
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/support.png" alt="image"/>
-                                        <p class="pro-text">24X7 Support</p>
+                                        <a href="customer-support.html" class="pro-text">24X7 Support</a>
                                         <p class="items">Contact us 24 hours a day, 7 days a week</p>
                                     </div>
                                 </div>
@@ -1385,7 +1453,7 @@
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/support.png" alt="image"/>
-                                        <p class="pro-text">24X7 Support</p>
+                                        <a href="customer-support.html" class="pro-text">24X7 Support</a>
                                         <p class="items">Contact us 24 hours a day, 7 days a week</p>
                                     </div>
                                 </div>
@@ -1393,14 +1461,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-md-6">
                     <div class="flip-box">
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/return.png" alt="image"/>
-                                        <p class="pro-text">30 Days Return</p>
+                                        <a href="orders.html" class="pro-text">30 Days Return</a>
                                         <p class="items">Simply return it within 30 days for an
                                             exchange</p>
                                     </div>
@@ -1410,7 +1478,7 @@
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/return.png" alt="image"/>
-                                        <p class="pro-text">30 Days Return</p>
+                                        <a href="orders.html" class="pro-text">30 Days Return</a>
                                         <p class="items">Simply return it within 30 days for an
                                             exchange</p>
                                     </div>
@@ -1419,14 +1487,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3 col-sm-6 col-md-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-md-6">
                     <div class="flip-box">
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/payment.png" alt="image"/>
-                                        <p class="pro-text">Payment Secure</p>
+                                        <a href="checkout.html" class="pro-text">Payment Secure</a>
                                         <p class="items">Contact us 24 hours a day, 7 days a week</p>
                                     </div>
                                 </div>
@@ -1435,7 +1503,7 @@
                                 <div class="product-watching-sec">
                                     <div class="Free-Shipping-img-text">
                                         <img src="images/prod-watching/payment.png" alt="image"/>
-                                        <p class="pro-text">Payment Secure</p>
+                                        <a href="checkout.html" class="pro-text">Payment Secure</a>
                                         <p class="items">Contact us 24 hours a day, 7 days a week</p>
                                     </div>
                                 </div>
@@ -1910,48 +1978,48 @@
                 <div class="swiper-slide container latest-blog-swiper-slider">
                     <div class="latest-img-sec row">
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 1.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 1.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">June 30,2022 - Organic</p>
-                            <p class="marketing-text">Marketing Guide: 5 Steps to</p>
-                            <p class="marketing-text">Success to way.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Marketing Guide: 5 Steps to</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">Success to way.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 2.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 2.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">April 02,2022 - Fruits</p>
-                            <p class="marketing-text">Best way to solve business deal</p>
-                            <p class="marketing-text">issue in market.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Best way to solve business deal</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">issue in market.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 3.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 3.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">Mar 09,2022 - Vegetables</p>
-                            <p class="marketing-text">31 grocery customer service stats</p>
-                            <p class="marketing-text">know in 2019.</p>
+                            <a href="blog-details.html"><p class="marketing-text">31 grocery customer service stats</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">know in 2019.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 4.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 4.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">January 25,2022 - Fastfood</p>
-                            <p class="marketing-text">Business ideas to grow your</p>
-                            <p class="marketing-text">business traffic.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Business ideas to grow your</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">business traffic.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 5.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 5.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">December 10,2021 - Fruits</p>
-                            <p class="marketing-text">Marketing Guide: 5 Steps way to</p>
-                            <p class="marketing-text">Success.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Marketing Guide: 5 Steps way to</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">Success.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                     </div>
@@ -1959,48 +2027,48 @@
                 <div class="swiper-slide container latest-blog-swiper-slider">
                     <div class="latest-img-sec row">
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 5.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 5.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">December 10,2021 - Fruits</p>
-                            <p class="marketing-text">Marketing Guide: 5 Steps way to</p>
-                            <p class="marketing-text">Success.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Marketing Guide: 5 Steps way to</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">Success.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 3.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 3.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">Mar 09,2022 - Vegetables</p>
-                            <p class="marketing-text">31 grocery customer service stats</p>
-                            <p class="marketing-text">know in 2019.</p>
+                            <a href="blog-details.html"><p class="marketing-text">31 grocery customer service stats</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">know in 2019.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 1.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 1.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">June 30,2022 - Organic</p>
-                            <p class="marketing-text">Marketing Guide: 5 Steps to</p>
-                            <p class="marketing-text">Success to way.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Marketing Guide: 5 Steps to</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">Success to way.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 2.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 2.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">April 02,2022 - Fruits</p>
-                            <p class="marketing-text">Best way to solve business deal</p>
-                            <p class="marketing-text">issue in market.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Best way to solve business deal</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">issue in market.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                         <div class="marketing-guid col-12 col-sm-6 col-lg col-md-4">
-                            <img src="images/latest/Link → 4.jpg.png" alt="image" class="latest-blog-img" width="200"/>
+                            <a href="blog-details.html"><img src="images/latest/Link → 4.jpg.png" alt="image" class="latest-blog-img" width="200"/></a>
                             <p class="months">January 25,2022 - Fastfood</p>
-                            <p class="marketing-text">Business ideas to grow your</p>
-                            <p class="marketing-text">business traffic.</p>
+                            <a href="blog-details.html"><p class="marketing-text">Business ideas to grow your</p></a>
+                            <a href="blog-details.html"><p class="marketing-text">business traffic.</p></a>
                             <button type="button" class="read">
-                                <a href="#">Read More</a><i class="fas fa-angle-double-right"></i>
+                                <a href="blog-details.html">Read More</a><i class="fas fa-angle-double-right"></i>
                             </button>
                         </div>
                     </div>
@@ -2132,5 +2200,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- main js -->
     <script src="js/script.js"></script>
+
+    <!-- cart js -->
+     <script src="js/cart.js"></script>
 </body>
 </html>

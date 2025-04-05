@@ -19,18 +19,18 @@
     <!-- fashion Css -->
     <link rel="stylesheet" href="css/fashion.css" />
 
-    <!-- left-sidebar css -->
-    <link rel="stylesheet" href="css/left-sidebar.css" />
+    <!-- shop page css -->
+    <link rel="stylesheet" href="css/shop-page.css" />
 
-    <!-- product-left-slider Css -->
-    <link rel="stylesheet" href="css/product-left-slider.css"/>
+    <!-- product-page Css -->
+    <link rel="stylesheet" href="css/product-page.css"/>
 
-    <!-- product-full-width Css -->
-    <link rel="stylesheet" href="css/product-full-width.css"/>
+    <!-- product-details-page Css -->
+    <link rel="stylesheet" href="css/product-details-page.css"/>
 </head>
 <body>
     <!-- navber start -->
-    <nav class="navber">
+    <div class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -120,7 +120,7 @@
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <div class="nav-menu-sec">
+        <nav class="nav-menu-sec">
             <div class="categories" id="categori-sec">
                 <svg class="categoryicon">
                     <use href="assets/icons.svg#category"></use>
@@ -143,10 +143,10 @@
                         <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="nav-menu-categori-list">
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Jens</a>
+                                <a href="garment&beautyproduct.html" class="items">garment & beautyproduct</a>
                             </li>
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Beauty Product</a>
+                                <a href="garments.html" class="items">garments</a>
                             </li>
                             <li class="nav-categori-items">
                                 <a href="#" class="items">Appliance</a>
@@ -182,11 +182,21 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="nave-menu-blogList-sec">
                         <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="navMenuBlogList">
+                            <li class="blogItems"><a href="blog.html">Blog</a></li>
+                            <li class="blogItems"><a href="blog-details.html">Blog details</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="pages-sec">
                         <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="pages">
+                            <li class="pages-List"><a href="shop-page.html">Shop Page</a></li>
+                            <li class="pages-List"><a href="product-page.html">Product Page</a></li>
+                            <li class="pages-List"><a href="compare.html">Product compare</a></li>
+                            <li class="pages-List"><a href="about-us.html">About us</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="offer-sec">
@@ -212,7 +222,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <div class="logo">
@@ -292,7 +302,7 @@
                 </div>
             </div>
         </div>
-     </nav>
+    </div>
     <div class="shop-page">
         <a href="#" class="shop">Product Page</a>
         <div class="home-shop">
@@ -300,30 +310,27 @@
           <i class="fa-solid fa-angle-right"></i>
           <a href="#" class="shop active-point">Product Page</a>
         </div>
-      </div>
+    </div>
     <!-- navber end -->
 
     <!-- product Page -->
      <section class="product-Page">
         <div class="pro-page-product-sec product-full-img-sec">
             <div class="product-images-details-rate">
-                <div id="product-images-sec">
-                <div class="chips-img">
-                    <img src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="image" height="100vh"/>
-                </div>
-                    <div class="pro-imgs">
-                        <div class="pro-page-imgs">
-                            <img src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="image" width="150"/>
+                <div id="main-container">
+                    <div class="main-image">
+                        <img id="displayedImage" src="image1.jpg" alt="Displayed Image">
+                    </div>
+                    <div class="image-slider">
+                        <button id="prevBtn"> <i class="fas fa-arrow-left"></i> </button>
+                        <div class="thumbnail-container">
+                            <div class="border-frame"></div>
+                            <img class="thumbnail" src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="Image 1">
+                            <img class="thumbnail" src="images/day-of-the-deal/Dried Fruits2.png" alt="Image 2">
+                            <img class="thumbnail" src="images/day-of-the-deal/Cookies.png" alt="Image 3">
+                            <img class="thumbnail" src="images/day-of-the-deal/foods2.png" alt="Image 4">
                         </div>
-                        <div class="pro-page-imgs">
-                            <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" width="150"/>
-                        </div>
-                        <div class="pro-page-imgs">
-                            <img src="images/day-of-the-deal/Cookies.png" alt="image" width="150"/>
-                        </div>
-                        <div class="pro-page-imgs">
-                            <img src="images/day-of-the-deal/foods2.png" alt="image" width="150"/>
-                        </div>
+                        <button id="nextBtn"> <i class="fas fa-arrow-right"></i> </button>
                     </div>
                 </div>
                 <div id="product-rate-details">
@@ -576,5 +583,11 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
        <!-- main js -->
       <script src="js/script.js"></script>
+
+      <!-- product details js -->
+       <script src="js/product-details.js"></script>
+    
+       <!-- product left js -->
+        <script src="js/product-left-slider.js"></script>
 </body>
 </html>

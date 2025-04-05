@@ -101,14 +101,48 @@
 .shopping-check-out-btn a{
     color: #4B5966;
 }
-.shopping-check-out-btn button{
+.shopping-check-out-btn .checkOut{
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
-    color: white;
     background: #5CAF90;
     text-decoration: underline;
 }
+.shopping-check-out-btn .checkOut a{
+    color: white;
+}
+.cart-close{
+    position: absolute;
+}
+.quantity-sec{
+    border: 1px solid #4B5966;
+    padding: 5px;
+    width: 85px;
+    border-radius: 6px;
+    text-align: center;
+}
+.quantity-sec button{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    width: 25px;
+}
+
+.quantity-sec .decrement{
+    color: #4B5966;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid;
+    font-size: 20px;
+}
+.total .total-price{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
 @media screen and (min-width:320px) and (max-width:539px) {
 
 }

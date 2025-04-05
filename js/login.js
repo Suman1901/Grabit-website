@@ -1,33 +1,6 @@
 
 const loginBtn= document.querySelector("#login-btn")
 
-
-// loginBtn.addEventListener("click", (eve)=>{
-//     eve.preventDefault();
-
-//     const email = document.querySelector("#emailInput").value.trim();
-//     const password = document.querySelector("#passInput").value;
-
-
-    // switch (true){
-    //     case email === '':
-    //         const emailError = document.querySelector("#email-error");
-    //         emailError.innerHTML = "Enter your email address";
-
-    //         break;
-    //     case password === '':
-    //         const passwordError = document.querySelector("#password-error");
-    //         passwordError.innerHTML = "Enter your password";
-            
-    //         break;
-    //     default:
-            
-    // }
-
- 
-// })
-
-
 function validateForm(){
     const email = document.querySelector("#emailInput").value.trim();
     const password = document.querySelector("#passInput").value;

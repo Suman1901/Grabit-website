@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Left sidebar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-page</title>
     <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- swipper  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css"/>
 
     <!-- fashion Css -->
-    <link rel="stylesheet" href="css/garment&beautyproduct.css"/>
+    <link rel="stylesheet" href="css/garment&beautyproduct.css" />
 
-    <!-- left-sidebar css -->
-    <link rel="stylesheet" href="css/left-sidebar.css" />
+    <!-- shop page css -->
+    <link rel="stylesheet" href="css/shop-page.css" />
 
-  </head>
-  <body>
+    <!-- product-page Css -->
+    <link rel="stylesheet" href="css/product-page.css">
+</head>
+<body>
     <!-- navber start -->
-    <nav class="navber">
+    <div class="navber">
       <div class="up-nav-sec">
           <div class="num-sec">
               <div class="phone-number">
@@ -123,7 +116,7 @@
               <i class="fas fa-bars"></i>
           </button>
       </div>
-      <div class="nav-menu-sec">
+      <nav class="nav-menu-sec">
           <div class="categories" id="categori-sec">
               <svg class="categoryicon">
                   <use href="assets/icons.svg#category"></use>
@@ -146,10 +139,10 @@
                       <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
                       <ul id="nav-menu-categori-list">
                           <li class="nav-categori-items">
-                              <a href="#" class="items">Jens</a>
+                              <a href="garment&beautyproduct.html" class="items">garment & beautyproduct</a>
                           </li>
                           <li class="nav-categori-items">
-                              <a href="#" class="items">Beauty Product</a>
+                              <a href="garments.html" class="items">garments</a>
                           </li>
                           <li class="nav-categori-items">
                               <a href="#" class="items">Appliance</a>
@@ -185,11 +178,21 @@
                           </li>
                       </ul>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item" id="nave-menu-blogList-sec">
                       <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                      <ul id="navMenuBlogList">
+                          <li class="blogItems"><a href="blog.html">Blog</a></li>
+                          <li class="blogItems"><a href="blog-details.html">Blog details</a></li>
+                      </ul>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item" id="pages-sec">
                       <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                      <ul id="pages">
+                          <li class="pages-List"><a href="shop-page.html">Shop Page</a></li>
+                          <li class="pages-List"><a href="product-page.html">Product Page</a></li>
+                          <li class="pages-List"><a href="compare.html">Product compare</a></li>
+                          <li class="pages-List"><a href="about-us.html">About us</a></li>
+                      </ul>
                   </li>
               </ul>
               <div class="offer-sec">
@@ -215,7 +218,7 @@
                   </li>
               </ul>
           </div>
-      </div>
+      </nav>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
               <div class="logo">
@@ -295,102 +298,16 @@
               </div>
           </div>
       </div>
-   </nav>
+    </div>
     <div class="shop-page">
-      <a href="#" class="shop">Shop page</a>
-      <div class="home-shop">
-        <a href="#" class="home">Home</a>
-        <i class="fa-solid fa-angle-right"></i>
-        <a href="#" class="shop active-point">Shop page</a>
-      </div>
+        <a href="#" class="shop">Product Page</a>
+        <div class="home-shop">
+          <a href="#" class="home">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#" class="shop active-point">Product Page</a>
+        </div>
     </div>
     <!-- navber end -->
-
-    <!-- product category start -->
-    <section class="product-categorys">
-      <div class="container product-categorys-container">
-          <div class="row">
-              <div class="col-6 col-sm-6  col-md-4 col-lg-2">
-                  <div class="pro-category-bg">
-                      <div class="typeOf-Products">
-                          <div class="product-img-text">
-                               <svg class="apple-icon">
-                                  <use href="assets/icons.svg#appleicon"></use>
-                               </svg>
-                              <p class="pro-text">Fruits</p>
-                              <p class="items">320 Items</p>
-                          </div>
-                          <div class="off-sec">
-                              <p>30%</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class=" col-6 col-sm-6  col-md-4 col-lg-2">
-                  <div class="pro-category-bg bakery-bg">
-                      <div class="typeOf-Products">
-                          <div class="product-img-text">
-                              <img src="images/product-category/Vector.png" alt="image"/>
-                              <p class="pro-text">Bakery</p>
-                              <p class="items">65 Items</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class=" col-6 col-sm-6  col-md-4 col-lg-2">
-                  <div class="pro-category-bg vegetable-bg">
-                      <div class="typeOf-Products">
-                          <div class="product-img-text">
-                              <img src="images/product-category/Vector (1).png" alt="image"/>
-                              <p class="pro-text">Vegetables</p>
-                              <p class="items">548 Items</p>
-                          </div>
-                          <div class="off-sec">
-                              <p>15%</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class=" col-6 col-sm-6  col-md-4 col-lg-2">
-                  <div class="pro-category-bg milk-bg">
-                      <div class="typeOf-Products">
-                          <div class="product-img-text">
-                              <img src="images/product-category/Vector (2).png" alt="image"/>
-                              <p class="pro-text">Dairy & Milk</p>
-                              <p class="items">48 Items</p>
-                          </div>
-                          <div class="off-sec">
-                              <p>10%</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class=" col-6 col-sm-6  col-md-4 col-lg-2">
-                  <div class="pro-category-bg snack-bg">
-                      <div class="typeOf-Products">
-                          <div class="product-img-text">
-                              <img src="images/product-category/Icon (1).png" alt="image"/>
-                              <p class="pro-text">Snack & Spice</p>
-                              <p class="items">59 Items</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class=" col-6 col-sm-6  col-md-4 col-lg-2">
-                  <div class="pro-category-bg juice-bg">
-                      <div class="typeOf-Products">
-                          <div class="product-img-text">
-                              <img src="images/product-category/Vector (3).png" alt="image"/>
-                              <p class="pro-text">Juice & Drinks</p>
-                              <p class="items">845 Items</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-   </section>
-  <!-- product category end -->
 
     <!-- categorys & product -->
     <section class="categorys">
@@ -456,7 +373,7 @@
                       </label>
                     </div>
                     <div class="different-category-wear">
-                      <label for="unisex">
+                      <label for="tuber">
                         <input type="checkbox" id="tuber" />
                         <svg class="tuber-icon">
                           <use href="assets/icons.svg#tubericon"></use>
@@ -465,7 +382,7 @@
                       </label>
                     </div>
                     <div class="different-category-wear">
-                      <label for="unisex">
+                      <label for="vegetable">
                         <input type="checkbox" id="vegetable" />
                         <svg class="fruit-icon vegetable-icon">
                           <use href="assets/icons.svg#vegetableicon"></use>
@@ -474,7 +391,7 @@
                       </label>
                     </div>
                     <div class="different-category-wear">
-                      <label for="unisex">
+                      <label for="snack">
                         <input type="checkbox" id="snack" />
                         <svg class="fruit-icon snack-icon">
                           <use href="assets/icons.svg#snackicon"></use>
@@ -492,7 +409,7 @@
                       </label>
                     </div>
                     <div class="different-category-wear">
-                      <label for="unisex">
+                      <label for="jewellery">
                         <input type="checkbox" id="jewellery" />
                         <svg class="fruit-icon jewellery-icon">
                           <use href="assets/icons.svg#jewelleryicon"></use>
@@ -531,52 +448,52 @@
                 <div class="garments-type">
                   <div class="clothes-sec brand-sec">
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="twokg">
+                        <input type="checkbox" class="twokg" />
                         <p class="wear-txt">2kg</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="tenkg">
+                        <input type="checkbox" class="tenkg" />
                         <p class="wear-txt">10kg</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="onekg">
+                        <input type="checkbox" class="onekg" />
                         <p class="wear-txt">1kg</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="twopic">
+                        <input type="checkbox" class="twopic" />
                         <p class="wear-txt">2pack</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="fivehundredGrame">
+                        <input type="checkbox" class="fivehundredGrame" />
                         <p class="wear-txt">500g</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="hundredGrame">
+                        <input type="checkbox" class="hundredGrame" />
                         <p class="wear-txt">100g</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="threePic">
+                        <input type="checkbox" class="threePic" />
                         <p class="wear-txt">3pcs</p>
-                      </div>
+                      </label>
                     </div>
                     <div class="different-category-wear">
-                      <div class="check-wear">
-                        <input type="checkbox" class="checkbox" />
+                      <label class="twopacket">
+                        <input type="checkbox" class="twopacket" />
                         <p class="wear-txt">2pack</p>
-                      </div>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -714,436 +631,619 @@
           </div>
         </div>
       </div>
-      <div class="different-type-category">
-        <!-- short by -->
-        <div class="short-by">
-          <div class="short-icon">
-            <div class="icon-bg">
-              <svg class="categoryicon">
-                <use href="assets/icons.svg#category"></use>
-              </svg>
+      <div class="pro-page-product-sec">
+            <div class="product-images-details-rate">
+              <div id="main-container">
+                <div class="main-image">
+                    <img id="displayedImage" src="image1.jpg" alt="Displayed Image">
+                </div>
+                <div class="image-slider">
+                    <button id="prevBtn" class="sliderBtn"> 
+                      <svg class="prevBtn-Icon"> <use href="assets/icons.svg#prevBtnIcon"></use> </svg>
+                    </button>
+                    <div class="thumbnail-container">
+                        <div class="border-frame"></div>
+                        <img class="thumbnail" src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="Image 1">
+                        <img class="thumbnail" src="images/day-of-the-deal/Dried Fruits2.png" alt="Image 2">
+                        <img class="thumbnail" src="images/day-of-the-deal/Cookies.png" alt="Image 3">
+                        <img class="thumbnail" src="images/day-of-the-deal/foods2.png" alt="Image 4">
+                    </div>
+                    <button id="nextBtn" class="sliderBtn">
+                      <svg class="nextArrow-icon"> <use href="assets/icons.svg#nextArrowIcon"></use> </svg>
+                    </button>
+                </div>
+              </div>
+              <div id="product-rate-details">
+                <div class="product-heading">
+                        <h4 class="pro-head-txt">Potato Chips 52g, American Cream & Onion Flavour, Crunchy Chips & Snacks.</h4>
+                </div>
+                <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <p class="count-of-rating">I 992 Ratings</p>
+                </div>
+                <div class="rate-stock-check">
+                        <div class="rate-sec">
+                            <div class="orginal-amount">
+                                <span class="main-price">$664.00</span> <span class="discount-price">-78%</span>
+                            </div>
+                            <div class="before-amount">
+                                <p class="before-price">M.R.P. : $2,999.00</p>
+                                <div id="crash-line"></div>
+                            </div>
+                        </div>
+                        <div class="stock-sec">
+                            <p class="pro-number">SKU#: WH12</p>
+                            <p class="avaible">IN STOCK</p>
+                        </div>
+                </div>
+                <p class="pro-small-detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1990.</p>
+                <ul class="pro-detail-list">
+                        <li><span>Closure :</span> Hook & Loop</li>
+                        <li><span>Sole :</span> Polyvinyl Chloride</li>
+                        <li><span>Width :</span> Medium</li>
+                        <li><span>Outer Material :</span>  A-Grade Standard Quality</li>
+                </ul>
+                <div class="net-weight">
+                        <p>Weight</p>
+                        <button class="small-packet-active">250g</button>
+                        <button>500g</button>
+                        <button>1kg</button>
+                        <button>2kg</button>
+                </div>
+                <div class="add-card-sec">
+                      <div class="number-increse">
+                        <button type="menu">-</button>
+                        <p>1</p>
+                        <button type="menu">+</button>
+                      </div>
+                      <div class="add-card-btn">
+                        <button type="button"> Add to card</button>
+                      </div>
+                      <i class="fas fa-heart"></i>
+                      <i class="far fa-eye"></i>
+                </div>
+              </div>
             </div>
-            <svg class="barIcon"> 
-              <use href="assets/icons.svg#baricon"></use>
-            </svg>
-          </div>
-          <div class="short-by-txt-sec">
-            <p class="short-by-txt">Sort by</p>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-        </div>
-        <!-- new arrival -->
-        <section class="new-arrival left-sidebar-new-arrival">
-          <!-- <div class=""> -->
-            <div class="day-of-deal-img-sec">
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Dried Fruits.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale">
-                    <p>SALE</p>
+            <div class="pro-reating-sec">
+              <div class="img-reating">
+                <div class="rating-product-img">
+                  <img src="images/reating-product/8_1.jpg.png" alt="image" width="60" />
+                </div>
+                <div class="product-reating-txt">
+                  <p>Honey Spiced Nuts</p>
+                  <div class="product-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star dont-reating"></i>
+                    <i class="fa-solid fa-star dont-reating"></i>
+                  </div>
+                  <div class="rate">
+                    <p class="currect-rate"><b>$32.00</b></p>
+                    <p class="dis-rate">$55.00</p><div class="rate-line"></div>
                   </div>
                 </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Dried Fruits</p>
-                  <p class="nuts-txt">Mixed Nuts Berries Pack</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>2kg</p>
-                    </div>
+              </div>
+              <div class="img-reating">
+                <div class="rating-product-img">
+                  <img src="images/reating-product/2_1.jpg.png" alt="image" width="60" />
+                </div>
+                <div class="product-reating-txt">
+                  <p>Dates Value Pouch</p>
+                  <div class="product-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                   </div>
                   <div class="rate">
                     <p class="currect-rate"><b>$56.00</b></p>
-                    <p class="dis-rate">$45.00</p>
-                    
+                    <p class="dis-rate">$60.00</p><div class="rate-line"></div>
                   </div>
                 </div>
               </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Cookies.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale">
-                    <p>SALE</p>
-                  </div>
+              <div class="img-reating">
+                <div class="rating-product-img">
+                  <img src="images/reating-product/5_1.jpg.png" alt="image" width="60" />
                 </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Cookies</p>
-                  <p class="nuts-txt">Multi Grain Combo Cookies</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>10kg</p>
-                    </div>
+                <div class="product-reating-txt">
+                  <p>Graps Mix Snack</p>
+                  <div class="product-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star dont-reating"></i>
+                    <i class="fa-solid fa-star dont-reating"></i>
+                    <i class="fa-solid fa-star dont-reating"></i>
                   </div>
                   <div class="rate">
-                    <p class="currect-rate"><b>$30.00</b></p>
-                    <p class="dis-rate">$25.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Dried Fruits2.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale">
-                    <p>SALE</p>
-                  </div>
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Dried Fruit</p>
-                  <p class="nuts-txt">Dates Value Fresh Pouch</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>1kg</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$85.00</b></p>
-                    <p class="dis-rate">$78.00</p>
-                    
+                    <p class="currect-rate"><b>$28.00</b></p>
+                    <p class="dis-rate">$35.00</p><div class="rate-line"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="day-of-deal-img-sec  new-arrival-img">
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/foods2.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale new">
-                    <p>NEW</p>
-                  </div>
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Foods</p>
-                  <p class="nuts-txt">Stick Fiber Masala Magic</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>2pack</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$50.00</b></p>
-                    <p class="dis-rate">$45.00</p>
-                    
-                  </div>
-                </div>
+            <div class="detail-review-etc-btns-txt">
+              <div class="detail-review-etc-btns">
+                <button type="button" class="active">Detail</button>
+                <button type="button">Specifications</button>
+                <button type="button">Vendor</button>
+                <button type="button">Reviews</button>
               </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Link → 24_1.jpg.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale new">
-                    <p>NEW</p>
-                  </div>
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Fresh Fruit</p>
-                  <p class="nuts-txt">Natural Hub Cherry Karonda</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>2kg</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$65.00</b></p>
-                    <p class="dis-rate">$49.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/foods.png"
-                    alt="image"
-                    height="100"
-                  />
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Foods</p>
-                  <p class="nuts-txt">Fresh Mango juice pack</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>1kg</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$21.00</b></p>
-                    <p class="dis-rate">$20.00</p>
-                    
-                  </div>
-                </div>
+              <div class="details-txt">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <ul class="pro-detail-list">
+                  <li>Any Product types that You want - Simple, Configurable</li>
+                  <li>Downloadable/Digital Products, Virtual Products</li>
+                  <li>Inventory Management with Backordered items</li>
+                  <li>Flatlock seams throughout.</li>
+                </ul>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
               </div>
             </div>
-            <div class="day-of-deal-img-sec  new-arrival-img">
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Link → 17_1.jpg.png"
-                    alt="image"
-                    height="100"
-                  />
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Tuber root</p>
-                  <p class="nuts-txt">Fresh Organic Ginger Pack</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>500g</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$3.00</b></p>
-                    <p class="dis-rate">$2.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Link → 4_1.jpg.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale new">
-                    <p>NEW</p>
-                  </div>
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Foods</p>
-                  <p class="nuts-txt">Natural Hub Cherry Karonda</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>1kg</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$65.00</b></p>
-                    <p class="dis-rate">$49.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Link → 25_1.jpg.png"
-                    alt="image"
-                    height="100"
-                  />
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Fresh Fruit</p>
-                  <p class="nuts-txt">Fresh Mango juice pack</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>2kg</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$21.00</b></p>
-                    <p class="dis-rate">$20.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="day-of-deal-img-sec  new-arrival-img">
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/vegetable.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale new">
-                    <p>NEW</p>
-                  </div>
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Foods</p>
-                  <p class="nuts-txt">Natural Hub Cherry Karonda</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>2pcs</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$8.00</b></p>
-                    <p class="dis-rate">$6.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/Link → 17_1.jpg.png"
-                    alt="image"
-                    height="100"
-                  />
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Tuber root</p>
-                  <p class="nuts-txt">Fresh Organic Ginger Pack</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>500g</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$3.00</b></p>
-                    <p class="dis-rate">$2.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="deal-img-sec left-sidebar-deal-img-sec">
-                <div class="deal-up-imge left-sidebar-deal-image">
-                  <img
-                    src="images/day-of-the-deal/22_1.jpg.png"
-                    alt="image"
-                    height="100"
-                  />
-                  <div class="sale new">
-                    <p>NEW</p>
-                  </div>
-                </div>
-                <div class="deal-text-sec">
-                  <p class="product-name">Fresh Fruit</p>
-                  <p class="nuts-txt">Kamalam Fruit</p>
-                  <div class="stars product-quentity">
-                    <div class="product-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star dont-reating"></i>
-                    </div>
-                    <div class="quentity">
-                      <p>3pcs</p>
-                    </div>
-                  </div>
-                  <div class="rate">
-                    <p class="currect-rate"><b>$17.00</b></p>
-                    <p class="dis-rate">$15.00</p>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          <!-- </div> -->
-        </section>
-
-        <div class="showing-item-next-btn">
-          <div class="showing">Showing 1-12 of 17 item(s)</div>
-          <div class="buttons-sec">
-            <button type="button" id="pre-btn">Prev</button>
-            <button type="button" id="pre-btn">1</button>
-            <button type="button" id="pre-btn">2</button>
-            <button type="button" id="next-btn">Next</button>
-          </div>
-        </div>
       </div>
     </section>
 
-     <!-- footer -->
-     <section class="footer-sec">
+    <!-- new arrival -->
+    <section class="new-arrival">
+      <div class="day-of-deal-up-sec related-product-heading">
+          <div class="up-text-sec">
+              <p class="day-of-deal-text"><b>Related</b> <span class="deal-txt"><b>Products</b></span></p>
+              <p class="suggetion-text">Browse The Collection of Top Products</p>
+          </div>
+      </div>
+      <div class="day-of-deal-img-sec">
+        <div class="deal-img-sec product-grid8 product-grid9">
+            <div class="deal-up-imge">
+                <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
+                <div class="sale">
+                    <p>SALE</p>
+                </div>
+                <ul class="social">
+                    <li><a href="" class="fa fa-search"></a></li>
+                    <li><a href="" class="fa fa-shopping-bag"></a></li>
+                    <li><a href="" class="fa fa-shopping-cart"></a></li>
+                </ul>
+            </div>
+            <div class="deal-text-sec">
+                <p class="product-name">Dried Fruits</p>
+                <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                <div class="stars product-quentity">
+                    <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                    </div>
+                </div>
+                <div class="rate">
+                    <p class="currect-rate"><b>$56.00</b></p>
+                    <p class="dis-rate">$45.00</p>
+                </div>
+                <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+            </div>
+        </div>
+        <div class="deal-img-sec product-grid8 product-grid9">
+            <div class="deal-up-imge">
+                <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
+                <div class="sale">
+                    <p>SALE</p>
+                </div>
+                <ul class="social">
+                    <li><a href="" class="fa fa-search"></a></li>
+                    <li><a href="" class="fa fa-shopping-bag"></a></li>
+                    <li><a href="" class="fa fa-shopping-cart"></a></li>
+                </ul>
+            </div>
+            <div class="deal-text-sec">
+                <p class="product-name">Cookies</p>
+                <p class="nuts-txt">Multi Grain Combo Cookies</p>
+                <div class="stars product-quentity">
+                    <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                    </div>
+                    <div class="quentity">
+                        <p>10kg</p>
+                    </div>
+                </div>
+                <div class="rate">
+                    <p class="currect-rate"><b>$30.00</b></p>
+                    <p class="dis-rate">$25.00</p>
+                </div>
+                <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+            </div>
+        </div>
+        <div class="deal-img-sec product-grid8 product-grid9">
+            <div class="deal-up-imge">
+                <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                <ul class="social">
+                    <li><a href="" class="fa fa-search"></a></li>
+                    <li><a href="" class="fa fa-shopping-bag"></a></li>
+                    <li><a href="" class="fa fa-shopping-cart"></a></li>
+                </ul>
+            </div>
+            <div class="deal-text-sec">
+                <p class="product-name">Foods</p>
+                <p class="nuts-txt">Fresh Mango juice pack</p>
+                <div class="stars product-quentity">
+                    <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                    </div>
+                </div>
+                <div class="rate">
+                    <p class="currect-rate"><b>$65.00</b></p>
+                    <p class="dis-rate">$46.00</p>
+                </div>
+                <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+            </div>
+        </div>
+        <div class="deal-img-sec product-grid8 product-grid9">
+            <div class="deal-up-imge">
+                <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
+                <div class="sale">
+                    <p>SALE</p>
+                </div>
+                <ul class="social">
+                    <li><a href="" class="fa fa-search"></a></li>
+                    <li><a href="" class="fa fa-shopping-bag"></a></li>
+                    <li><a href="" class="fa fa-shopping-cart"></a></li>
+                </ul>
+            </div>
+            <div class="deal-text-sec">
+                <p class="product-name">Dried Fruits</p>
+                <p class="nuts-txt">Dates Value Fresh Pouch</p>
+                <div class="stars product-quentity">
+                    <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                    </div>
+                </div>
+                <div class="rate">
+                    <p class="currect-rate"><b>$85.00</b></p>
+                    <p class="dis-rate">$78.00</p>
+                </div>
+                <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+            </div>
+        </div>
+        <div class="deal-img-sec product-grid8 product-grid9">
+            <div class="deal-up-imge">
+                <img src="images/day-of-the-deal/foods2.png" alt="image"/>
+                <div class="sale new">
+                    <p>NEW</p>
+                </div>
+                <ul class="social">
+                    <li><a href="" class="fa fa-search"></a></li>
+                    <li><a href="" class="fa fa-shopping-bag"></a></li>
+                    <li><a href="" class="fa fa-shopping-cart"></a></li>
+                </ul>
+            </div>
+            <div class="deal-text-sec">
+                <p class="product-name">Dried Fruits</p>
+                <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                <div class="stars product-quentity">
+                    <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                        <i class="fa-solid fa-star dont-reating"></i>
+                    </div>
+                    <div class="quentity">
+                        <p>2pack</p>
+                    </div>
+                </div>
+                <div class="rate">
+                    <p class="currect-rate"><b>$50.00</b></p>
+                    <p class="dis-rate">$45.00</p>
+                </div>
+                <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper day-of-deal-imges-sec">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide day-of-deal-part-img day-of-deal-first-img" >
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Link → 24_1.jpg.png" alt="image" height="100"/>
+                    <div class="sale new">
+                        <p>NEW</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Fresh Fruit</p>
+                    <p class="nuts-txt">Natural Hub Cherry Karonda</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$65.00</b></p>
+                        <p class="dis-rate">$49.00</p>
+                    </div>
+                    <a class="add-to-cart" href="product-full-widht.html">SEE ALL DETAILS</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Foods</p>
+                    <p class="nuts-txt">Fresh Mango juice pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$21.00</b></p>
+                        <p class="dis-rate">$20.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec product-grid8 product-grid9">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Link → 17_1.jpg.png" alt="image" height="100"/>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Tuber root</p>
+                    <p class="nuts-txt">Fresh Organic Ginger Pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$3.00</b></p>
+                        <p class="dis-rate">$2.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="image" height="100"/>
+                    <div class="sale new">
+                        <p>NEW</p>
+                    </div>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Foods</p>
+                    <p class="nuts-txt">Natural Hub Cherry Karonda</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$65.00</b></p>
+                        <p class="dis-rate">$49.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Link → 25_1.jpg.png" alt="image" height="100"/>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Fresh Fruit</p>
+                    <p class="nuts-txt">Fresh Mango juice pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$21.00</b></p>
+                        <p class="dis-rate">$20.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Dried Fruits.png" alt="image" height="100"/>
+                    <div class="sale">
+                        <p>SALE</p>
+                    </div>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Dried Fruits</p>
+                    <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$56.00</b></p>
+                        <p class="dis-rate">$45.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Cookies.png" alt="image" height="100"/>
+                    <div class="sale">
+                        <p>SALE</p>
+                    </div>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Cookies</p>
+                    <p class="nuts-txt">Multi Grain Combo Cookies</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                        <div class="quentity">
+                            <p>10kg</p>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$30.00</b></p>
+                        <p class="dis-rate">$25.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/foods.png" alt="image" height="100"/>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Foods</p>
+                    <p class="nuts-txt">Fresh Mango juice pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$65.00</b></p>
+                        <p class="dis-rate">$46.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/Dried Fruits2.png" alt="image" height="100"/>
+                    <div class="sale">
+                        <p>SALE</p>
+                    </div>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Dried Fruits</p>
+                    <p class="nuts-txt">Dates Value Fresh Pouch</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$85.00</b></p>
+                        <p class="dis-rate">$78.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide day-of-deal-part-img">
+            <div class="deal-img-sec">
+                <div class="deal-up-imge">
+                    <img src="images/day-of-the-deal/foods2.png" alt="image"/>
+                    <div class="sale new">
+                        <p>NEW</p>
+                    </div>
+                </div>
+                <div class="deal-text-sec">
+                    <p class="product-name">Dried Fruits</p>
+                    <p class="nuts-txt">Mixed Nuts Berries Pack</p>
+                    <div class="stars product-quentity">
+                        <div class="product-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                            <i class="fa-solid fa-star dont-reating"></i>
+                        </div>
+                        <div class="quentity">
+                            <p>2pack</p>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <p class="currect-rate"><b>$50.00</b></p>
+                        <p class="dis-rate">$45.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev "></div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer-sec">
       <div class="container">
           <div class="row">
               <div class="col-12 col-lg col-md-4">
@@ -1247,26 +1347,25 @@
       
       
       
-  </section>
-  <section class="copyright-sec">
-      <div class="copy-right-text">
-          <p>Copyright © <span>Grabit</span>all rights reserved. Powered by Grabit.</p>
-      </div>
-      <div class="payment">
-          <img src="images/payment.png.png" alt="image" height="30" />
-      </div>
-  </section>
-
-    <!-- main js -->
-    <script src="js/script.js"></script>
-
-    <!-- left-sidebar js -->
-     <script src="js/left-sidebar.js"></script>
+    </section>
+    <section class="copyright-sec">
+        <div class="copy-right-text">
+            <p>Copyright © <span>Grabit</span>all rights reserved. Powered by Grabit.</p>
+        </div>
+        <div class="payment">
+            <img src="images/payment.png.png" alt="image" height="30" />
+        </div>
+    </section>
 
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- jquery js -->
-     <script src="js/jquery-3.7.1.slim.min.js"></script>
-  </body>
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- main js -->
+    <script src="js/script.js"></script>
+
+    <!-- product-left-slider JS -->
+     <script src="js/product-left-slider.js"></script>
+</body>
 </html>

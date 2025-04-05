@@ -15,14 +15,14 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css"/>
 
-    <!-- left-sidebar css -->
-    <link rel="stylesheet" href="css/left-sidebar.css"/>
+    <!-- shop page css -->
+    <link rel="stylesheet" href="css/shop-page.css"/>
 
     <!-- cart Css -->
      <link rel="stylesheet" href="css/cart.css"/>
 
-    <!-- product-left-slider Css -->
-    <link rel="stylesheet" href="css/product-left-slider.css">
+    <!-- product-page Css -->
+    <link rel="stylesheet" href="css/product-page.css">
 
     <!-- watchlist Css -->
     <link rel="stylesheet" href="css/wishlist.css">
@@ -30,7 +30,7 @@
 </head>
 <body>
     <!-- navber start -->
-    <nav class="navber">
+    <header class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -110,6 +110,7 @@
                     <svg class="cart-icon">
                         <use href="assets/icons.svg#carticon"></use>
                     </svg>
+                    <span class="cartItem-count"></span>
                     <div class="log-watch-cart">
                         <a href="cart.html" class="ac-watch-cart-text">Cart</a>
                         <a href="cart.html" class="log-item">3-items</a>
@@ -120,7 +121,7 @@
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <div class="nav-menu-sec">
+        <nav class="nav-menu-sec">
             <div class="categories" id="categori-sec">
                 <svg class="categoryicon">
                     <use href="assets/icons.svg#category"></use>
@@ -143,10 +144,10 @@
                         <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="nav-menu-categori-list">
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Jens</a>
+                                <a href="garment&beautyproduct.html" class="items">garment & beautyproduct</a>
                             </li>
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Beauty Product</a>
+                                <a href="garments.html" class="items">garments</a>
                             </li>
                             <li class="nav-categori-items">
                                 <a href="#" class="items">Appliance</a>
@@ -182,11 +183,21 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="nave-menu-blogList-sec">
                         <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="navMenuBlogList">
+                            <li class="blogItems"><a href="blog.html">Blog</a></li>
+                            <li class="blogItems"><a href="blog-details.html">Blog details</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="pages-sec">
                         <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="pages">
+                            <li class="pages-List"><a href="shop-page.html">Shop Page</a></li>
+                            <li class="pages-List"><a href="product-page.html">Product Page</a></li>
+                            <li class="pages-List"><a href="compare.html">Product compare</a></li>
+                            <li class="pages-List"><a href="about-us.html">About us</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="offer-sec">
@@ -212,7 +223,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <div class="logo">
@@ -292,7 +303,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+     </header>
     <div class="shop-page">
         <a href="#" class="shop">Cart</a>
         <div class="home-shop">
@@ -349,26 +360,32 @@
                 <p>$194.40</p>
             </div>
         </div>
-        <div class="table-sec">
-            <table class="table">
+        <div class="table-sec cart-sec">
+            <!-- <table class="table cart-box">
                 <thead>
                     <tr>
-                        <th class="table-head">ID</th>
                         <th class="table-head">Image</th>
                         <th class="table-head">Name</th>
-                        <th class="table-head">Date</th>
                         <th class="table-head">Price</th>
+                        <th class="table-head">Quantity</th>
+                        <th class="table-head">Total</th>
                         <th class="table-head">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="sl-no">1</td>
                         <td>
                             <img src="images/watchlist-img/wallate.png" alt="image" width="50"/>
                         </td>
                         <td class="product-name">Women's wallet Hand Purse</td>
-                        <td class="product-date">22/01/2025</td>
+                        <td class="dalar">$70</td>
+                        <td class="cart-quantity">
+                            <div class="quantity-sec">
+                                <button class="decrement">-</button>
+                                <span class="number">1</span>
+                                <button class="increment">+</button>
+                            </div>
+                        </td>
                         <td class="dalar">$70</td>
                         <td>
                             <div class="cross-btn">
@@ -378,12 +395,18 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="sl-no">2</td>
                         <td>
                             <img src="images/watchlist-img/53_1.jpg (1).png" alt="image" width="50"/>
                         </td>
                         <td class="product-name">Rose Gold Earring</td>
-                        <td class="product-date">22/01/2025</td>
+                        <td class="dalar">$80</td>
+                        <td class="cart-quantity">
+                            <div class="quantity-sec">
+                                <button class="decrement">-</button>
+                                <span class="number">1</span>
+                                <button class="increment">+</button>
+                            </div>
+                        </td>
                         <td class="dalar">$80</td>
                         <td>
                             <div class="cross-btn">
@@ -393,12 +416,18 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="sl-no">3</td>
                         <td>
                             <img src="images/watchlist-img/21_1.jpg (1).png" alt="image" width="50"/>
                         </td>
                         <td class="product-name">Apple</td>
-                        <td class="product-date">22/01/2025</td>
+                        <td class="dalar">$12</td>
+                        <td class="cart-quantity">
+                            <div class="quantity-sec">
+                                <button class="decrement">-</button>
+                                <span class="number">1</span>
+                                <button class="increment">+</button>
+                            </div>
+                        </td>
                         <td class="dalar">$12</td>
                         <td>
                             <div class="cross-btn">
@@ -408,10 +437,14 @@
                         </td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
             <div class="shopping-check-out-btn">
                 <a href="#">Continue Shopping</a>
-                <button type="button">Check out</button>
+                <button type="button" class="checkOut"> <a href="checkout.html">Check out</a> </button>
             </div>
         </div>
     </div>
@@ -988,7 +1021,11 @@
 
     <!-- swipper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
      <!-- main js -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+    <!-- cart js -->
+     <script src="js/cart.js"></script>
 </body>
 </html>

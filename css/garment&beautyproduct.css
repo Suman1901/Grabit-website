@@ -41,8 +41,11 @@ input[type="checkbox"]{
 .different-category-wear label input{
     margin-right: 8px;
 }
+.different-category-wear label{
+    display: flex;
+}
 .accordion{
-    width: 20vw;
+    width: 20%;
 }
 .category .category-text{
     display: flex;
@@ -63,25 +66,20 @@ input[type="checkbox"]{
 }
 .clothes-sec .different-category-wear{
     display: flex;
-    margin-top: 15px;
     justify-content: space-between;
     color: #777777;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.clothes-sec .different-category-wear:hover{
+    background: #dee6ff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
 }
 .foot-wear-sec,.accessories-sec{
     margin-top: 20px;
 }
-.check-wear{
-    display: flex;
-}
-.check-wear .wear-txt{
-    color: #777777;
-    font-weight: 400;
-    text-transform: capitalize;
-    padding-left: 10px;
-}
-.check-wear .uqantity{
-    color: #777777;
-}
+
 .tag-sec button{
     background: #516EBF;
     padding: 4px 5px;
@@ -135,21 +133,22 @@ input[type="checkbox"]{
 .typeOf-Products .fachion-dis-pro{
     background: #516EBF !important;
 }
-.product-categorys{
-    padding: 0;
-}
+
 .fashion-category-row{
     justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
     
 }
-.product-categorys .pro-category-bg{
-    width: 12vw;
+.product-categorys{
+    padding: 0;
 }
 
 
 /* ===new-arrival==== */
+.day-of-deal-img-sec .deal-img-sec{
+    width: 23%;
+}
 .fashion-new-arrival{
     padding: 0 !important;
     margin-top: 60px;
@@ -268,6 +267,9 @@ input[type="checkbox"]{
 
 .fashion-top-product-sec{
     padding: 0 !important;
+}
+.top-pro-list{
+    width: 31%;
 }
 .fashion-top-product-arrow{
     color: #5CAF90 !important;
@@ -478,9 +480,6 @@ input[type="checkbox"]{
 
 
     /* ===footer=== */
-    .footer-sec .logo{
-        width: 10vw;
-    }
     .contact-site img{
         height: 20px;
     }

@@ -33,7 +33,8 @@
 
 /* ===product category=== */
 .product-categorys{
-    padding: 20px 5%;
+    margin-top: 40px;
+    padding: 0 5%;
 }
 
 /* ===categorys & product=== */
@@ -45,7 +46,7 @@
     height: 18px;
     border-radius: 50%;
     background: #C4D6F9;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 .color-sec{
     display: flex;
@@ -162,11 +163,11 @@
 }
 .shop-page{
     display: flex;
-    width: 89vw;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
     border: 1px solid #dddd;
-    padding: 15px;
+    padding: 13% 25px 15px;
     border-radius: 0 0 5px 5px;
 }
 .shop-page .shop{
@@ -283,7 +284,7 @@
     }
     /* ===categorys & product === */
     .accordion{
-        width: 55vw;
+        width: 60%;
         margin: auto;
     }
     .different-type-category{
@@ -339,9 +340,6 @@
 
 
     /* ===footer=== */
-    .footer-sec .logo{
-        width: 10vw;
-    }
     .contact-site img{
         height: 20px;
     }

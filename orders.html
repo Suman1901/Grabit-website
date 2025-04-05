@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -13,8 +16,8 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css"/>
 
-    <!-- left-sidebar css -->
-    <link rel="stylesheet" href="css/left-sidebar.css"/>
+    <!-- shop page css -->
+    <link rel="stylesheet" href="css/shop-page.css"/>
 
     <!-- watchlist Css -->
     <link rel="stylesheet" href="css/wishlist.css"/>
@@ -25,7 +28,7 @@
 </head>
 <body>
     <!-- navber start -->
-    <nav class="navber">
+    <div class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -115,7 +118,7 @@
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <div class="nav-menu-sec">
+        <nav class="nav-menu-sec">
             <div class="categories" id="categori-sec">
                 <svg class="categoryicon">
                     <use href="assets/icons.svg#category"></use>
@@ -138,10 +141,10 @@
                         <a href="#Categories" class="nav-link">Categories <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="nav-menu-categori-list">
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Jens</a>
+                                <a href="garment&beautyproduct.html" class="items">garment & beautyproduct</a>
                             </li>
                             <li class="nav-categori-items">
-                                <a href="#" class="items">Beauty Product</a>
+                                <a href="garments.html" class="items">garments</a>
                             </li>
                             <li class="nav-categori-items">
                                 <a href="#" class="items">Appliance</a>
@@ -177,11 +180,21 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="nave-menu-blogList-sec">
                         <a href="blog.html" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="navMenuBlogList">
+                            <li class="blogItems"><a href="blog.html">Blog</a></li>
+                            <li class="blogItems"><a href="blog-details.html">Blog details</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="pages-sec">
                         <a href="#Pages" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <ul id="pages">
+                            <li class="pages-List"><a href="shop-page.html">Shop Page</a></li>
+                            <li class="pages-List"><a href="product-page.html">Product Page</a></li>
+                            <li class="pages-List"><a href="compare.html">Product compare</a></li>
+                            <li class="pages-List"><a href="about-us.html">About us</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="offer-sec">
@@ -207,7 +220,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"        aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <div class="logo">
@@ -287,7 +300,7 @@
                 </div>
             </div>
         </div>
-     </nav>
+    </div>
     <div class="shop-page">
         <a href="#" class="shop">My Orders</a>
         <div class="home-shop">

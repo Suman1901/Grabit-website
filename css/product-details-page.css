@@ -17,6 +17,37 @@
 .product-full-img-reating{
     width: 28vw;
 }
+
+.product-images-details-rate #product-rate-details{
+    width: 60%;
+}
+
+
+
+@media screen and (min-width:1025px) and (max-width:1366px) {
+
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}
+@media screen and (min-width:540px) and (max-width:767px) {
+  .pro-page-product-sec .product-images-details-rate{
+    flex-direction: column;
+  }
+  #main-container{
+    width: 80%;
+    margin: auto;
+  }
+  .product-images-details-rate #product-rate-details{
+    width: auto;
+    margin-top: 30px;
+  }
+  #product-rate-details .add-card-sec{
+    width: 55%;
+  }
+
+
+}
 @media screen and (min-width:320px) and (max-width:539px) {
     .pro-page-product-sec{
         margin-top: 0;
@@ -25,14 +56,14 @@
         margin: 20px 0;
         width: auto;
     }
-    .product-images-details-rate #product-images-sec{
-        width: auto;
+    #main-container{
+      width: 100%;
     }
     .chips-img img{
         width: auto;
     }
     #product-rate-details .add-card-sec{
-        width: auto;
+        width: 70%;
     }
     .pro-reating-sec{
         margin-top: 0;
