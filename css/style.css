@@ -1153,6 +1153,7 @@ dl, ol, ul{
 .arrow{
     position: relative;
     width: 70px;
+    z-index: 0;
 }
 .arrow #left-arrow{
     rotate: 87deg;
@@ -1436,6 +1437,10 @@ ul .defarance-category{
         top: 19%;
         width: 33%;
     }
+    /* ===banner=== */
+    .banner{
+        padding: 18% 5% 40px;
+    }
 
     /* ===product watching sec=== */
     .product-img-text .pro-text{
@@ -1569,7 +1574,7 @@ ul .defarance-category{
 
     /* === banner=== */
     .banner{
-        padding: 20px 5%;
+        padding: 18% 5% 35px;
     }
     .explore-fresh-juice{
         width: 40%;
@@ -1694,9 +1699,6 @@ ul .defarance-category{
     .top-pro-head-txt .treding{
         font-size: 16px;
         line-height: 18px;
-    }
-    .arrow{
-        width: 65%;
     }
     .nut-mix-txt-price .nut-mix-txt{
         font-size: 11px;
@@ -1862,11 +1864,14 @@ ul .defarance-category{
 
     /* ===banner=== */
     .banner{
-        padding: 25px 5%;
+        padding: 131px 5% 20px;
+    }
+    .explore-fresh-juice #shop-now {
+        margin-top: 10px;
     }
     .explore-fresh-juice{
         top: 7%;
-        width: 40%;
+        width: 47%;
         left: 4%;
     }
     .explore-fresh-juice #explore-juice{
@@ -2176,7 +2181,7 @@ ul .defarance-category{
 
     /* ===banner=== */
     .banner{
-        padding: 10px 5%;
+        padding: 67px 5% 10px;
     }
     .explore-fresh-juice{
         width: 40%;
@@ -2276,6 +2281,9 @@ ul .defarance-category{
     /* ===product watching sec=== */
     .flip-box-inner{
         height: 90%;
+    }
+    #team {
+        padding: 0 5%;
     }
 
     /* === top product=== */

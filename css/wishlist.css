@@ -38,8 +38,6 @@
 }
 .table{
     border: 1px solid #EEEEEE;
-    /* width: 89vw;
-    padding: 20px; */
 }
 table tr{
     border-bottom: 1px solid #EEEEEE;
@@ -111,8 +109,11 @@ tbody tr .stock-out{
         width: 100%;
         border: 1px solid #EEEEEE;
     }
+    .table-for-mobile tbody{
+        width: 100%;
+    }
     .wishlist-pro-img{
-        width: 20vw;
+        width: auto;
         margin: auto;
     }
     .product-name,.product-date,.dalar,.avaible{

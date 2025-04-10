@@ -18,14 +18,17 @@
     <!-- shop page css -->
     <link rel="stylesheet" href="css/shop-page.css"/>
 
+    <!-- checkOut Css -->
+    <link rel="stylesheet" href="css/checkout.css"/>
+
     <!-- cart Css -->
-     <link rel="stylesheet" href="css/cart.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
 
     <!-- product-page Css -->
-    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="stylesheet" href="css/product-page.css"/>
 
     <!-- watchlist Css -->
-    <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="stylesheet" href="css/wishlist.css"/>
 
 </head>
 <body>
@@ -315,53 +318,55 @@
     <!-- navber end -->
 
     <!-- shopping estimate cart-Items -->
-    <div class="shopping-estimate-card-items">
-        <div class="shopping-estimate">
-            <p class="shopping-summary">Summary</p>
-            <div class="estimate">
-                <p>Estimate Shipping</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="estimate-line"></div>
-            <p id="shopping-destination">Enter your destination to get a shipping estimate</p>
-            <div class="shopping-add">
-                <p class="country">Country *</p>
-                <div class="input-add">
-                    <input type="text" placeholder="Country"/> <i class="fa-solid fa-angle-down"></i>
+    <section class="product-summery-customer-checkout-sec">
+        <div class="shopping-estimate-card-items">
+            <div class="shopping-estimate">
+                <p class="shopping-summary">Summary</p>
+                <div class="estimate">
+                    <p>Estimate Shipping</p>
+                    <i class="fa-solid fa-angle-down"></i>
                 </div>
-            </div>
-            <div class="shopping-add">
-                <p class="country">State/Province</p>
-                <div class="input-add">
-                    <input type="text" placeholder="State/Province"/> <i class="fa-solid fa-angle-down"></i>
+                <div class="estimate-line"></div>
+                <p id="shopping-destination">Enter your destination to get a shipping estimate</p>
+                <div class="shopping-add">
+                    <p class="country">Country *</p>
+                    <div class="input-add">
+                        <input type="text" placeholder="Country"/> <i class="fa-solid fa-angle-down"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="shopping-add">
-                <p class="country">Zip/Postal Code</p>
-                <div class="input-add">
-                    <input type="text" placeholder="Zip/Postal Code"/> <i class="fa-solid fa-angle-down"></i>
+                <div class="shopping-add">
+                    <p class="country">State/Province</p>
+                    <div class="input-add">
+                        <input type="text" placeholder="State/Province"/> <i class="fa-solid fa-angle-down"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="amount" id="sub-total">
-                <p>Sub-Total</p>
-                <p class="price">$162.00</p>
-            </div>
-            <div class="amount" id="delivery-charge">
-                <p>Delivery Charges</p>
-                <p class="price">$32.40</p>
-            </div>
-            <div class="discount">
-                <p>Coupon Discount</p>
-                <a href="#">Apply Discount</a>
-            </div>
-            <div class="estimate-line"></div>
-            <div class="total-amount">
-                <p>Total Amount</p>
-                <p>$194.40</p>
+                <div class="shopping-add">
+                    <p class="country">Zip/Postal Code</p>
+                    <div class="input-add">
+                        <input type="text" placeholder="Zip/Postal Code"/> <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="amount" id="sub-total">
+                    <p>Sub-Total</p>
+                    <p class="price">$162.00</p>
+                </div>
+                <div class="amount" id="delivery-charge">
+                    <p>Delivery Charges</p>
+                    <p class="price">$32.40</p>
+                </div>
+                <div class="discount">
+                    <p>Coupon Discount</p>
+                    <a href="#">Apply Discount</a>
+                </div>
+                <div class="estimate-line"></div>
+                <div class="total-amount">
+                    <p>Total Amount</p>
+                    <p>$194.40</p>
+                </div>
             </div>
         </div>
         <div class="table-sec cart-sec">
-            <!-- <table class="table cart-box">
+            <table class="table cart-box">
                 <thead>
                     <tr>
                         <th class="table-head">Image</th>
@@ -437,7 +442,7 @@
                         </td>
                     </tr>
                 </tbody>
-            </table> -->
+            </table>
             <div class="total">
                 <div class="total-title">Total</div>
                 <div class="total-price">$0</div>
@@ -447,8 +452,7 @@
                 <button type="button" class="checkOut"> <a href="checkout.html">Check out</a> </button>
             </div>
         </div>
-    </div>
-
+    </section>
     <!-- new arrival -->
     <section class="new-arrival">
         <div class="day-of-deal-up-sec">

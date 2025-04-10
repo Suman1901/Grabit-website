@@ -128,13 +128,19 @@
     font-weight: bold;
 }
 
+/* ===categorys=== */
+
+.categorys{
+    padding: 40px 5%;
+}
+
 
 /* ===short-by==== */
 .different-type-category .short-by{
     display: flex;
 }
 .short-by .short-icon{
-    width: 80vw;
+    width: 80%;
     border: 1px solid #d1d1d1;
     padding: 5px;
     border-radius: 4px 0 0 4px;
@@ -150,7 +156,7 @@
     margin-right: 10px;
 }
 .short-by .short-by-txt-sec{
-    width: 20vw;
+    width: 20%;
     border: 1px solid #d1d1d1;
     padding: 5px;
     border-radius: 0 4px 4px 0;
@@ -200,7 +206,7 @@
     padding: 0 ;
 }
 .day-of-deal-img-sec .left-sidebar-deal-img-sec{
-    width: 22vw;
+    width: 32%;
 }
 
 .left-sidebar-deal-img-sec .left-sidebar-deal-image{
@@ -227,8 +233,11 @@
 }
 @media screen and (min-width:1025px) and (max-width:1366px){
     
-    .day-of-deal-img-sec .left-sidebar-deal-img-sec{
-        width: auto;
+    .shop-page{
+        padding: 175px 15px 10px;
+    }
+    .categorys {
+        padding: 40px 5%;
     }
     .day-of-deal-img-sec{
         padding: 0;
@@ -242,7 +251,6 @@
     .deal-text-sec .product-name{
         font-size: 15px;
         font-weight: 500;
-        /* margin-bottom: 0; */
     }
     .deal-text-sec .nuts-txt{
         font-size: 13px;
@@ -270,12 +278,15 @@
         right: 6px;
     }
     .day-of-deal-img-sec .left-sidebar-deal-img-sec {
-        width: 22vw;
+        width: 32%;
     }
      
 
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    .shop-page{
+        padding: 160px 12px 10px;
+    }
     .categorys{
         flex-direction: column;
     }
@@ -292,7 +303,7 @@
         margin: 30px auto 0;
     }
     .day-of-deal-img-sec .left-sidebar-deal-img-sec {
-        width: auto;
+        width: 32%;
         margin-bottom: 15px;
     }
     .new-arrival-img{
@@ -301,17 +312,17 @@
 
 }
 @media screen and (min-width:540px) and (max-width:767px){
+    .shop-page{
+        padding: 125px 13px 11px;
+    }
     .categorys{
         flex-direction: column;
     }
-    /* ===product category=== */
-    .product-categorys .pro-category-bg{
-        width: 30vw;
-    }
+
 
     /* ===categorys & product=== */
     .accordion{
-        width: 60vw;
+        width: 60%;
         margin: auto;
     }
 
@@ -327,11 +338,6 @@
     }
     .day-of-deal-img-sec .left-sidebar-deal-img-sec{
         width: 32%;
-        /* margin: 20px auto; */
-    }
-
-    .all-details .contact-site{
-        width: 30vw;
     }
     .different-type-category{
         width: 100%;
@@ -347,20 +353,20 @@
 
 }
 @media screen and (min-width:320px) and (max-width:539px){
+    .shop-page{
+        padding: 62px 10px 6px;
+    }
     /* ===categorys & product=== */
     .accordion{
         margin: auto;
     }
     /* ===short-by=== */
-    .short-by .short-icon{
-        width: 65vw;
-    }
     .short-by .short-by-txt-sec{
-        width: 25vw;
+        width: 25%;
     }
     /* ===new Arrival=== */
     .day-of-deal-img-sec .left-sidebar-deal-img-sec{
-        width: 80vw;
+        width: 65%;
     }
     .showing-item-next-btn .showing{
         font-size: 13px;

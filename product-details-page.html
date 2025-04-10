@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product-full-width</title>
+    <title>Product-details</title>
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -322,7 +322,9 @@
                         <img id="displayedImage" src="image1.jpg" alt="Displayed Image">
                     </div>
                     <div class="image-slider">
-                        <button id="prevBtn"> <i class="fas fa-arrow-left"></i> </button>
+                        <button id="prevBtn" class="sliderBtn"> 
+                          <svg class="prevBtn-Icon"> <use href="assets/icons.svg#prevBtnIcon"></use> </svg>
+                        </button>
                         <div class="thumbnail-container">
                             <div class="border-frame"></div>
                             <img class="thumbnail" src="images/day-of-the-deal/Link → 4_1.jpg.png" alt="Image 1">
@@ -330,7 +332,9 @@
                             <img class="thumbnail" src="images/day-of-the-deal/Cookies.png" alt="Image 3">
                             <img class="thumbnail" src="images/day-of-the-deal/foods2.png" alt="Image 4">
                         </div>
-                        <button id="nextBtn"> <i class="fas fa-arrow-right"></i> </button>
+                        <button id="nextBtn" class="sliderBtn">
+                          <svg class="nextArrow-icon"> <use href="assets/icons.svg#nextArrowIcon"></use> </svg>
+                        </button>
                     </div>
                 </div>
                 <div id="product-rate-details">

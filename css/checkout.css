@@ -1,18 +1,19 @@
-/* product-summery-customer-checkout-sec */
+/* ===product-summery-customer-checkout-sec=== */
 .product-summery-customer-checkout-sec{
     display: flex;
-}
-#checkout-pro-items{
-    flex-direction: column;
-    padding: 0;
-}
-.checkout-bg{
-    width: 30vw !important;
-    margin-right: 20px;
-}
-.product-summery-customer-checkout-sec{
     padding: 40px 5%;
+    justify-content: space-between;
+    width: auto;
 }
+.shopping-estimate-card-items{
+    background: #F8F8FB;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    flex-direction: column;
+    width: 29%;
+}
+
 .product-type{
     border: 1px solid #EEEEEE;
     padding: 10px;
@@ -51,7 +52,7 @@
     font-size: 15px;
 }
 .shopping-estimate #comment-box{
-    width: 26vw;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #EEEEEE;
@@ -95,7 +96,7 @@
 }
 .new-customer-checkout .checkout-options{
     display: flex;
-    width: 30vw;
+    width: 50%;
     justify-content: space-between;
     margin-top: 14px;
 }

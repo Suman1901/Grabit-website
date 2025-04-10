@@ -1,16 +1,6 @@
 /* ===shopping estimate cart-Items=== */
-.shopping-estimate-card-items{
-    padding: 40px 5%;
-    display: flex;
 
-}
-.shopping-estimate-card-items .shopping-estimate{
-    background: #F8F8FB;
-    padding: 15px;
-    width: 28vw;
-    border-radius: 5px;
-    border: 1px solid #EEEEEE;
-}
+
 .shopping-estimate .shopping-summary{
     color: #4B5966;
     font-size: 20px;
@@ -54,7 +44,7 @@
 .input-add input{
     border: none;
     background: none;
-    width: 24vw;
+    width: 100%;
 }
 .input-add input:focus{
     outline: none;
@@ -88,8 +78,7 @@
     font-weight: 500;
 }
 .table-sec{
-    width: 60vw;
-    margin-left: 1vw;
+    width: 69%;
 }
 .table-sec table{
     border: none;

@@ -15,7 +15,7 @@
 }
 .who-we-are-txt{
     margin-left: 20px;
-    width: 50vw;
+    width: 49%;
 }
 .who-we-are-txt .who-we-are-txt-heading{
     color: #4B5966;
@@ -50,7 +50,7 @@
     color: #5CAF90;
 }
 .our-services-heading p{
-    width: 23vw;
+    width: 25%;
     margin: auto;
     color: #777777;
 }
@@ -64,14 +64,14 @@
 
 /* ===CEO sec=== */
 .ceo-sec{
-    width: 89vw;
+    width: 90%;
     margin: auto;
     background: #f6f6f6;
     padding: 50px;
     border-radius: 5px;
 }
 .ceo-sec .ceo-contain-sec{
-    width: 40vw;
+    width: 48%;
     margin: auto;
     text-align: center;
 }
@@ -92,13 +92,13 @@
 
 /* ===company turnout === */
 .company-turnout-sec{
-    width: 89vw;
+    width: 90%;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
 }
 .company-turnout-sec .different-type-sec{
-    width: 21vw;
+    width: 24%;
     border: 1px solid #bebdbd;
     border-radius: 5px;
     text-align: center;
@@ -123,6 +123,7 @@
 /* ===our team=== */
 .our-team-sec{
     margin-bottom: 70px;
+    padding: 0 5%;
 }
 .our-team-sec .our-team-heading{
     text-align: center;
@@ -139,13 +140,10 @@
     color: #777777;
 }
 .our-team-sec .our-team-imgs-post{
-    width: 89vw;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 40px auto;
-}
-.our-team-img{
-    width: 209px;
+    margin: 40px 0;
 }
 
 .img-post .name{
@@ -164,9 +162,7 @@
 .our-team-img{
     margin: auto;
 }
-.row{
-    width: 100%;
-}
+
 
 @media screen and (min-width:540px) and (max-width:767px) {
     .who-we-are-img-txt{
@@ -179,21 +175,20 @@
         width: auto;
     }
     .our-services-heading p{
-        width: 55vw;
+        width: 63%;
     }
     .purchess-product-watching-sec{
         flex-direction: column;
     }
     .product-watching-sec{
-        width:65vw;
+        width:65%;
         margin: 0 auto 15px;
     }
     .company-turnout-sec{
         flex-direction: column;
-        /* margin: auto; */
     }
     .company-turnout-sec .different-type-sec{
-        width: 53vw;
+        width: 55%;
         margin: 0 auto 15px;
     }
     .our-team-heading h2{
@@ -220,13 +215,12 @@
         width: auto;
     }
     .our-services-heading p{
-        width: 60vw;
+        width: 70%;
     }
     .purchess-product-watching-sec{
         margin-top: 30px;
     }
     .product-watching-sec{
-        height: 21vh;
         margin: 0 auto 10px;
     }
     .ceo-sec{
@@ -248,7 +242,7 @@
         margin: 20px auto;
     }
     .our-team-img{
-        margin: auto;
+        width: max-content;
     }
     .our-team-heading h2{
         margin-bottom: 0;
