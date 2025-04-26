@@ -41,7 +41,8 @@
   .image-slider {
     display: flex;
     align-items: center;
-    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
   }
   
   .thumbnail-container {
@@ -69,7 +70,6 @@
   }
   
   .sliderBtn {
-    padding: 7px;
     border: none;
     background: none;
   }

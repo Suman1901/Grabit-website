@@ -1,3 +1,7 @@
+#main-container{
+    width: 27%;
+}
+
 .product-Page{
     padding: 40px 5%;
 }
@@ -19,7 +23,7 @@
 }
 
 .product-images-details-rate #product-rate-details{
-    width: 67%;
+    width: 69%;
 }
 
 

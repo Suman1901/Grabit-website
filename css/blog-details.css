@@ -30,9 +30,27 @@
     color: #0D6EFD;
     font-size: 15px;
 }
+@media screen and (min-width:1025px) and (max-width:1366px) {
+
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}
+@media screen and (min-width:540px) and (max-width:767px) {
+    .blogs-items{
+        flex-direction: row;
+    }
+    .blog-unit{
+        width: 49%;
+    }
+
+}
 @media screen and (min-width:320px) and (max-width:539px) {
     .images-blog{
         width: auto;
         margin: 0;
+    }
+    .blog-itm-img img{
+        margin: auto;
     }
 }

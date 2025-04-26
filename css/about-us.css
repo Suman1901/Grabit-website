@@ -181,14 +181,13 @@
         flex-direction: column;
     }
     .product-watching-sec{
-        width:65%;
         margin: 0 auto 15px;
     }
     .company-turnout-sec{
         flex-direction: column;
     }
     .company-turnout-sec .different-type-sec{
-        width: 55%;
+        width: auto;
         margin: 0 auto 15px;
     }
     .our-team-heading h2{
@@ -199,6 +198,7 @@
     }
     .our-team-img{
         margin: auto;
+        width: 292px;
     }
 
 
@@ -211,8 +211,13 @@
     .who-we-are-imgs{
         flex-direction: column;
     }
+    .who-we-are-imgs .who-are-first-img{
+        margin-right: auto;
+    }
     .who-we-are-txt{
         width: auto;
+        margin-left: auto;
+        margin-top: 10px;
     }
     .our-services-heading p{
         width: 70%;

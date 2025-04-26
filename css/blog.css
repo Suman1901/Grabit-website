@@ -242,13 +242,14 @@ input[type="checkbox"]{
     }
     .images-blog{
         margin: auto;
+        width: auto;
     }
     .img-blog-search-items #blog-search{
         display: none;
     }
     .img-blog-search-items{
         margin: auto;
-        width: 60%;
+        width: auto;
     }
     .blog-unit .pro-date{
         margin-top: 5px;

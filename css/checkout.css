@@ -140,6 +140,13 @@
     .day-of-deal-img-sec{
         display: none;
     }
+    .new-customer-checkout{
+        width: 63%;
+        height: 52vh;
+    }
+    .shopping-estimate-card-items{
+        width: 34%;
+    }
 }
 @media screen and (min-width:540px) and (max-width:767px) {
     
@@ -165,10 +172,20 @@
     .day-of-deal-img-sec{
         display: none;
     }
+    .shopping-estimate-card-items{
+        width: 39%;
+    }
+    .new-customer-checkout{
+        width: 59%;
+        height: 56vh;
+    }
 }
 @media screen and (min-width:320px) and (max-width:539px) {
     .product-summery-customer-checkout-sec{
         flex-direction: column;
+    }
+    .shopping-estimate-card-items{
+        width: 100%;
     }
     .checkout-bg{
         width: auto !important;

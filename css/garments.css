@@ -323,7 +323,7 @@
         align-items: center;
     }
     .day-of-deal-img-sec .deal-img-sec{
-        width: 80%;
+        width: auto;
         margin-bottom: 20px;
     }
     .day-of-deal-img-sec .deal-last-img{

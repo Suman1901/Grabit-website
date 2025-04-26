@@ -12,6 +12,9 @@
     <!-- swipper  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -718,8 +721,8 @@
     </section>
 
     <!-- middle banner -->
-     <section class="middle-banner">
-        <div class="middle-banner-img">
+     <section class="middle-banner" data-aos="fade-up" >
+        <div class="middle-banner-img" data-aos-anchor-placement="top-bottom">
             <img src="images/Background (1).png" alt="image" width="100%"/>
             <div class="fresh-fruit-text">
                 <h2>Fresh Fruits Healthy Products</h2>
@@ -2201,7 +2204,13 @@
      <!-- main js -->
     <script src="js/script.js"></script>
 
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <!-- cart js -->
-     <script src="js/cart.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

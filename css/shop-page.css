@@ -359,14 +359,15 @@
     /* ===categorys & product=== */
     .accordion{
         margin: auto;
+        width: 100%;
     }
     /* ===short-by=== */
     .short-by .short-by-txt-sec{
-        width: 25%;
+        width: 90px;
     }
     /* ===new Arrival=== */
     .day-of-deal-img-sec .left-sidebar-deal-img-sec{
-        width: 65%;
+        width: auto;
     }
     .showing-item-next-btn .showing{
         font-size: 13px;

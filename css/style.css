@@ -1380,11 +1380,15 @@ ul .defarance-category{
 .all-details .contact-site{
     display: flex;
     margin-top: 20px;
+    align-items: center;
 }
 
 .contact-site .contact-way{
     color: #777777;
     font-size: 14px;
+}
+.contact-site p{
+    margin-left: 5px;
 }
 .social-icons{
     display: flex;
@@ -1395,7 +1399,7 @@ ul .defarance-category{
 }
 .loc{
     width: 25px;
-    margin-right: 5px;
+    margin: auto;
 }
 
 /* copyright-sec */
@@ -1413,9 +1417,6 @@ ul .defarance-category{
 }
 .copy-right-text span{
     color: #5CAF90;
-}
-.contact-site img{
-    margin-right: 5px;
 }
 
 
@@ -1775,9 +1776,6 @@ ul .defarance-category{
     }
     ul .defarance-category{
         margin-top: 5px;
-    }
-    .loc {
-        width: 35px;
     }
 
 }
@@ -2230,7 +2228,7 @@ ul .defarance-category{
         align-items: center;
     }
     .day-of-deal-img-sec .deal-img-sec{
-        width: 65%;
+        width: auto;
         margin-bottom: 20px;
     }
     .day-of-deal-img-sec .deal-last-img{
@@ -2334,7 +2332,7 @@ ul .defarance-category{
     }
     .marketing-guid{
         margin-bottom: 30px;
-        width: 75%;
+        width: 100%;
     }
     .orginal-discount-price .dis-price-line{
         right: 39%;
