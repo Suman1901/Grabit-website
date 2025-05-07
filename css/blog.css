@@ -61,7 +61,7 @@
     margin-top: 30px;
     border: 1px solid #999999;
     border-radius: 5px;
-    /* position: relative; */
+
 }
 .blog-recent-article .article-line{
     width: auto;
@@ -123,6 +123,14 @@ input[type="checkbox"]{
     right: 0;
     margin-top: 40px;
     right: -84%;
+    border: 1px solid #5CAF90;
+    transition: all 0.5s ease-in-out;
+}
+.filter-btn:hover{
+    color: #5CAF90;
+    background: none;
+    border: 1px solid #5CAF90;
+    transition: all 0.5s ease-in-out;
 }
 .blog-article-filter .quantity{
     color: #777777;

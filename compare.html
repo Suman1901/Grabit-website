@@ -29,7 +29,7 @@
 </head>
 <body>
     <!-- navber start -->
-    <div class="navber">
+    <header class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -81,7 +81,7 @@
         </div>
         <div class="logo-search-login">
             <div class="logo">
-                <img src="images/logo.png" alt="logo" height="23"/>
+                <a href="index.html"><img src="images/logo.png" alt="logo" height="23"/></a>
             </div>
             <div class="search-sec">
                 <input class="search" type="text" placeholder="search products..." name="" value=""/> <i class="fa-solid fa-magnifying-glass"></i>
@@ -109,6 +109,7 @@
                     <svg class="cart-icon">
                         <use href="assets/icons.svg#carticon"></use>
                     </svg>
+                    <span class="cartItem-count"></span>
                     <div class="log-watch-cart">
                         <a href="cart.html" class="ac-watch-cart-text">Cart</a>
                         <a href="cart.html" class="log-item">3-items</a>
@@ -301,7 +302,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <div class="shop-page">
         <a href="#" class="shop">Compare</a>
         <div class="home-shop">
@@ -360,6 +361,11 @@
         </div>
         <div class="product-compare-category">
             <div class="product-compare-img">
+                <button type="button" class="crass">
+                    <svg class="crass-icon">
+                        <use href="assets/icons.svg#crassIcon"></use>
+                    </svg>
+                </button>
                 <img src="images/compare/50_1.jpg.png" alt="image" class="product-compare-type-img-txt" width="200"/>
             </div>
             <div class="prpduct-compare-line"></div>
@@ -412,6 +418,11 @@
         </div>
         <div class="product-compare-category">
             <div class="product-compare-img">
+                <button type="button" class="crass">
+                    <svg class="crass-icon">
+                        <use href="assets/icons.svg#crassIcon"></use>
+                    </svg>
+                </button>
                 <img src="images/compare/32_1.jpg.png" alt="image" class="product-compare-type-img-txt" width="200"/>
             </div>
             <div class="prpduct-compare-line"></div>
@@ -464,6 +475,11 @@
         </div>
         <div class="product-compare-category">
             <div class="product-compare-img">
+                <button type="button" class="crass">
+                    <svg class="crass-icon">
+                        <use href="assets/icons.svg#crassIcon"></use>
+                    </svg>
+                </button>
                 <img src="images/compare/23_1.jpg.png" alt="image" class="product-compare-type-img-txt" width="200"/>
             </div>
             <div class="prpduct-compare-line"></div>
@@ -639,5 +655,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- main js -->
     <script src="js/script.js"></script>
+
+    <!-- comspare js -->
+     <script src="js/compare.js"></script>
 </body>
 </html>

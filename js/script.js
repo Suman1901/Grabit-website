@@ -1,16 +1,4 @@
 
-
-// const naveMenuSec = document.querySelector(".nav-menu-sec");
-
-
-// const bars = document.querySelector(".bars");
-// const naveMenuLinks = document.querySelector(".links");
-
-// bars.addEventListener("click", () =>{
-//   naveMenuLinks.classList.toggle("mobile-menu");
-//   naveMenuSec.classList.toggle("menu-sec");
-// })
-
 // ==== navber ====
 
 const categori = document.querySelector("#categori-sec");
@@ -22,11 +10,6 @@ categori.addEventListener("click", () =>{
 })
 
 
-
-
-
-
-
 // ====banner====
 var swiper = new Swiper(".mySwiper", {
   pagination: {
@@ -35,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   },
   loop: true,
   autoplay : {
-      delay:5000,
+      delay:3000,
       disableOnInteraction:false
   },
   effect : "fade",
@@ -69,6 +52,21 @@ var swiper = new Swiper(".day-of-deal-imges-sec", {
     prevEl: ".swiper-button-prev",
   }
 });
+
+
+let dealUpImage = document.querySelector(".deal-img-sec");
+let producutImage = document.createElement("img")
+let dealProductsList = [
+  {
+    producutImageSrc : "images/day-of-the-deal/Dried Fruits.png",
+    productName : "Dried Fruits",
+    tag : "Mixed Nuts Berries Pack",
+
+
+  }
+]
+
+dealProductsList.append(dealUpImage);
 
 
 // ====top product====
@@ -109,17 +107,18 @@ var swiper = new Swiper(".latest-blog-swiper", {
 
 
 // ===renge slider===
-$(document).ready(function() {
-    // Update the slider value when the range input changes
-    $('#rangeSlider').on('input', function() {
-        var value = $(this).val();
-        $('#sliderValue').text(value);
-    });
-});
-$(document).ready(function() {
-    // Update the slider value when the range input changes
-    $('#rangeSlider').on('input', function() {
-        var value = $(this).val();
-        $('#sliderValue').text(value);
-    });
-});
+
+// $(document).ready(function() {
+//     // Update the slider value when the range input changes
+//     $('#rangeSlider').on('input', function() {
+//         var value = $(this).val();
+//         $('#sliderValue').text(value);
+//     });
+// });
+// $(document).ready(function() {
+//     // Update the slider value when the range input changes
+//     $('#rangeSlider').on('input', function() {
+//         var value = $(this).val();
+//         $('#sliderValue').text(value);
+//     });
+// });

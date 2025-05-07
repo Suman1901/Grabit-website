@@ -19,14 +19,17 @@
     <link rel="stylesheet" href="css/shop-page.css" />
 
     <!-- blog Css -->
-     <link rel="stylesheet" href="css/blog.css"/>
+    <link rel="stylesheet" href="css/blog.css"/>
     
     <!-- blog details Css -->
-     <link rel="stylesheet" href="css/blog-details.css">
+    <link rel="stylesheet" href="css/blog-details.css">
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- navber start -->
-    <div class="navber">
+    <header class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -78,7 +81,7 @@
         </div>
         <div class="logo-search-login">
             <div class="logo">
-                <img src="images/logo.png" alt="logo" height="23"/>
+                <a href="index.html"><img src="images/logo.png" alt="logo" height="23"/></a>
             </div>
             <div class="search-sec">
                 <input class="search" type="text" placeholder="search products..." name="" value=""/> <i class="fa-solid fa-magnifying-glass"></i>
@@ -106,6 +109,7 @@
                     <svg class="cart-icon">
                         <use href="assets/icons.svg#carticon"></use>
                     </svg>
+                    <span class="cartItem-count"></span>
                     <div class="log-watch-cart">
                         <a href="cart.html" class="ac-watch-cart-text">Cart</a>
                         <a href="cart.html" class="log-item">3-items</a>
@@ -298,7 +302,7 @@
                 </div>
             </div>
         </div>
-    </div>
+      </header>
     <div class="shop-page">
         <a href="#" class="shop">Blog Page</a>
         <div class="home-shop">
@@ -363,8 +367,8 @@
             </div>
             <div class="blog-recent-article">
                 <h4 class="recent-article-txt">Recent Articles</h4>
-                <div class="article-line"></div>
-                <div class="article-img-txt">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="article-img-txt" data-aos="zoom-in-down">
                     <div class="article-img">
                         <img src="images/blog-image/6.jpg.png" alt="image" width="80"/>
                     </div>
@@ -374,8 +378,8 @@
                         <p class="type-of-product-article">- Organic</p>
                     </div>
                 </div>
-                <div class="article-line"></div>
-                <div class="article-img-txt">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="article-img-txt" data-aos="zoom-in-down">
                     <div class="article-img">
                         <img src="images/blog-image/5.jpg.png" alt="image" width="80"/>
                     </div>
@@ -385,8 +389,8 @@
                         <p class="type-of-product-article">- Fruits</p>
                     </div>
                 </div>
-                <div class="article-line"></div>
-                <div class="article-img-txt">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="article-img-txt" data-aos="zoom-in-down">
                     <div class="article-img">
                         <img src="images/blog-image/4.jpg.png" alt="image" width="80"/>
                     </div>
@@ -396,8 +400,8 @@
                         <p class="type-of-product-article">- Vegetables</p>
                     </div>
                 </div>
-                <div class="article-line"></div>
-                <div class="article-img-txt">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="article-img-txt" data-aos="zoom-in-down">
                     <div class="article-img">
                         <img src="images/blog-image/3.jpg.png" alt="image" width="80"/>
                     </div>
@@ -407,8 +411,8 @@
                         <p class="type-of-product-article">- Organic</p>
                     </div>
                 </div>
-                <div class="article-line"></div>
-                <div class="article-img-txt">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="article-img-txt" data-aos="zoom-in-down">
                     <div class="article-img">
                         <img src="images/blog-image/2.jpg.png" alt="image" width="80"/>
                     </div>
@@ -418,41 +422,41 @@
                         <p class="type-of-product-article">- Vegetables</p>
                     </div>
                 </div>
-                <div class="article-line"></div>
-                <h4 class="recent-article-txt">Categories</h4>
-                <div class="article-line"></div>
-                <div class="blog-article-filter">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <h4 class="recent-article-txt" data-aos="zoom-in-down">Categories</h4>
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="blog-article-filter" data-aos="zoom-in-down">
                     <div class="article-filter-checkbox">
                         <input type="checkbox"/>
                         <p class="blog-categori-type">Organic</p>
                     </div>
                     <div class="quantity">-2</div>
                 </div>
-                <div class="article-line"></div>
-                <div class="blog-article-filter">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="blog-article-filter" data-aos="zoom-in-down">
                     <div class="article-filter-checkbox">
                         <input type="checkbox"/>
                         <p class="blog-categori-type">Fruits</p>
                     </div>
                     <div class="quantity">-3</div>
                 </div>
-                <div class="article-line"></div>
-                <div class="blog-article-filter">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="blog-article-filter" data-aos="zoom-in-down">
                     <div class="article-filter-checkbox">
                         <input type="checkbox"/>
                         <p class="blog-categori-type">Vegetables</p>
                     </div>
                     <div class="quantity">-2</div>
                 </div>
-                <div class="article-line"></div>
-                <div class="blog-article-filter">
+                <div class="article-line" data-aos="zoom-in-down"></div>
+                <div class="blog-article-filter" data-aos="zoom-in-down">
                     <div class="article-filter-checkbox">
                         <input type="checkbox"/>
                         <p class="blog-categori-type">Fastfood</p>
                     </div>
                     <div class="quantity">-2</div>
                 </div>
-                <button type="button" class="filter-btn">Filter</button>
+                <button type="button" class="filter-btn" data-aos="fade-left">Filter</button>
             </div>
         </div>
     </section>
@@ -580,6 +584,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- main js -->
     <script src="js/script.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

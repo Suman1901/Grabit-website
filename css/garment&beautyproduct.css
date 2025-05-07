@@ -161,16 +161,6 @@ input[type="checkbox"]{
 .new-arrival-txt .arri{
     color: #516EBF !important;
 }
-/* .new-arrival-up-text .new-arrival-type{
-    display: flex;
-    width: 25vw;
-    justify-content: space-between;
-} */
-/* .product-type .arrival-type{
-    color: #777777;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-} */
 .product-type .all{
     color: #516EBF !important;
 }
@@ -178,9 +168,6 @@ input[type="checkbox"]{
     color: #516EBF;
     transition: all 0.3s ease-in-out;
 }
-/* .new-arri-img-sec{
-    border: 1px solid #f3f1f1 !important;
-} */
 
 .type-of-product-txt{
     margin-top: 20px;
@@ -207,13 +194,34 @@ input[type="checkbox"]{
     font-size: 16px;
 }
 .discount-pro-shop-btn{
-    background: #516EBF !important;
-    border: none;
+    background: #516EBF;
+    border: 1px solid;
     padding: 2px 5px;
     border-radius: 5px;
     color: white;
     margin-top: 10px;
+    transition: all 0.4s ease-in-out;
 }
+.snack-food-text{
+    width: 36%;
+    top: 25%;
+}
+.snack-fruits-sec .snack:hover .discount-pro-shop-btn{
+    border: 1px solid #516EBF;
+    background: none;
+    color: #516EBF;
+    transition: all 0.4s ease-in-out;
+}
+.snack-fruits-sec .fruits:hover .discount-pro-shop-btn{
+    border: 1px solid #516EBF;
+    background: none;
+    color: #516EBF;
+    transition: all 0.4s ease-in-out;
+}
+.discount-pro-shop-btn:hover{
+    
+}
+
 
 /* =====fashion-day-of-deal==== */
 

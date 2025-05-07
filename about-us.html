@@ -21,10 +21,13 @@
     <!-- about Css -->
     <link rel="stylesheet" href="css/about-us.css"/>
 
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- navber start -->
-    <div class="navber">
+    <header class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -76,7 +79,7 @@
         </div>
         <div class="logo-search-login">
             <div class="logo">
-                <img src="images/logo.png" alt="logo" height="23"/>
+                <a href="index.html"><img src="images/logo.png" alt="logo" height="23"/></a>
             </div>
             <div class="search-sec">
                 <input class="search" type="text" placeholder="search products..." name="" value=""/> <i class="fa-solid fa-magnifying-glass"></i>
@@ -104,6 +107,7 @@
                     <svg class="cart-icon">
                         <use href="assets/icons.svg#carticon"></use>
                     </svg>
+                    <span class="cartItem-count"></span>
                     <div class="log-watch-cart">
                         <a href="cart.html" class="ac-watch-cart-text">Cart</a>
                         <a href="cart.html" class="log-item">3-items</a>
@@ -296,7 +300,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <div class="shop-page">
         <a href="#" class="shop">About Us</a>
         <div class="home-shop">
@@ -310,14 +314,14 @@
     <!-- who we are start -->
     <div class="who-we-are-img-txt">
         <div class="who-we-are-imgs">                        
-            <div class="who-are-first-img">
+            <div class="who-are-first-img" data-aos="fade-right">
                 <img src="images/about-us-img/about.png.png" alt="image" width="376"/>
             </div>
             <div class="who-are-small-img-sec">
-                <div class="who-sec-img">
+                <div class="who-sec-img" data-aos="fade-down">
                     <img src="images/about-us-img/about-2.png.png" alt="image" width="376"/>
                 </div>
-                <div class="who-third-img">
+                <div class="who-third-img" data-aos="fade-up"> 
                     <img src="images/about-us-img/about-3.png.png" alt="image" width="376"/>
                 </div>
             </div>
@@ -663,5 +667,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- main js -->
     <script src="js/script.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

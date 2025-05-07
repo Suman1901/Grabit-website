@@ -19,11 +19,13 @@
     <!-- garments css -->
      <link rel="stylesheet" href="css/garments.css">
 
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body>
     <!-- navber start -->
-    <div class="navber">
+    <header class="navber">
         <div class="up-nav-sec">
             <div class="num-sec">
                 <div class="phone-number">
@@ -75,7 +77,7 @@
         </div>
         <div class="logo-search-login">
             <div class="logo">
-                <img src="images/logo.png" alt="logo" height="23"/>
+                <a href="index.html"><img src="images/logo.png" alt="logo" height="23"/></a>
             </div>
             <div class="search-sec">
                 <input class="search" type="text" placeholder="search products..." name="" value=""/> <i class="fa-solid fa-magnifying-glass"></i>
@@ -103,6 +105,7 @@
                     <svg class="cart-icon">
                         <use href="assets/icons.svg#carticon"></use>
                     </svg>
+                    <span class="cartItem-count"></span>
                     <div class="log-watch-cart">
                         <a href="cart.html" class="ac-watch-cart-text">Cart</a>
                         <a href="cart.html" class="log-item">3-items</a>
@@ -295,7 +298,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <!-- navber end -->
 
     <!-- banner start -->
@@ -716,7 +719,7 @@
     </section>
 
     <!-- middle banner -->
-    <section class="middle-banner">
+    <section class="middle-banner" data-aos="fade-up">
       <div class="middle-banner-img">
           <img src="images/middle-img/Background (5).png" alt="image" width="100%"/>
           <div class="fresh-fruit-text">
@@ -2283,5 +2286,11 @@
 
    <!-- main js -->
     <script src="js/script.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>

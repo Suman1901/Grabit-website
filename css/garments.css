@@ -32,7 +32,7 @@
 /* ===collection==== */
 .collection{
     width: 32% !important;
-    height: 223px !important;
+    height: 218px !important;
     transition: all 0.4s ease-in-out;
 }
 .collection:hover{
