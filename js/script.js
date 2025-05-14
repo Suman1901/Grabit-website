@@ -2,11 +2,9 @@
 // ==== navber ====
 
 const categori = document.querySelector("#categori-sec");
-// console.log(categori)
 categori.addEventListener("click", () =>{
   const categoriesList = document.querySelector("#categori-list");
   categoriesList.classList.toggle("categories-list");
-  // console.log(categoriesList)
 })
 
 
@@ -66,7 +64,7 @@ let dealProductsList = [
   }
 ]
 
-dealProductsList.append(dealUpImage);
+// dealProductsList.append(dealUpImage);
 
 
 // ====top product====

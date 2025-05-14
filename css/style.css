@@ -286,10 +286,6 @@ dl, ol, ul{
     color: #fff200;
     transition: all 0.1s ease-in-out;
 }
-.nav-menu-sec .categories:hover{
-    background: #41846c;
-    transition: all 0.5s ease-in-out;
-}
 .categories .categories-text{
     text-decoration: none;
     text-transform: capitalize;
@@ -418,7 +414,11 @@ dl, ol, ul{
     margin-left: 10px;
     transition: all 0.5s ease-in-out;
 }
-.nav-menu-sec .categories:hover .fa-solid.fa-angle-down{
+.nav-menu-sec #business-location:hover{
+    background: #41846c;
+    transition: all 0.5s ease-in-out;
+}
+.nav-menu-sec #business-location:hover .fa-solid.fa-angle-down{
     transform: rotate(181deg);
     transition: all 0.5s ease-in-out;
 }
